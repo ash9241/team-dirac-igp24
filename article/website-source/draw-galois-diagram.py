@@ -22,7 +22,7 @@ def diagram(mobile=False):
         color, marker = ("#a33e35", "red") if rejected else ("#315dff", "blue")
         parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="2" fill="{("#f6eeee" if rejected else "#eef2ff")}"/>')
         text(x + 25, y + 41, "FORBIDDEN" if rejected else "ALLOWED", 25 if mobile else 17, color, weight="700")
-        text(x + 25, y + 80, "Swap two adjacent roots" if rejected else "Complex conjugation", 30 if mobile else 26, weight="600")
+        text(x + 25, y + 80, "Swap two adjacent roots" if rejected else "Swap the imaginary roots", 30 if mobile else 26, weight="600")
         cx, cy, radius = x + w / 2, y + (240 if mobile else 194), 90 if mobile else 72
         parts.append(f'<path d="M{cx-radius-12} {cy}H{cx+radius+12}M{cx} {cy-radius-12}V{cy+radius+12}" fill="none" stroke="#c4ccd8" stroke-width="1.5"/>')
         roots = [(cx + radius, cy, "α", "start", cx + radius + 17, cy + 8, rejected),
@@ -39,9 +39,9 @@ def diagram(mobile=False):
         parts.append(f'<path d="{path}" fill="none" stroke="{color}" stroke-width="3" marker-start="url(#{marker})" marker-end="url(#{marker})"/>')
         baseline = y + h - (48 if mobile else 47)
         text(cx, baseline, "α ↔ iα; −α stays fixed" if rejected else "iα ↔ −iα; α and −α stay fixed", 25 if mobile else 21, color, "middle")
-        text(cx, baseline + 31, "α + (−α) = 0 → iα − α ≠ 0." if rejected else "Every rational algebraic relation survives.", 23 if mobile else 18, "#465465", "middle")
-    text(width / 2, 1002 if mobile else 456, "8 automorphisms. 24 permutations.", 30 if mobile else 29, anchor="middle", weight="600")
-    text(width / 2, 1042 if mobile else 493, "The algebra decides which permutations are allowed.", 24 if mobile else 19, "#546174", "middle")
+        text(cx, baseline + 31, "α + (−α) = 0 → iα − α ≠ 0." if rejected else "All the required relationships survive.", 23 if mobile else 18, "#465465", "middle")
+    text(width / 2, 1002 if mobile else 456, "24 rearrangements. Only 8 allowed.", 30 if mobile else 29, anchor="middle", weight="600")
+    text(width / 2, 1042 if mobile else 493, "Every swap has to pass the arithmetic test.", 24 if mobile else 19, "#546174", "middle")
     parts.append('</svg>')
     return '\n'.join(parts) + '\n'
 

@@ -38,13 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13319,
-      "sha256": "bb04149b6edf1e3e57fcd6114080ff228a6f871428a01d25af64cd1d528e6eb5"
+      "bytes": 13322,
+      "sha256": "3c620537afb5ea8522f14d1cad3e94e874f8083741a256e452494d82306ea7e9"
     },
     {
       "path": "article/essay.md",
-      "bytes": 22050,
-      "sha256": "a029c104d145d054ba8cec8fb550913984bb2bd47b4accf010db4cd4128321d0"
+      "bytes": 24948,
+      "sha256": "7af2438003c3e93310056fc749569eb5106559ee6e5aa028ece607e01cb78ca3"
     },
     {
       "path": "article/evidence/checkpoints.csv",
@@ -103,13 +103,23 @@
     },
     {
       "path": "article/figures/galois-symmetries-mobile.svg",
-      "bytes": 4776,
-      "sha256": "f184a15d9d8de6684f8a14eef80a47c216168e9acd875a63fb5f0161e53f675b"
+      "bytes": 4770,
+      "sha256": "2ef03486c9e3c2018f13d967d9c97eaa058af2a172864e624c6b5a66ddc95af5"
     },
     {
       "path": "article/figures/galois-symmetries.svg",
-      "bytes": 4774,
-      "sha256": "448cf771ae2be3fb3c94006dcaf7e042196b39150b431ce58dec07077b4187ab"
+      "bytes": 4768,
+      "sha256": "994e1dbca43e7a26aeef862b46301617059fd89323e0b185a59b994aebf6088f"
+    },
+    {
+      "path": "article/figures/hill-climbing-mobile.svg",
+      "bytes": 17722,
+      "sha256": "742687bfd2d8803f918bdfa62a7b5a6ac4ddf3316c419376689451b1c164b82c"
+    },
+    {
+      "path": "article/figures/hill-climbing.svg",
+      "bytes": 17710,
+      "sha256": "e0c38578846a23264f4d20ea9496f9fe3038c313b71db98a5027c1637a83a444"
     },
     {
       "path": "article/figures/trajectory-mobile.png",
@@ -163,8 +173,13 @@
     },
     {
       "path": "article/website-source/draw-galois-diagram.py",
-      "bytes": 4370,
-      "sha256": "1f472d631318a0a9ec9feaa2484b73601e74d2c2f66771a71232fb04d111aa3f"
+      "bytes": 4364,
+      "sha256": "5eb123370e24f4b5c74d937d65d667307dfe9c0a9d52f7fde20b827b048b4039"
+    },
+    {
+      "path": "article/website-source/draw-hill-climbing.py",
+      "bytes": 4297,
+      "sha256": "05f383d6e69f9e277c391cf09b26e7f7ce25c417dee6328a4964ffdfcdac01ff"
     },
     {
       "path": "article/website-source/essay-tools.tsx",
@@ -178,8 +193,8 @@
     },
     {
       "path": "article/website-source/globals.css",
-      "bytes": 20819,
-      "sha256": "c9f14679baa66ec038ff71cb24db75ceb4013a0d6a276ba315206cbbc234ec7e"
+      "bytes": 20918,
+      "sha256": "4d70af6f923005ba02e08164020d777c4b508df73d35fd56e2d4dccd02bc378f"
     },
     {
       "path": "article/website-source/layout.tsx",
@@ -188,8 +203,8 @@
     },
     {
       "path": "article/website-source/page.tsx",
-      "bytes": 31126,
-      "sha256": "0394ae0cb3bae3a0668a590756aa911500531bcc820c37df05f63babdc594a67"
+      "bytes": 34550,
+      "sha256": "6e724d26f8c62813bcbc92c50b190eaca4651d3a169d0ec358e80234ea98302c"
     },
     {
       "path": "article/website-source/plot-essay.py",
@@ -5479,7 +5494,7 @@
     {
       "path": "website/README.md",
       "bytes": 2359,
-      "sha256": "5370b70041e813d0bb90ddb6891e77f3a42b70522326dc4e60881c9ebaa39ac1"
+      "sha256": "88e10f34d10396150344adb893a95d91c7fbeb4685ea7c8a6299e98b13a9ed7a"
     },
     {
       "path": "website/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -5782,6 +5797,11 @@
       "sha256": "f1c30059dfeee783a85b21c1804bace7a944440167e7d6d602a48794f08fdbae"
     },
     {
+      "path": "website/assets/index-DCRTmerM.css",
+      "bytes": 49472,
+      "sha256": "ade449201ee09b5a6ee6d6a66520b980cfb438deb2bb5f1bdd4729fb390cc9b8"
+    },
+    {
       "path": "website/assets/index-O2_PQxfz.css",
       "bytes": 47902,
       "sha256": "d615e271d6c3caee70e935b90c0e6048f54eb7c2c7a88b00b01d47b9c22ee16b"
@@ -5793,8 +5813,8 @@
     },
     {
       "path": "website/downloads/two-batchmates.md",
-      "bytes": 22338,
-      "sha256": "c3d7f0a97498c477ca937da96a729a33268b9eea76e3ff7a47b1fe16ccd3b155"
+      "bytes": 25308,
+      "sha256": "eb2c1d445625c64bf710161cadc4f5ba89df729e379947b92dfcb5d78931b9a2"
     },
     {
       "path": "website/figures/diversity-mobile.svg",
@@ -5808,13 +5828,23 @@
     },
     {
       "path": "website/figures/galois-symmetries-mobile.svg",
-      "bytes": 4776,
-      "sha256": "f184a15d9d8de6684f8a14eef80a47c216168e9acd875a63fb5f0161e53f675b"
+      "bytes": 4770,
+      "sha256": "2ef03486c9e3c2018f13d967d9c97eaa058af2a172864e624c6b5a66ddc95af5"
     },
     {
       "path": "website/figures/galois-symmetries.svg",
-      "bytes": 4774,
-      "sha256": "448cf771ae2be3fb3c94006dcaf7e042196b39150b431ce58dec07077b4187ab"
+      "bytes": 4768,
+      "sha256": "994e1dbca43e7a26aeef862b46301617059fd89323e0b185a59b994aebf6088f"
+    },
+    {
+      "path": "website/figures/hill-climbing-mobile.svg",
+      "bytes": 17722,
+      "sha256": "742687bfd2d8803f918bdfa62a7b5a6ac4ddf3316c419376689451b1c164b82c"
+    },
+    {
+      "path": "website/figures/hill-climbing.svg",
+      "bytes": 17710,
+      "sha256": "e0c38578846a23264f4d20ea9496f9fe3038c313b71db98a5027c1637a83a444"
     },
     {
       "path": "website/figures/trajectory-mobile.svg",
@@ -5853,8 +5883,8 @@
     },
     {
       "path": "website/index.html",
-      "bytes": 60423,
-      "sha256": "c89211c919f1c2b8bfb9e30152ee1307f16f65a31d5e689aa9fcee25b4e5e196"
+      "bytes": 63891,
+      "sha256": "231bb5716ccc66f0b65394c6a42409603a68abcec6ae89fc57c9e641813401f2"
     },
     {
       "path": "website/robots.txt",

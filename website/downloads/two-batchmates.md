@@ -7,23 +7,25 @@ September 8, 2026.
 
 The competition asked us to work backwards: choose how an equation’s roots should behave, then find an equation whose roots behave that way.
 
-Most of us meet a polynomial as something to solve. For Galois theory, we start with a polynomial with rational coefficients and consider its **splitting field**: the smallest field containing the rational numbers and every root. It also contains everything we can make from them by addition, subtraction, multiplication, and division by nonzero elements.
+Take the equation x² = 2. It has two answers: √2 and −√2, because squaring either gives 2. These answers are called its **roots**. Galois theory asks a different question: **which roots can exchange places without breaking the arithmetic?**
 
-A field automorphism is a bijection from that field to itself that preserves addition and multiplication. The automorphisms that fix every rational number form the polynomial’s **Galois group over ℚ**. The group operation is composition: do one automorphism, then another.[^8]
+If two roots add to zero, their replacements must still add to zero. The same goes for every relationship you can express using addition, multiplication, and rational numbers—whole numbers and fractions. A swap must preserve all of those relationships at once.
 
-Each automorphism permutes the roots. But its action must preserve **every polynomial relation with rational coefficients among those roots**. Preserving their overall sum and product is not enough; every permutation does that. The example below shows a swap that fails this stronger requirement.
+To check this properly, we include the roots, the fractions, and every number we can build from them by ordinary arithmetic, with no division by zero. Mathematicians call this number system the **splitting field**. An allowed swap must work consistently across this whole system. It has to preserve addition and multiplication, keep the fractions fixed, and be reversible. Such a rearrangement is called an **automorphism**.[^8]
 
-The **inverse Galois problem** asks whether every finite group can arise as a Galois group over ℚ. The general problem remains open.
+The **Galois group** is the collection of all these allowed rearrangements, including doing nothing. We can combine two by performing one after the other, and every one can be undone. Together, they describe the algebraic symmetry of the roots.
+
+The **inverse Galois problem** reverses the task. Start with any finite group: a finite collection of symmetries that can be combined and undone. Can we find an equation built from powers of x and whole numbers or fractions whose Galois group is exactly that group? Nobody knows how to do this for every finite group. The general problem remains open.
 
 IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group acting on the 24 roots, and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1. They also had to be irreducible: they could not factor into lower-degree polynomials over the rationals.
 
-### A permutation has to respect the algebra.
+### Some swaps work. Others break the arithmetic.
 
-For x⁴ − 2, let α be the positive fourth root of 2 and let i² = −1. The roots are α, −α, iα, and −iα. The splitting field is ℚ(α, i).
+Here is the same test for x⁴ = 2. We use α for the positive number whose fourth power is 2. The symbol i is the imaginary unit, defined by i² = −1. There are four roots: α, −α, iα, and −iα. The diagram places the real roots horizontally and the imaginary roots vertically.
 
 ![For x to the fourth minus two, complex conjugation swaps i alpha and minus i alpha and fixes the real roots. This is allowed. Swapping alpha and i alpha alone breaks alpha plus minus alpha equals zero. Eight of the 24 root permutations belong to the Galois group.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/figures/galois-symmetries.svg)
 
-The left-hand map is complex conjugation, which preserves addition, multiplication, and every rational number. A single broken relation rules out the right-hand swap. Here the splitting field has degree 8 over ℚ, so the Galois group has 8 elements.[^8]
+On the left, the two imaginary roots trade places while the real roots stay fixed. This is called complex conjugation, and it preserves every required relationship. On the right, α changes but −α does not: two numbers that used to add to zero no longer do. There are 24 ways to rearrange four roots, but only 8 pass every test.[^8]
 
 There are 25,000 transitive groups of degree 24 in the catalog. Once you include the allowed real-root counts, there are 165,836 targets. The competition’s frozen baseline had examples for only 622 of them.[^1]
 
@@ -151,6 +153,18 @@ IGP24 suited this way of working because it offered many separately checkable ta
 
 Does that divide mathematics into problems you can hill-climb and problems you cannot? I don’t think the boundary is so clean. It depends on how you represent the question, which moves you allow, and what you can measure. Sometimes a search for examples, counterexamples, or better bounds gives a hard problem an iterative form. Finding that formulation may itself be the mathematical breakthrough. It also does not guarantee that a better score means you are closer to a proof.
 
+Andrej Karpathy helped popularise the term **autoresearch** with a small, concrete example. An AI agent changes the code used to train a language model, runs a five-minute training experiment, and checks how well the resulting model predicts text it was not trained on. It retains changes that improve that result, reverts unsuccessful ones, and repeats.[^10] The human sets the instructions, the time budget, and the test. The agent can then carry out many experiments without waiting for a person between each one.
+
+Autoresearch lets an agent run that cycle of experiments and feedback. **Hill climbing is one way to decide which changes to keep.** The familiar picture is below: each position represents a possible candidate, and height represents how well it scores. Moving uphill gets you to something better nearby. It can also leave you on top of a small hill, with a higher one across a valley. A fresh starting point or a different kind of move can help the search explore elsewhere. Our persistent runs had this rhythm, with Durgesh and me still choosing mathematical directions and reviewing what the experiments meant.
+
+### Getting uphill is easier than finding the highest hill.
+
+Keep a change when it improves the result. Repeat until nearby changes stop helping.
+
+![A schematic search landscape. Blue steps climb from a starting point to a local peak. Beyond a valley lies a higher, global peak; farther right is a flat plateau. Ordinary uphill moves can stop at the local peak even though the global peak is better.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/figures/hill-climbing.svg)
+
+A local maximum is better than its neighbors. The global maximum is the best point across the whole landscape. A plateau offers little guidance because nearby choices score the same. This is a schematic of the search idea, not a plot of our IGP24 results. Our constructions form a much more complicated space, and the competition’s scoring landscape also changes as other teams submit.[^7]
+
 ## Then we started losing ground.
 
 We reached an earlier checkpoint at rank 11. The published September 1 table places us **14th, with 30,426 scoreable group/real-root pairs and 405.86189 points**.[^2] More examples had not guaranteed a better position.
@@ -204,5 +218,6 @@ We’re bringing the experiments as well as the result. We want to hear where ot
 [^7]: Poole and Mackworth, [Local Search](https://artint.info/3e/html/ArtInt3e.Ch4.S6.html), for hill climbing and its limits. The discussion of mathematical formulations is our interpretation.
 [^8]: J. S. Milne, [Fields and Galois Theory](https://www.jmilne.org/math/CourseNotes/FT.pdf), chapters 2–3: splitting fields and automorphisms. For x⁴ − 2, Eisenstein’s criterion gives [ℚ(α) : ℚ] = 4. This field is real, so adjoining i doubles the degree to 8.
 [^9]: Archived harness code: [local validity gates](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/submit_exploration_batch.py), [ledger](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/ledger.py), [expected-value scheduler](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/scheduler.py), and [wave controller and marginal forecast](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/controller.py). The [research runbook](https://github.com/ash9241/team-dirac-igp24/blob/main/research/IGP24_Rank_Climbing_System.md) records the local group predictor and its updates from official labels.
+[^10]: Andrej Karpathy’s [autoresearch](https://github.com/karpathy/autoresearch): the March 2026 project and its [experiment instructions](https://github.com/karpathy/autoresearch/blob/master/program.md). The comparison with our IGP24 workflow is ours.
 
 Written with AI assistance from our conversations and experiment records. The hero and landscape were made with Image Gen. The diagrams explain the algebra; graphs use recorded data. [Image prompts](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/illustration-prompts.json).

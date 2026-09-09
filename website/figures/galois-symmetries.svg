@@ -5,7 +5,7 @@
 <defs><marker id="blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="#315dff"/></marker><marker id="red" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="#a33e35"/></marker></defs>
 <rect x="20" y="18" width="510" height="383" rx="2" fill="#eef2ff"/>
 <text x="45" y="59" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#315dff" text-anchor="start" font-weight="700">ALLOWED</text>
-<text x="45" y="98" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#1b2531" text-anchor="start" font-weight="600">Complex conjugation</text>
+<text x="45" y="98" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#1b2531" text-anchor="start" font-weight="600">Swap the imaginary roots</text>
 <path d="M191.0 212H359.0M275.0 128V296" fill="none" stroke="#c4ccd8" stroke-width="1.5"/>
 <circle cx="347.0" cy="212" r="7" fill="#697586"/>
 <text x="364.0" y="220" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#465465" text-anchor="start" font-weight="400">α</text>
@@ -17,7 +17,7 @@
 <text x="275.0" y="319" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#315dff" text-anchor="middle" font-weight="400">−iα</text>
 <path d="M285.0 152C336.2 168.8 336.2 255.2 285.0 272" fill="none" stroke="#315dff" stroke-width="3" marker-start="url(#blue)" marker-end="url(#blue)"/>
 <text x="275.0" y="354" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#315dff" text-anchor="middle" font-weight="400">iα ↔ −iα; α and −α stay fixed</text>
-<text x="275.0" y="385" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#465465" text-anchor="middle" font-weight="400">Every rational algebraic relation survives.</text>
+<text x="275.0" y="385" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#465465" text-anchor="middle" font-weight="400">All the required relationships survive.</text>
 <rect x="570" y="18" width="510" height="383" rx="2" fill="#f6eeee"/>
 <text x="595" y="59" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#a33e35" text-anchor="start" font-weight="700">FORBIDDEN</text>
 <text x="595" y="98" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#1b2531" text-anchor="start" font-weight="600">Swap two adjacent roots</text>
@@ -33,6 +33,6 @@
 <path d="M839.0 142Q905.0 132 895.0 198" fill="none" stroke="#a33e35" stroke-width="3" marker-start="url(#red)" marker-end="url(#red)"/>
 <text x="825.0" y="354" font-family="Arial,Helvetica,sans-serif" font-size="21" fill="#a33e35" text-anchor="middle" font-weight="400">α ↔ iα; −α stays fixed</text>
 <text x="825.0" y="385" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#465465" text-anchor="middle" font-weight="400">α + (−α) = 0 → iα − α ≠ 0.</text>
-<text x="550.0" y="456" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#1b2531" text-anchor="middle" font-weight="600">8 automorphisms. 24 permutations.</text>
-<text x="550.0" y="493" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#546174" text-anchor="middle" font-weight="400">The algebra decides which permutations are allowed.</text>
+<text x="550.0" y="456" font-family="Arial,Helvetica,sans-serif" font-size="29" fill="#1b2531" text-anchor="middle" font-weight="600">24 rearrangements. Only 8 allowed.</text>
+<text x="550.0" y="493" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#546174" text-anchor="middle" font-weight="400">Every swap has to pass the arithmetic test.</text>
 </svg>

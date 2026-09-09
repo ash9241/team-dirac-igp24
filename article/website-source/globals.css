@@ -63,12 +63,12 @@ figcaption{font-size:13px;line-height:1.75;color:var(--muted)}
 .feedback{border-top:1px solid #9faef6;padding-top:19px;display:flex;align-items:center;gap:18px}
 .feedback>span{font-size:34px;line-height:1}
 .feedback p{font-size:14px;line-height:1.65}
-.galois-figure{background:#fff}
+.galois-figure,.hill-figure{background:#fff}
 .diagram-heading{padding:34px 38px 18px}
 .diagram-heading h3,.quartic-structure h3{font-size:32px;font-weight:600;letter-spacing:-.04em}
 .diagram-heading p{max-width:850px;margin-top:16px;font-size:17px;line-height:1.7}
-.galois-figure picture,.galois-figure img{display:block;width:100%;height:auto}
-.galois-figure figcaption{padding:20px 38px 26px;border-top:1px solid var(--line);font-size:14px}
+.galois-figure picture,.galois-figure img,.hill-figure picture,.hill-figure img{display:block;width:100%;height:auto}
+.galois-figure figcaption,.hill-figure figcaption{padding:20px 38px 26px;border-top:1px solid var(--line);font-size:14px}
 .quartic-structure{padding:36px 38px 26px;background:#edf0f5}
 .quartic-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px;margin:30px 0 24px}
 .quartic-steps>div{position:relative;min-width:0;padding:22px 0 12px;border-top:1px solid #bdc7d6}
@@ -194,7 +194,7 @@ h2{font-size:38px;line-height:1.15;margin-bottom:27px}
 .roots-study figcaption{padding:17px 22px;font-size:12px}
 .harness-diagram{padding:28px 24px}.harness-diagram h3{font-size:28px}.harness-diagram ol{gap:29px 24px}.harness-diagram li strong{font-size:18px}.harness-diagram li p{font-size:14px}
 .diagram-heading{padding:26px 24px 14px}.diagram-heading h3,.quartic-structure h3{font-size:27px}.diagram-heading p{font-size:16px}
-.galois-figure figcaption{padding:18px 24px 24px}.quartic-structure{padding:28px 24px 24px}
+.galois-figure figcaption,.hill-figure figcaption{padding:18px 24px 24px}.quartic-structure{padding:28px 24px 24px}
 .quartic-steps{grid-template-columns:1fr;gap:12px;margin:24px 0}.quartic-steps>div{padding:18px 0 8px}.quartic-steps>div+div::before{content:none}.quartic-steps .math-line{font-size:25px;margin-top:8px}
 .graph{padding:27px 13px 25px}.graph h3{font-size:25px;padding:0 10px}.graph figcaption{font-size:12px;margin:12px 10px 0}
 .search-study figcaption{padding:18px 22px;font-size:12px}

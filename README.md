@@ -16,7 +16,7 @@ The published September 1, 2026 leaderboard placed **Dirac 14th, with 30,426 sco
 
 ## What was the problem?
 
-For a polynomial over $\mathbb{Q}$, its splitting field is the smallest field containing all its roots and the rational numbers. Its Galois group consists of the automorphisms of that field that fix $\mathbb{Q}$, with composition as the group operation. They permute the roots while preserving every polynomial relation over $\mathbb{Q}$ among them. The [illustrated example](article/essay.md#a-permutation-has-to-respect-the-algebra) shows why some root permutations are forbidden.
+For a polynomial over $\mathbb{Q}$, its splitting field is the smallest field containing all its roots and the rational numbers. Its Galois group consists of the automorphisms of that field that fix $\mathbb{Q}$, with composition as the group operation. They permute the roots while preserving every polynomial relation over $\mathbb{Q}$ among them. The [illustrated example](article/essay.md#some-swaps-work-others-break-the-arithmetic) shows why some root permutations are forbidden.
 
 The inverse Galois problem asks for the equation when you start with the group. IGP24 focused on degree 24: monic, irreducible polynomials with integer coefficients, labeled by their group `24Tt` and their number of real roots `r`. A target is the pair `(24Tt, r)`.
 
