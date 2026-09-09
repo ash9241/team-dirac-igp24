@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://team-dirac-igp24.vercel.app/sitemap.xml

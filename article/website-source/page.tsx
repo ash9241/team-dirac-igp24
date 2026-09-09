@@ -3,6 +3,10 @@ import type { ReactNode } from "react";
 import katex from "katex";
 import { SharingExplorer } from "./essay-tools";
 
+const repository = "https://github.com/ash9241/team-dirac-igp24";
+const evidence = repository + "/blob/main/article/evidence/";
+const example = repository + "/tree/main/examples/f5";
+
 const board = "https://competition.sair.foundation/competitions/igp24/leaderboard";
 const rules = "https://competition.sair.foundation/competitions/igp24/overview";
 const summit = "https://www.caltech.edu/campus-life-events/calendar/science-x-ai-summit-2026-1";
@@ -19,7 +23,7 @@ function Section({id,title,note,children}:{id:string,title?:string,note?:ReactNo
   return <section id={id} className="story-section"><aside className="margin-note">{note}</aside><div className="prose">{title&&<h2>{title}</h2>}{children}</div></section>;
 }
 function Graph({name,title,alt,caption}:{name:string,title:string,alt:string,caption:string}) {
-  return <figure className="graph wide"><h3>{title}</h3><picture><source media="(max-width:600px)" srcSet={"/figures/"+name+"-mobile.svg"}/><img src={"/figures/"+name+".svg"} alt={alt} loading="lazy" width="1100" height="460"/></picture><figcaption>{caption} <a href={name==="diversity"?"/evidence/diversity.json":"/evidence/checkpoints.csv"}>See the data ↗</a></figcaption></figure>;
+  return <figure className="graph wide"><h3>{title}</h3><picture><source media="(max-width:600px)" srcSet={"/figures/"+name+"-mobile.svg"}/><img src={"/figures/"+name+".svg"} alt={alt} loading="lazy" width="1100" height="460"/></picture><figcaption>{caption} <a href={evidence+(name==="diversity"?"diversity.json":"checkpoints.csv")}>See the data ↗</a></figcaption></figure>;
 }
 
 export default function Article() {
@@ -35,7 +39,7 @@ export default function Article() {
       <a className="begin-link" href="#problem">The story <span aria-hidden="true">↓</span></a>
     </header>
     <div className="byline"><p>By <strong>Aishwarya Das</strong><br/>Research with <strong>Durgesh Kumar</strong></p><p>IGP24 · Degree 24<br/>GPT‑5.6 Pro, Codex &amp; computational algebra</p></div>
-    <nav className="reading-nav" aria-label="In this article"><a href="#problem">The problem</a><a href="#turning-point">The experiment</a><a href="#polynomial">The polynomial</a><a href="#results">The score</a><a href="#friday">Caltech</a></nav>
+    <nav className="reading-nav" aria-label="In this article"><a href="#problem">The problem</a><a href="#turning-point">The experiment</a><a href="#polynomial">The polynomial</a><a href="#results">The score</a><a href="#friday">Caltech</a><a href={repository}>GitHub ↗</a></nav>
 
     <article id="essay">
       <Section id="problem" note={<><span className="margin-stat">24</span><p>The highest power of x in the polynomials we were trying to find.</p></>}>
@@ -110,8 +114,8 @@ export default function Article() {
           <div><strong>f(x) = h(x²)</strong><span>Return to degree 24</span></div>
         </div>
         <div className="exact-polynomial" data-coefficients={coefficients}><Equation tex={polynomial}/></div>
-        <div className="polynomial-checks"><span>Degree <strong>24</strong></span><span>Irreducible <strong>Yes</strong></span><span>Real roots <strong>20</strong></span><a href="/downloads/dirac-replay.zip" download>Reproduce this polynomial <span aria-hidden="true">↓</span></a></div>
-        <figcaption>PARI/GP replay reproduced the coefficients and checked degree, irreducibility, and real-root count. The Galois-group label comes from the <a href="/evidence/worked_example.json">archived official receipt and action certificate</a>; Magma identification was not rerun for this article.</figcaption>
+        <div className="polynomial-checks"><span>Degree <strong>24</strong></span><span>Irreducible <strong>Yes</strong></span><span>Real roots <strong>20</strong></span><a href={example}>Reproduce on GitHub <span aria-hidden="true">↗</span></a></div>
+        <figcaption>PARI/GP replay reproduced the coefficients and checked degree, irreducibility, and real-root count. The Galois-group label comes from the <a href={evidence+"worked_example.json"}>archived official receipt and action certificate</a>; Magma identification was not rerun for this article.</figcaption>
       </figure>
       <Section id="reusing-results">
         <p>A verified result could become the starting point of another search. That made the ledger more than a list of successes. It was a collection of material we could return to, transform, and test again.</p>
@@ -155,14 +159,14 @@ export default function Article() {
     </article>
 
     <footer className="appendix" aria-labelledby="appendix-title">
-      <div className="appendix-intro"><h2 id="appendix-title">The work behind<br/>the story.</h2><p>Data, construction, and checks, so you can follow an example all the way through.</p><div className="downloads"><a href="/downloads/dirac-replay.zip" download>Download the polynomial replay <span>↓</span></a><a href="/downloads/two-batchmates.md" download>Download the article text <span>↓</span></a></div><p className="credits">Written with AI assistance from our conversations and experiment records. Images were made with Image Gen; graphs use recorded data. <a href="/evidence/illustration-prompts.json">Image prompts</a>.</p></div>
+      <div className="appendix-intro"><h2 id="appendix-title">The work behind<br/>the story.</h2><p>Data, construction, and checks, so you can follow an example all the way through.</p><div className="downloads"><a href={repository}>Explore the public research archive <span>↗</span></a><a href="/downloads/dirac-replay.zip" download>Download the polynomial replay <span>↓</span></a><a href="/downloads/two-batchmates.md" download>Download the article text <span>↓</span></a></div><p className="credits">Written with AI assistance from our conversations and experiment records. Images were made with Image Gen; graphs use recorded data. <a href={evidence+"illustration-prompts.json"}>Image prompts</a>.</p></div>
       <div><ol className="sources">
         <li id="source-1"><a href={rules}>IGP24 overview</a> and <a href="https://competition.sair.foundation/competitions/igp24/evaluation-setup">evaluation rules</a>: targets, baseline, verification, and scoring.</li>
-        <li id="source-2"><a href={board}>Published leaderboard</a>. Table dated September 1, 2026, retrieved September 9 UTC / September 8 Pacific. <a href="/evidence/leaderboard.json">Saved team extract</a>.</li>
-        <li id="source-3"><a href="/evidence/diversity.json">Quartic portfolio and first-stage pilot</a>, with workflow provenance. GPT‑5.6 Pro is the setting reported by Aishwarya; per-turn model metadata is unavailable. This is an account of the workflow, not a controlled ablation of its components.</li>
-        <li id="source-4"><a href="/evidence/f5-f6.json">F5/F6 results</a>: 49 distinct pairs matched to accepted receipts, plus selected-cohort and failed-run records.</li>
-        <li id="source-5"><a href="/evidence/worked_example.json">Worked example and archived receipt</a>; <a href="/evidence/worked_example_replay.json">PARI/GP replay result</a>. The group identification was not rerun in this audit.</li>
-        <li id="source-6"><a href="/evidence/checkpoints.csv">Historical checkpoints</a>, with a source for each observation.</li>
+        <li id="source-2"><a href={board}>Published leaderboard</a>. Table dated September 1, 2026, retrieved September 9 UTC / September 8 Pacific. <a href={evidence+"leaderboard.json"}>Saved team extract</a>.</li>
+        <li id="source-3"><a href={evidence+"diversity.json"}>Quartic portfolio and first-stage pilot</a>, with workflow provenance. <a href={repository+"/blob/main/conversations/README.md"}>Pro conversation and implementation handoffs</a>. GPT‑5.6 Pro is the setting reported by Aishwarya; per-turn model metadata is unavailable. This is an account of the workflow, not a controlled ablation of its components.</li>
+        <li id="source-4"><a href={evidence+"f5-f6.json"}>F5/F6 results</a>: 49 distinct pairs matched to accepted receipts, plus selected-cohort and failed-run records.</li>
+        <li id="source-5"><a href={evidence+"worked_example.json"}>Worked example and archived receipt</a>; <a href={evidence+"worked_example_replay.json"}>PARI/GP replay result</a>. The group identification was not rerun in this audit.</li>
+        <li id="source-6"><a href={evidence+"checkpoints.csv"}>Historical checkpoints</a>, with a source for each observation.</li>
         <li id="source-7">Poole and Mackworth, <a href="https://artint.info/3e/html/ArtInt3e.Ch4.S6.html">Local Search</a>, for hill climbing and its limits. The discussion of mathematical formulations is our interpretation.</li>
       </ol><a className="back-top" href="#top">Back to the beginning ↑</a></div>
     </footer>

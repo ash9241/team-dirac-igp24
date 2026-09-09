@@ -19,3 +19,8 @@ research/**/output/
 research/**/outbox/
 research/**/receipts/
 # Hand-written *.sage.py experiments are intentionally tracked.
+
+# The public website includes the reader-facing downloads.
+!website/downloads/
+!website/downloads/**
+.vercel/

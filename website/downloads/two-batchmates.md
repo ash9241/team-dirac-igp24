@@ -1,7 +1,5 @@
 # Two Batchmates Walk Into a Maths Competition
 
-[Read the live website](https://team-dirac-igp24.vercel.app) · [Browse the research archive](../README.md)
-
 A founder building quantum sensors, a future category theorist, and a month spent learning what AI could help us find.
 
 By Aishwarya Das. Research with Durgesh Kumar.
@@ -61,7 +59,7 @@ The batch used degree-four constructions over degree-six starting fields, giving
 
 I brought the actual templates and returned labels to Pro and asked it to explain the collapse. Its diagnosis focused on the restrictions we had preserved. It proposed a small general-quartic pilot, spread across different structural choices. It also warned that simply adding odd powers might send most candidates into another common family. We needed to test the change.
 
-![Identical blue casts sit in a white tray, with distinct geometric forms beside it: a conceptual illustration of changing the construction.](images/same-mould.png)
+![Identical blue casts sit in a white tray, with distinct geometric forms beside it: a conceptual illustration of changing the construction.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/images/same-mould.png)
 
 Different coefficients can preserve the same restrictive structure. The illustration captures the problem; the graph below shows the recorded results.
 
@@ -71,9 +69,9 @@ The first checkpoint recorded 16 pairs that were new to our team. That was the u
 
 ### A smaller experiment explored more evenly.
 
-![The earlier 1,000-row portfolio put 98.9 percent in its top three group labels. The later 48-row pilot put 25 percent in its top three labels.](figures/diversity.svg)
+![The earlier 1,000-row portfolio put 98.9 percent in its top three group labels. The later 48-row pilot put 25 percent in its top three labels.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/figures/diversity.svg)
 
-Share of each batch in its three most common group labels: 989 of 1,000 versus 12 of 48. These were different-sized, deliberately selected batches, not a controlled comparison of models. [See the data ↗](evidence/diversity.json)
+Share of each batch in its three most common group labels: 989 of 1,000 versus 12 of 48. These were different-sized, deliberately selected batches, not a controlled comparison of models. [See the data ↗](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/diversity.json)
 
 This is the episode I keep coming back to when people ask what the AI contributed. We can follow it: a repetitive batch, an explanation tied to the formulas, a research brief, an implementation, and a pilot that explored more evenly. The explanation mattered because we could do something with it—and find out whether it helped.
 
@@ -93,13 +91,13 @@ $$
 \begin{aligned}f(x)={}&x^{24}-65x^{22}-919x^{20}\\&+99\,720x^{18}-2\,091\,889x^{16}\\&+20\,925\,521x^{14}-115\,387\,013x^{12}\\&+361\,770\,394x^{10}-629\,434\,912x^{8}\\&+562\,276\,089x^{6}-201\,494\,301x^{4}\\&-10\,640\,675x^{2}+15\,405\,625.\end{aligned}
 $$
 
-PARI/GP replay reproduced the coefficients and checked degree, irreducibility, and real-root count. The Galois-group label comes from the [archived official receipt and action certificate](evidence/worked_example.json); Magma identification was not rerun for this article.
+PARI/GP replay reproduced the coefficients and checked degree, irreducibility, and real-root count. The Galois-group label comes from the [archived official receipt and action certificate](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example.json); Magma identification was not rerun for this article.
 
 A verified result could become the starting point of another search. That made the ledger more than a list of successes. It was a collection of material we could return to, transform, and test again.
 
 There were dead ends too. Alongside the productive F5 records, we found five additional zero-hit summaries covering 54 resolutions.[^4] A persistent agent could keep trying, but persistence alone could not tell us whether a family deserved another run. We had to decide what the evidence was saying.
 
-![White contour-map islands connected by a red route on a dark blue ground. A conceptual illustration of exploring construction families.](images/interlude-search-archipelago.png)
+![White contour-map islands connected by a red route on a dark blue ground. A conceptual illustration of exploring construction families.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/images/interlude-search-archipelago.png)
 
 Durgesh’s “islands”: families of constructions that gave us a reason to search nearby. This is a conceptual landscape, not measured data.
 
@@ -141,9 +139,9 @@ Between August 6 and the September 1 table, our credited coverage grew by 7,108 
 
 ### Our coverage grew. Our score did not keep up.
 
-![Across seven dated checkpoints, scoreable pairs increased to 30,426. Score peaked at the July 18 checkpoint at 1,160.148, then fell to 405.862 in the September 1 table.](figures/trajectory.svg)
+![Across seven dated checkpoints, scoreable pairs increased to 30,426. Score peaked at the July 18 checkpoint at 1,160.148, then fell to 405.862 in the September 1 table.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/figures/trajectory.svg)
 
-Seven selected checkpoints, July 4–September 1, extending beyond our period of active work. Lines connect observations, not daily measurements. The record does not isolate the effects of sharing, discriminants, and score recomputation. [See the data ↗](evidence/checkpoints.csv)
+Seven selected checkpoints, July 4–September 1, extending beyond our period of active work. Lines connect observations, not daily measurements. The record does not isolate the effects of sharing, discriminants, and score recomputation. [See the data ↗](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/checkpoints.csv)
 
 Fourteenth place means something to us. This is a competition whose leading team includes Gunter Malle and Jürgen Klüners, with deep expertise in computational number theory.[^2] Our number is a competition result, not a ranking of mathematicians. The 30,426 pairs are not 30,426 distinct groups or exclusive discoveries. They are a substantial collection of explicit examples, produced through a process we can describe and, in places, replay.
 
@@ -159,10 +157,12 @@ We’re bringing the experiments as well as the result. We want to hear where ot
 
 [^1]: [IGP24 overview](https://competition.sair.foundation/competitions/igp24/overview) and [evaluation rules](https://competition.sair.foundation/competitions/igp24/evaluation-setup).
 [^2]: [Published leaderboard](https://competition.sair.foundation/competitions/igp24/leaderboard), table dated September 1, retrieved September 9 UTC / September 8 Pacific.
-[^3]: [Quartic portfolio, first-stage pilot, and workflow provenance](evidence/diversity.json). The Pro setting is reported by Aishwarya; per-turn model metadata is unavailable.
-[^4]: [F5/F6 matched receipts and selected-cohort limitations](evidence/f5-f6.json).
-[^5]: [Construction, action certificate, and archived receipt](evidence/worked_example.json). [Fresh arithmetic replay](evidence/worked_example_replay.json); Magma identification was not rerun.
-[^6]: [Seven dated checkpoints and their sources](evidence/checkpoints.csv).
+[^3]: [Quartic portfolio, first-stage pilot, and workflow provenance](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/diversity.json). The Pro setting is reported by Aishwarya; per-turn model metadata is unavailable.
+[^4]: [F5/F6 matched receipts and selected-cohort limitations](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/f5-f6.json).
+[^5]: [Construction, action certificate, and archived receipt](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example.json). [Fresh arithmetic replay](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example_replay.json); Magma identification was not rerun.
+[^6]: [Seven dated checkpoints and their sources](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/checkpoints.csv).
 [^7]: Poole and Mackworth, [Local Search](https://artint.info/3e/html/ArtInt3e.Ch4.S6.html), for hill climbing and its limits. The discussion about mathematical formulations is our interpretation.
 
-Written with AI assistance from our conversations and experiment records. Images were made with Image Gen; graphs use recorded data. [Image prompts](evidence/illustration-prompts.json).
+Written with AI assistance from our conversations and experiment records. Images were made with Image Gen; graphs use recorded data. [Image prompts](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/illustration-prompts.json).
+
+[Browse the public research archive](https://github.com/ash9241/team-dirac-igp24) · [Pro conversation and handoffs](https://github.com/ash9241/team-dirac-igp24/blob/main/conversations/README.md)

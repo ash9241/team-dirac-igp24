@@ -8,7 +8,7 @@ Durgesh suggested the mathematical structures worth exploring. I worked with GPT
 
 The published September 1, 2026 leaderboard placed **Dirac 14th, with 30,426 scoreable group/signature pairs and 405.86189 points**. This repository lets you look past that number: at the equations we submitted, the methods we tried, the checks we used, and one strategy conversation that led to a different experiment.
 
-[Read the illustrated essay](article/essay.md) · [Reproduce an example](examples/f5/README.md) · [Browse the pair index](data/pairs.csv) · [Read the Pro conversation and handoffs](conversations/README.md) · [Download the full corpus](https://github.com/ash9241/team-dirac-igp24/releases/tag/v1.0.0)
+[Read the live illustrated essay](https://team-dirac-igp24.vercel.app) · [Read it on GitHub](article/essay.md) · [Reproduce an example](examples/f5/README.md) · [Browse the pair index](data/pairs.csv) · [Read the Pro conversation and handoffs](conversations/README.md) · [Download the full corpus](https://github.com/ash9241/team-dirac-igp24/releases/tag/v1.0.0)
 
 ![Recorded pair coverage grew while the competition score fell across seven selected checkpoints.](article/figures/trajectory.png)
 
@@ -28,6 +28,7 @@ Our result does not solve the general inverse Galois problem. A pair is not a di
 
 | Material | What you can inspect |
 |---|---|
+| [Live website](https://team-dirac-igp24.vercel.app) · [Deployable files](website/README.md) | The complete public website, with its interactive scoring calculator and links back to the evidence |
 | [Illustrated essay](article/essay.md) | The story, polynomial, scoring explanation, measured graphs, and generated illustrations |
 | [Results and data dictionary](data/README.md) | All exported local submission rows, a searchable representative for each locally accepted pair, and the coverage reconciliation |
 | [F5 worked example](examples/f5/README.md) | A source polynomial, the construction, exact output coefficients, an action certificate, a saved official receipt, and a runnable arithmetic replay |
