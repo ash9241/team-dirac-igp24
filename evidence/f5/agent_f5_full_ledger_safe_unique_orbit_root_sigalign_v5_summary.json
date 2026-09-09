@@ -1,0 +1,97 @@
+{
+  "exactHits": 7,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_plan.json",
+  "planSha256": "6ff67c91191b45f995c5f0751e4d9a93d89efa6caf35e6ed891a3e4338052638",
+  "resolvedSources": 24,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_results.jsonl",
+  "resultsSha256": "1ff91a6dc17ee4e1f7bd8f12ea3cdee7608e7fbead5245de4b12503b7a58c141",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15337_r16.json",
+      "certificateSha256": "f0f88b4856f01c61599628730a0c30c9d6ac114914377a6f3da5b97e7a4ef7f8",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15337_r16.txt",
+      "manifestSha256": "9256293a1365df073d36de343236a473c3ac043f02df22d15ac50a952c123d22",
+      "target": {
+        "label": "24T15337",
+        "r": 16,
+        "t": 15337
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15337_r8.json",
+      "certificateSha256": "65a184514f7637185e75891b4bf2bfab16693e37177bd5a1f14377b31e369266",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15337_r8.txt",
+      "manifestSha256": "785cf03f0a449119084c6dbb16fb1a8e813fc8a6416207919bf3fd790981960d",
+      "target": {
+        "label": "24T15337",
+        "r": 8,
+        "t": 15337
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15266_r12.json",
+      "certificateSha256": "ce4e0da8cd8c76c7d6d4c917791e1534200d04818ef2af97d1cfad6e06522579",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15266_r12.txt",
+      "manifestSha256": "284276c24458f38b7e872f61d76d33a29e393bfc135aee6a5764f662087155cf",
+      "target": {
+        "label": "24T15266",
+        "r": 12,
+        "t": 15266
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15266_r20.json",
+      "certificateSha256": "79216c63b1a8c087057e5cae19eb054199ef13e7bd75014ed15593e39884f719",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15266_r20.txt",
+      "manifestSha256": "feaa953617e54cb41644aa53a0220ddcd29835661e3c1d94d598500031b7cce1",
+      "target": {
+        "label": "24T15266",
+        "r": 20,
+        "t": 15266
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15267_r24.json",
+      "certificateSha256": "fec2e4cbae2fb10030f809bbd0adabed672322db2ccf8648ab9e6b0f43f516c2",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15267_r24.txt",
+      "manifestSha256": "2001b4a004d7b03ba506a485de699ab4e4b13510f07e470c74df1af5d2c55dbe",
+      "target": {
+        "label": "24T15267",
+        "r": 24,
+        "t": 15267
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15337_r24.json",
+      "certificateSha256": "bef53a91907a02358264762dd166c409837b322134a6f290941cec1e53a78ad7",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15337_r24.txt",
+      "manifestSha256": "88a77b744e371ff06f6644abb129ad720ed26fa5411ca8e73ff9459af2be4229",
+      "target": {
+        "label": "24T15337",
+        "r": 24,
+        "t": 15337
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15425_r24.json",
+      "certificateSha256": "f2bd35155a6d089b81da975180c68515fba9e0ab3a77c4c0db4870d43576900b",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v5_24T15425_r24.txt",
+      "manifestSha256": "072033fcb974fd1e6a2b77bbfaf08f09d47b767add21a7afd923cc6816bfb4b7",
+      "target": {
+        "label": "24T15425",
+        "r": 24,
+        "t": 15425
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 7,
+    "resolved_known_coefficient": 1,
+    "resolved_not_frozen_live_signature": 14,
+    "resolved_pair_claimed": 2
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_v5"
+}

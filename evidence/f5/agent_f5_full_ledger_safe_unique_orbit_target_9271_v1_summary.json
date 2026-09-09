@@ -1,0 +1,52 @@
+{
+  "exactHits": 3,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_plan.json",
+  "planSha256": "275cb9a5abfe489771d599d20e20c33e66a5a7e56a5618ed086cac507624f4e6",
+  "resolvedSources": 6,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_results.jsonl",
+  "resultsSha256": "9e5edac54c9cc23f22ceb6275d07c2be4af2d431e5da40591427a724e22526bb",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r8.json",
+      "certificateSha256": "6cd34824b94325552d26be59c5bb6e1c900f0a933129aebbd99975da3518f140",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r8.txt",
+      "manifestSha256": "7a43751e2f4b0f631210869d37636b4c35e8579c6fdd91bd6749effc98897afe",
+      "target": {
+        "label": "24T9271",
+        "r": 8,
+        "t": 9271
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r16.json",
+      "certificateSha256": "7eebf6c7e8d4ed8da9352a4de808b29a23745fa17a48e3d92f1c2db019cd2827",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r16.txt",
+      "manifestSha256": "4d6a2f29d03c747807ce855db6ffe02ad28a2c204b9f64e8f1b3c389892bf196",
+      "target": {
+        "label": "24T9271",
+        "r": 16,
+        "t": 9271
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r24.json",
+      "certificateSha256": "544fae0d3def1b52bc42903a13b2dd53883bdaaa1b77834e3bce8e5a5b3f034d",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r24.txt",
+      "manifestSha256": "c54a7d80e992f5412a3b668a33af16731639b0181edfad5d0f59d76d169d24b3",
+      "target": {
+        "label": "24T9271",
+        "r": 24,
+        "t": 9271
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 3,
+    "resolved_known_coefficient": 2,
+    "resolved_not_frozen_live_signature": 1
+  },
+  "submissionCalls": 0,
+  "waveId": "target_9271_v1"
+}

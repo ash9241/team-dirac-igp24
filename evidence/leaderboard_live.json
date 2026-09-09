@@ -1,0 +1,434 @@
+{
+  "retrieved_at_utc": "2026-09-09T02:22:16.182589+00:00",
+  "source_url": "https://server-9527.sair.foundation/api/igp24/leaderboard",
+  "response": {
+    "ok": true,
+    "data": {
+      "generatedAt": "2026-09-01T13:33:10Z",
+      "items": [
+        {
+          "team": {
+            "teamId": "teamv2_77ff91b0ffab410ca7f51ec1c9c62cb7",
+            "teamNumber": "IGP24-T00027",
+            "teamName": "KLPB",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 12539.450935,
+          "scoreablePairs": 143364,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Gunter Malle"
+              },
+              {
+                "name": "J\u00fcrgen Kl\u00fcners"
+              }
+            ],
+            "memberCount": 2
+          },
+          "rank": 1
+        },
+        {
+          "team": {
+            "teamId": "teamv2_9a453217ad094674b7d64dcfa5df4ca3",
+            "teamNumber": "IGP24-T00141",
+            "teamName": "JonWashburn",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 8326.973974,
+          "scoreablePairs": 139947,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Jonathan Washburn",
+                "avatarUrl": "https://server-9527.sair.foundation/avatars/U-2e10ad37154187fd48ffb9bf3df03106659c8bf5/202607/bd08c93184e04511a66fb5b0c6522942.jpg"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 2
+        },
+        {
+          "team": {
+            "teamId": "teamv2_0ff2e4ffb82643b283bf9044f8d659b0",
+            "teamNumber": "IGP24-T00145",
+            "teamName": "\ud835\uddb2\ud835\udfe3\ud835\udfe9",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 6266.384787,
+          "scoreablePairs": 122239,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "ZHAI Jun",
+                "avatarUrl": "https://server-9527.sair.foundation/avatars/U-0511f34e29e438d2c09f374f9213522aab1e0530/202608/071788cec5b94062bb98f30ea4ec45b7.jpg"
+              },
+              {
+                "name": "Luo Zhikang",
+                "avatarUrl": null
+              },
+              {
+                "name": "TANG Guodong",
+                "avatarUrl": null
+              }
+            ],
+            "memberCount": 8
+          },
+          "rank": 3
+        },
+        {
+          "team": {
+            "teamId": "teamv2_e204b691cbee4c7a9ce234d8184cb2c7",
+            "teamNumber": "IGP24-T00088",
+            "teamName": "highland",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 2763.857759,
+          "scoreablePairs": 74690,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "P\u00e9ter N\u00e1ndori"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 4
+        },
+        {
+          "team": {
+            "teamId": "teamv2_cf88af9d366249019f23a3a366af7f36",
+            "teamNumber": "IGP24-T00096",
+            "teamName": "DJMATI11",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 2525.548742,
+          "scoreablePairs": 102758,
+          "teamDetails": null,
+          "rank": 5
+        },
+        {
+          "team": {
+            "teamId": "teamv2_fea0c0fad746492b8e09a87711514622",
+            "teamNumber": "IGP24-T00040",
+            "teamName": "K-Arts alum",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 2367.061925,
+          "scoreablePairs": 41165,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Yesung Lim"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 6
+        },
+        {
+          "team": {
+            "teamId": "teamv2_5f902f57527546fda788135472ea6bc3",
+            "teamNumber": "IGP24-T00118",
+            "teamName": "Tertius",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 2023.056214,
+          "scoreablePairs": 92175,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Benjamin Antieau"
+              }
+            ],
+            "memberCount": 2
+          },
+          "rank": 7
+        },
+        {
+          "team": {
+            "teamId": "teamv2_06c80c84cb6d4ce9b404e774eeada7e4",
+            "teamNumber": "IGP24-T00121",
+            "teamName": "Steins; Gate",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 1442.435428,
+          "scoreablePairs": 47244,
+          "teamDetails": null,
+          "rank": 8
+        },
+        {
+          "team": {
+            "teamId": "teamv2_19c842e6d55048ad83f28b7d2418cc29",
+            "teamNumber": "IGP24-T00171",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 1025.500058,
+          "scoreablePairs": 33738,
+          "teamDetails": null,
+          "rank": 9
+        },
+        {
+          "team": {
+            "teamId": "teamv2_07f0f7f581c34fd1a0dd913dad90dcec",
+            "teamNumber": "IGP24-T00110",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 817.291565,
+          "scoreablePairs": 46910,
+          "teamDetails": null,
+          "rank": 10
+        },
+        {
+          "team": {
+            "teamId": "teamv2_d75d12de4213466591ae8651e434cb54",
+            "teamNumber": "IGP24-T00111",
+            "teamName": "Alex",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 760.533982,
+          "scoreablePairs": 2346,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Alexander Gramolin"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 11
+        },
+        {
+          "team": {
+            "teamId": "teamv2_32d618912a0e471fb418e886de946622",
+            "teamNumber": "IGP24-T00134",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 474.285283,
+          "scoreablePairs": 31264,
+          "teamDetails": null,
+          "rank": 12
+        },
+        {
+          "team": {
+            "teamId": "teamv2_94873c93c3f74080804cb0b987a6739e",
+            "teamNumber": "IGP24-T00087",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 434.978424,
+          "scoreablePairs": 37804,
+          "teamDetails": null,
+          "rank": 13
+        },
+        {
+          "team": {
+            "teamId": "teamv2_fb892e04a4624608ae68e61fa9b5250b",
+            "teamNumber": "IGP24-T00135",
+            "teamName": "Dirac",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 405.86189,
+          "scoreablePairs": 30426,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Durgesh Kumar"
+              },
+              {
+                "name": "Aishwarya Das"
+              }
+            ],
+            "memberCount": 2
+          },
+          "rank": 14
+        },
+        {
+          "team": {
+            "teamId": "teamv2_26ddfb8c4e1e4193a4075695b88c5fb0",
+            "teamNumber": "IGP24-T00013",
+            "teamName": "Low hanging fruit",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 350.754915,
+          "scoreablePairs": 34519,
+          "teamDetails": null,
+          "rank": 15
+        },
+        {
+          "team": {
+            "teamId": "teamv2_0ec5fc7dfe04454185f5330b22ce3967",
+            "teamNumber": "IGP24-T00185",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 342.019138,
+          "scoreablePairs": 46217,
+          "teamDetails": null,
+          "rank": 16
+        },
+        {
+          "team": {
+            "teamId": "teamv2_c3364cb4218641dfb67c382d48b111a4",
+            "teamNumber": "IGP24-T00162",
+            "teamName": "Marcus Emmanuel Barnes",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 317.010837,
+          "scoreablePairs": 13918,
+          "teamDetails": null,
+          "rank": 17
+        },
+        {
+          "team": {
+            "teamId": "teamv2_caaf6a64fafd4acc89e2796f0db72d7d",
+            "teamNumber": "IGP24-T00195",
+            "teamName": "\u15e9\u14aa\u163f\u166d",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 266.472837,
+          "scoreablePairs": 14629,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Alexander West Templeton",
+                "avatarUrl": "https://server-9527.sair.foundation/avatars/U-1ecd052a7d24f8c0119f08b599ac598c8493b128/202608/b9c631a8890b4fbf91ec0c47ce01ed8e.png"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 18
+        },
+        {
+          "team": {
+            "teamId": "teamv2_8b537beb58e946a1a97bfd8b37f567f6",
+            "teamNumber": "IGP24-T00056",
+            "teamName": "ProvablyRandom",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 180.240374,
+          "scoreablePairs": 30378,
+          "teamDetails": null,
+          "rank": 19
+        },
+        {
+          "team": {
+            "teamId": "teamv2_4b58c3ea456f40c790caf4e9fbc01105",
+            "teamNumber": "IGP24-T00132",
+            "teamName": "Kenta Kitamura",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 129.006357,
+          "scoreablePairs": 21895,
+          "teamDetails": null,
+          "rank": 20
+        },
+        {
+          "team": {
+            "teamId": "teamv2_ef8f006361154568810f402c594df114",
+            "teamNumber": "IGP24-T00032",
+            "teamName": "nasqret",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 97.936484,
+          "scoreablePairs": 27018,
+          "teamDetails": null,
+          "rank": 21
+        },
+        {
+          "team": {
+            "teamId": "teamv2_cfa12a7cd47a4384820688798c1758f2",
+            "teamNumber": "IGP24-T00216",
+            "teamName": "Math vs Vibes",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 93.179989,
+          "scoreablePairs": 4905,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Eric Anderson"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 22
+        },
+        {
+          "team": {
+            "teamId": "teamv2_e1937866e22e4a979df57609f63222ea",
+            "teamNumber": "IGP24-T00106",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 81.721377,
+          "scoreablePairs": 17698,
+          "teamDetails": null,
+          "rank": 23
+        },
+        {
+          "team": {
+            "teamId": "teamv2_d2cfb1f6bb6b45d5a05bd9fbbfa85416",
+            "teamNumber": "IGP24-T00082",
+            "teamName": "Short Black",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 77.906332,
+          "scoreablePairs": 35000,
+          "teamDetails": null,
+          "rank": 24
+        },
+        {
+          "team": {
+            "teamId": "teamv2_90d6bda91bbf43c5a13e407e7cf9c8dd",
+            "teamNumber": "IGP24-T00043",
+            "teamName": "",
+            "ownerSairId": null,
+            "members": []
+          },
+          "score": 63.535197,
+          "scoreablePairs": 21193,
+          "teamDetails": {
+            "members": [
+              {
+                "name": "Robert Joseph George",
+                "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocIKmImC6fu-TroucFtQuBnOzHZ2C1rxe6sE2PmulQpRPgoyQwE=s96-c"
+              }
+            ],
+            "memberCount": 1
+          },
+          "rank": 25
+        }
+      ],
+      "nextCursor": "WzI1LCJ0ZWFtdjJfOTBkNmJkYTkxYmJmNDNjNWExM2U0MDdlN2NmOWM4ZGQiXQ==",
+      "totalCount": 140
+    }
+  }
+}

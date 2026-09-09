@@ -1,0 +1,51 @@
+{
+  "exactHits": 3,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_plan.json",
+  "planSha256": "88511d0cfa58074a594999e6f7843460de17f87f32fdbde301a86c4588f46f28",
+  "resolvedSources": 24,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_results.jsonl",
+  "resultsSha256": "2f02cfef10e18ee4732fa333bf289b3bc05d395e011be7f977d527dd53bb2114",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_24T17571_r16.json",
+      "certificateSha256": "27459ae6d50de580eb886d45b64a2afc0d7f9cd6e5f0c36f8128a7453adca7c8",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_24T17571_r16.txt",
+      "manifestSha256": "ab4103235b7b0dd553408d584ebf738af7bec4d45e80ef8dae6c8991a4303cc9",
+      "target": {
+        "label": "24T17571",
+        "r": 16,
+        "t": 17571
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_24T17599_r16.json",
+      "certificateSha256": "a08149de08e6aa8b53f7b0f01d98bc64b59d3d0fab74eb176af55c1e7b8f14d5",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_24T17599_r16.txt",
+      "manifestSha256": "ae3f811ae77ec5425d675d3a04901da927d40fa9a9a321d7d45bb8fe91ba6086",
+      "target": {
+        "label": "24T17599",
+        "r": 16,
+        "t": 17599
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_24T17571_r24.json",
+      "certificateSha256": "efaae1579703438b945f7f676afa26ace3c2e6755ded262a9852a0cb0ee251e0",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v6_24T17571_r24.txt",
+      "manifestSha256": "d9be183068e3dde6144502d01df1178a8c9be04f6478a1f31d7186f801562cda",
+      "target": {
+        "label": "24T17571",
+        "r": 24,
+        "t": 17571
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 3,
+    "resolved_not_frozen_live_signature": 21
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_v6"
+}

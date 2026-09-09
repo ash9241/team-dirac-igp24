@@ -1,0 +1,16 @@
+{
+  "exactHits": 0,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_fullreal_v11_plan.json",
+  "planSha256": "0412bde2dd3b832955eda362d7940dcafa3e717c0aeafc9c9a184f34df1a0f69",
+  "resolvedSources": 4,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_fullreal_v11_results.jsonl",
+  "resultsSha256": "88b6ab6e9695dd75b6501fcb5cbbeac2b2433e006f75f1d7d65e9cdbfd383bc8",
+  "staged": [],
+  "statusHistogram": {
+    "resolved_not_frozen_live_signature": 4
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_fullreal_v11"
+}

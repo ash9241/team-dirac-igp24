@@ -1,0 +1,203 @@
+{
+  "candidate": {
+    "coefficientLine": "441481283239936,0,389542308741120,0,-166567725629440,0,-58255260712960,0,2551489007616,0,853510062080,0,27938256896,0,-1192491008,0,-74598784,0,-937728,0,7488,0,208,0,1",
+    "coefficientSha256": "9319bf75f32251b347089e65a4d0e663d9df044ebceb8396dfba09cb8326376f",
+    "fieldDiscriminantAbs": "1600060919034508624504703058694394029477568651984896",
+    "irreducible": true,
+    "r": 8
+  },
+  "exactAction": {
+    "pairOrbit": [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "sourceBlockSystem": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        23,
+        24
+      ]
+    ],
+    "sourceLabel": "24T15596",
+    "sourceSignatureToPossibleTargetSignatures": {
+      "0": [
+        0,
+        24
+      ],
+      "12": [
+        0,
+        12,
+        16
+      ],
+      "16": [
+        8,
+        24
+      ],
+      "2": [
+        0
+      ],
+      "20": [
+        16
+      ],
+      "24": [
+        24
+      ],
+      "4": [
+        0,
+        4,
+        16
+      ],
+      "8": [
+        4,
+        8,
+        24
+      ]
+    },
+    "sourceT": 15596,
+    "targetLabel": "24T9271",
+    "targetOrder": 6144,
+    "targetT": 9271
+  },
+  "factorDegrees": [
+    {
+      "degree": 6,
+      "exponent": 1
+    },
+    {
+      "degree": 12,
+      "exponent": 1
+    },
+    {
+      "degree": 24,
+      "exponent": 1
+    },
+    {
+      "degree": 24,
+      "exponent": 1
+    }
+  ],
+  "frozenGoldTarget": {
+    "frozenAt": "2026-07-21T13:03:45.180099+00:00",
+    "label": "24T9271",
+    "minimumDiscAbs": null,
+    "projectedNewGoldPoints": 1.0,
+    "r": 8,
+    "t": 9271,
+    "targetGeneratedAt": "2026-07-21T13:01:08Z",
+    "teamCount": 0
+  },
+  "localLiveRecheck": {
+    "baseline": false,
+    "discovered": false,
+    "owned": false,
+    "teamCount": 0
+  },
+  "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_24T9271_r8.txt",
+  "manifestSha256": "7a43751e2f4b0f631210869d37636b4c35e8579c6fdd91bd6749effc98897afe",
+  "method": "safe-single-block-system-unique-pair-orbit-exact-pilot-v1",
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_target_9271_v1_plan.json",
+  "planSha256": "275cb9a5abfe489771d599d20e20c33e66a5a7e56a5618ed086cac507624f4e6",
+  "source": {
+    "coefficientBytes": 123,
+    "coefficientSha256": "7e1ce5a42fa28e841e9f3ef1eaa6670804408e9a7d1761a771666fe5d8d3572c",
+    "fieldDiscAbs": "286115539388866371718949671165293097687873224704",
+    "label": "24T15596",
+    "polynomialIndex": 3,
+    "quotientLine": "21011456,131885056,278201856,248175104,75043904,-18848000,-14885824,-1962432,89616,22368,-144,-64,1",
+    "quotientPolynomialSha256": "b7f959a0a7073bd3206c22b1a0877c30aaccda1f6c4c13e3dd701fc56ec12f5d",
+    "r": 8,
+    "submissionId": "sub_e22138d35a614728a1bc63d7fe779122",
+    "t": 15596
+  },
+  "submissionCalls": 0
+}

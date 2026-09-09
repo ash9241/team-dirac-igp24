@@ -1,0 +1,52 @@
+{
+  "exactHits": 3,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_plan.json",
+  "planSha256": "8f0a94de39049c5beb4c5d30c1b1477c284b955a8855b63a7204d75f622d7753",
+  "resolvedSources": 24,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_results.jsonl",
+  "resultsSha256": "ee34867e054e722e5f1249ad12a4e350d54abf43ddd268a0f2bf5c6a121369e5",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_24T15308_r20.json",
+      "certificateSha256": "4b3577678792124d1a3fc5e7b27d601877ca90d12f23b23dec96f5ab39f6b0c4",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_24T15308_r20.txt",
+      "manifestSha256": "b39cfa320fbf3e6731f7b988881fe861c6e3d74ec68b45b488b8ffe6396b23f9",
+      "target": {
+        "label": "24T15308",
+        "r": 20,
+        "t": 15308
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_24T18934_r16.json",
+      "certificateSha256": "87f3ae350ee7a2335855b0a95f26a4bcea6d97f2f08a6b838a9c1b64da902be1",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_24T18934_r16.txt",
+      "manifestSha256": "33ddd4142dbcba91d9a19d8df835d37a9e9a7939c2f744e27887008b6a7a828f",
+      "target": {
+        "label": "24T18934",
+        "r": 16,
+        "t": 18934
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_24T17520_r24.json",
+      "certificateSha256": "66fdbf6a7f4457a62af7e4b481700bc4317d0d1acf1bc14e41eb66edb0145805",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v7_24T17520_r24.txt",
+      "manifestSha256": "ae71a5840a29ae61236225a1b98366d3fe208756802750c0d3736831334eb1e1",
+      "target": {
+        "label": "24T17520",
+        "r": 24,
+        "t": 17520
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 3,
+    "resolved_not_frozen_live_signature": 20,
+    "resolved_pair_claimed": 1
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_v7"
+}

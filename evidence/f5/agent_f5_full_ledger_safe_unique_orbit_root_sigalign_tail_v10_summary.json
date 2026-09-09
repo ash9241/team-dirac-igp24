@@ -1,0 +1,84 @@
+{
+  "exactHits": 6,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_plan.json",
+  "planSha256": "0d45650f2d2c97ede36d71521bfe2e57fddcd1de37dabb5645f889630dadf870",
+  "resolvedSources": 7,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_results.jsonl",
+  "resultsSha256": "7bc9c78acf0ca43ed8d993b5bea1758e915119816b4fd55428faee7840f92446",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T13491_r16.json",
+      "certificateSha256": "a5c75fbc50b464bf911c42873ad2edeb480fec630d2f616ba8b069388ead77e3",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T13491_r16.txt",
+      "manifestSha256": "fa72fdccbcb0eff2f0dfd8de73a5648fb0c4badb941520549688a2f42d50d290",
+      "target": {
+        "label": "24T13491",
+        "r": 16,
+        "t": 13491
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T9402_r8.json",
+      "certificateSha256": "542f696c040855c1ff9f640bbd8b41e4a1a99fe8367fd74e9e27cb260be49126",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T9402_r8.txt",
+      "manifestSha256": "7148a8396662876035433b8726349be506b606d41f13981e7d04dbad0876b9a4",
+      "target": {
+        "label": "24T9402",
+        "r": 8,
+        "t": 9402
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T17692_r24.json",
+      "certificateSha256": "5acccbcc79a096f777615b986e23aaad54697036f1c058407d16c9e653892757",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T17692_r24.txt",
+      "manifestSha256": "653db0331aebec22e2f73524d853019bece43a2547a73ef1fa5832d058f7a721",
+      "target": {
+        "label": "24T17692",
+        "r": 24,
+        "t": 17692
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T13491_r24.json",
+      "certificateSha256": "9334d309d56cc3a5348a9656a5386642dbd183e6026330298ee4c3a9713e434d",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T13491_r24.txt",
+      "manifestSha256": "e590d2769f6fe7bced8f47dd49342a0468b579ae3cf2f56ffdf796c7af81d2d8",
+      "target": {
+        "label": "24T13491",
+        "r": 24,
+        "t": 13491
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T9485_r24.json",
+      "certificateSha256": "dc7a9038cb8dee5b0c28b42f6bdfa6bebc98952c797a7c57a2c346e1ea5894db",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T9485_r24.txt",
+      "manifestSha256": "11f9ea1d9c5d3466e5040d7b90ce399bcbdddc849f24a93ebd0103e43165ced2",
+      "target": {
+        "label": "24T9485",
+        "r": 24,
+        "t": 9485
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T15790_r24.json",
+      "certificateSha256": "d2ebbdc64c51ad615cb8c497a8aded01ac6e43d5a3ffa60b30c566ed20da2765",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T15790_r24.txt",
+      "manifestSha256": "391e573b70fd582e51d4280bf5226fc04e2dc61d48c44af2606b662bd913d919",
+      "target": {
+        "label": "24T15790",
+        "r": 24,
+        "t": 15790
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 6,
+    "resolved_not_frozen_live_signature": 1
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_tail_v10"
+}

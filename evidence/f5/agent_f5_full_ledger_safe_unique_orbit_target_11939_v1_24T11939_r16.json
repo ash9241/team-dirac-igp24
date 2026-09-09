@@ -1,0 +1,223 @@
+{
+  "candidate": {
+    "coefficientLine": "152393021631238144,0,-94655600022929408,0,21207431377162240,0,-1929598643247104,0,27971215154688,0,6245091156480,0,-309001055616,0,-10055360896,0,1441115472,0,-43574080,0,466040,0,-1272,0,1",
+    "coefficientSha256": "5cec94c687b635e460ff4e7d156f3ebafc58b5e62f4c8a3aedf90999efde92c7",
+    "fieldDiscriminantAbs": "3356411560334634516059323691999142904617876078985216",
+    "irreducible": true,
+    "r": 16
+  },
+  "exactAction": {
+    "pairOrbit": [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "sourceBlockSystem": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        23,
+        24
+      ]
+    ],
+    "sourceLabel": "24T17610",
+    "sourceSignatureToPossibleTargetSignatures": {
+      "0": [
+        0,
+        8,
+        12,
+        16,
+        24
+      ],
+      "10": [
+        8
+      ],
+      "12": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "14": [
+        8
+      ],
+      "16": [
+        8,
+        16,
+        24
+      ],
+      "2": [
+        4
+      ],
+      "20": [
+        16
+      ],
+      "24": [
+        24
+      ],
+      "4": [
+        0,
+        4,
+        8,
+        16
+      ],
+      "6": [
+        0,
+        4,
+        8
+      ],
+      "8": [
+        0,
+        4,
+        8,
+        16,
+        24
+      ]
+    },
+    "sourceT": 17610,
+    "targetLabel": "24T11939",
+    "targetOrder": 12288,
+    "targetT": 11939
+  },
+  "factorDegrees": [
+    {
+      "degree": 6,
+      "exponent": 1
+    },
+    {
+      "degree": 12,
+      "exponent": 1
+    },
+    {
+      "degree": 24,
+      "exponent": 1
+    },
+    {
+      "degree": 24,
+      "exponent": 1
+    }
+  ],
+  "frozenGoldTarget": {
+    "frozenAt": "2026-07-21T13:03:45.180099+00:00",
+    "label": "24T11939",
+    "minimumDiscAbs": null,
+    "projectedNewGoldPoints": 1.0,
+    "r": 16,
+    "t": 11939,
+    "targetGeneratedAt": "2026-07-21T13:01:11Z",
+    "teamCount": 0
+  },
+  "localLiveRecheck": {
+    "baseline": false,
+    "discovered": false,
+    "owned": false,
+    "teamCount": 0
+  },
+  "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_target_11939_v1_24T11939_r16.txt",
+  "manifestSha256": "5c76a282d8617108cdd82a1084a83794046a21447d92e12f15789d6eb7232c89",
+  "method": "safe-single-block-system-unique-pair-orbit-exact-pilot-v1",
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_target_11939_v1_plan.json",
+  "planSha256": "6b22f515be38f8804d035c54476cb81fb139e7a83a6cc19aafc741c80cfb56a6",
+  "source": {
+    "coefficientBytes": 129,
+    "coefficientSha256": "99f625e0c147b0d1fd210d18f681472b339718342fb3d66e1bceec04b248f820",
+    "fieldDiscAbs": "481081350426240087405220626462836873615663660269568",
+    "label": "24T17610",
+    "polynomialIndex": 10,
+    "quotientLine": "390375488,-1149289472,969146752,-305389696,84222880,-33482240,11261328,-2738720,472980,-53488,3524,-112,1",
+    "quotientPolynomialSha256": "feb5e2c1ff8e56a30374e9e69f90acd660a2191275272035ec8ef1f3f407f721",
+    "r": 16,
+    "submissionId": "sub_998d6511f4e14a15a5de5956366d314e",
+    "t": 17610
+  },
+  "submissionCalls": 0
+}

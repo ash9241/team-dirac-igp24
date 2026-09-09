@@ -1,0 +1,86 @@
+{
+  "exported_at_utc": "2026-09-09T05:04:52.902064+00:00",
+  "source": "igp24_autoresearch/data/ledger.sqlite3, read-only transaction",
+  "source_database_bytes": 2799206400,
+  "submission_span": {
+    "first": "2026-07-04T08:42:15Z",
+    "last": "2026-08-16T00:08:09Z",
+    "submissions": 3238
+  },
+  "polynomial_rows": 1833772,
+  "row_status_counts": {
+    "accepted": 1680129,
+    "unverified_in_local_snapshot": 153625,
+    "failed": 18
+  },
+  "accepted_rows": 1680129,
+  "accepted_distinct_pairs": 30288,
+  "accepted_distinct_labels": 8521,
+  "scoreable_rows_in_local_snapshot": 1457640,
+  "scoreable_distinct_pairs_in_local_snapshot": 25724,
+  "representative_selection": "Prefer a row marked scoreable in the local snapshot, then shortest coefficient text, lexicographic coefficient text, submission ID, row index. This is not a smallest-discriminant claim.",
+  "coefficient_encoding": "25 comma-separated integers, constant coefficient first. SHA-256 over this exact ASCII string without newline. Large discriminants remain decimal strings.",
+  "status_caveat": "Local verification/scoring states predate the final leaderboard; missing verification and pending scoring are preserved, never converted to failure or success.",
+  "bulk_assets": [
+    {
+      "file": "polynomials-001.csv.gz",
+      "rows": 200000,
+      "bytes": 35827854,
+      "sha256": "b35395eb8c75f003180125ebf1cb0d75b8a2a6a128f90eebb11ceea02c2ad97c"
+    },
+    {
+      "file": "polynomials-002.csv.gz",
+      "rows": 200000,
+      "bytes": 33974250,
+      "sha256": "5684af4d1228bca85c228c5b8b4cc55de1455f50723e387321693764987e1977"
+    },
+    {
+      "file": "polynomials-003.csv.gz",
+      "rows": 200000,
+      "bytes": 35213218,
+      "sha256": "1d7e7fe0c9b47d7d2fb758eb4b1dddfb89d45153fc250f1a1051cf826fa93b24"
+    },
+    {
+      "file": "polynomials-004.csv.gz",
+      "rows": 200000,
+      "bytes": 35581359,
+      "sha256": "1dbce63157c76373ef2c1a0c5986cf6ecb92ff83f16310845a657a092c5c0280"
+    },
+    {
+      "file": "polynomials-005.csv.gz",
+      "rows": 200000,
+      "bytes": 35592999,
+      "sha256": "e7e6d6ef74330212a13ec764b72512d5c662f419365697bd043cf4d02c245690"
+    },
+    {
+      "file": "polynomials-006.csv.gz",
+      "rows": 200000,
+      "bytes": 35513087,
+      "sha256": "e06b22af436cc9fa63857ac1bd56f3a68e3c9722a92f7a2e8047b7fcc0106fd3"
+    },
+    {
+      "file": "polynomials-007.csv.gz",
+      "rows": 200000,
+      "bytes": 34918090,
+      "sha256": "1d6910732bf377ef42c2342fd15df3ec98f775e7ef9e656efa0e5de77af0cc81"
+    },
+    {
+      "file": "polynomials-008.csv.gz",
+      "rows": 200000,
+      "bytes": 36573426,
+      "sha256": "9f0a2b4fc3dc34d5e6480f4ff9f73edd35f659c6bcbf7447b46f7c387322a651"
+    },
+    {
+      "file": "polynomials-009.csv.gz",
+      "rows": 200000,
+      "bytes": 35043676,
+      "sha256": "6d2928ea61bc86156bb14c75b9f507a9a7f44dda00b91d985e6cc7bc9158a877"
+    },
+    {
+      "file": "polynomials-010.csv.gz",
+      "rows": 33772,
+      "bytes": 5609495,
+      "sha256": "809723ddf4c55c13dee3e04ede90a9f337ca09594118bbb3dba4fb340cc5cc1f"
+    }
+  ]
+}

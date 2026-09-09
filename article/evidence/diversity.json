@@ -1,0 +1,382 @@
+{
+  "earlier": {
+    "rows": 1000,
+    "distinct_labels": 11,
+    "top_three_rows": 989,
+    "source": "routeA/data/cross2000_even_quartic_forensic.json",
+    "caveat": "Different dates, sample sizes, and selected construction portfolios; not a randomized or matched-budget ablation."
+  },
+  "pilot": {
+    "submission_id": "sub_94aa13abcde64b04a38d73c3b594a6a9",
+    "submitted_at": "2026-07-18T01:50:12Z",
+    "verified_rows": 48,
+    "accepted_rows": 48,
+    "scoreable_rows": 48,
+    "distinct_labels": 14,
+    "distinct_pairs": 48,
+    "top_three_rows": 12,
+    "largest_label_rows": 4,
+    "rows": [
+      {
+        "polynomial_index": 0,
+        "status": "accepted",
+        "label": "24T23435",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 1,
+        "status": "accepted",
+        "label": "24T24510",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 2,
+        "status": "accepted",
+        "label": "24T22794",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 3,
+        "status": "accepted",
+        "label": "24T14594",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 4,
+        "status": "accepted",
+        "label": "24T24905",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 5,
+        "status": "accepted",
+        "label": "24T24906",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 6,
+        "status": "accepted",
+        "label": "24T23440",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 7,
+        "status": "accepted",
+        "label": "24T23883",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 8,
+        "status": "accepted",
+        "label": "24T24884",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 9,
+        "status": "accepted",
+        "label": "24T24345",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 10,
+        "status": "accepted",
+        "label": "24T24917",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 11,
+        "status": "accepted",
+        "label": "24T24607",
+        "r": 0,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 12,
+        "status": "accepted",
+        "label": "24T24884",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 13,
+        "status": "accepted",
+        "label": "24T22725",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 14,
+        "status": "accepted",
+        "label": "24T24917",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 15,
+        "status": "accepted",
+        "label": "24T22794",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 16,
+        "status": "accepted",
+        "label": "24T24510",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 17,
+        "status": "accepted",
+        "label": "24T24607",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 18,
+        "status": "accepted",
+        "label": "24T24905",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 19,
+        "status": "accepted",
+        "label": "24T23440",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 20,
+        "status": "accepted",
+        "label": "24T22788",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 21,
+        "status": "accepted",
+        "label": "24T24906",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 22,
+        "status": "accepted",
+        "label": "24T23883",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 23,
+        "status": "accepted",
+        "label": "24T24345",
+        "r": 8,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 24,
+        "status": "accepted",
+        "label": "24T24917",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 25,
+        "status": "accepted",
+        "label": "24T24905",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 26,
+        "status": "accepted",
+        "label": "24T22794",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 27,
+        "status": "accepted",
+        "label": "24T22725",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 28,
+        "status": "accepted",
+        "label": "24T24345",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 29,
+        "status": "accepted",
+        "label": "24T23883",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 30,
+        "status": "accepted",
+        "label": "24T24906",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 31,
+        "status": "accepted",
+        "label": "24T22788",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 32,
+        "status": "accepted",
+        "label": "24T24884",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 33,
+        "status": "accepted",
+        "label": "24T24510",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 34,
+        "status": "accepted",
+        "label": "24T24607",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 35,
+        "status": "accepted",
+        "label": "24T23440",
+        "r": 16,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 36,
+        "status": "accepted",
+        "label": "24T24884",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 37,
+        "status": "accepted",
+        "label": "24T22725",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 38,
+        "status": "accepted",
+        "label": "24T23883",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 39,
+        "status": "accepted",
+        "label": "24T24906",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 40,
+        "status": "accepted",
+        "label": "24T24607",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 41,
+        "status": "accepted",
+        "label": "24T23440",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 42,
+        "status": "accepted",
+        "label": "24T24345",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 43,
+        "status": "accepted",
+        "label": "24T23435",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 44,
+        "status": "accepted",
+        "label": "24T24917",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 45,
+        "status": "accepted",
+        "label": "24T24905",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 46,
+        "status": "accepted",
+        "label": "24T22794",
+        "r": 24,
+        "scoreable": 1
+      },
+      {
+        "polynomial_index": 47,
+        "status": "accepted",
+        "label": "24T24510",
+        "r": 24,
+        "scoreable": 1
+      }
+    ],
+    "caveat": "48-row first stage, not the full proposed GQ-96. Scoreable rows are not net-new pairs or retained points."
+  },
+  "pilot_label_counts": {
+    "24T23435": 2,
+    "24T24510": 4,
+    "24T22794": 4,
+    "24T14594": 1,
+    "24T24905": 4,
+    "24T24906": 4,
+    "24T23440": 4,
+    "24T23883": 4,
+    "24T24884": 4,
+    "24T24345": 4,
+    "24T24917": 4,
+    "24T24607": 4,
+    "24T22725": 3,
+    "24T22788": 2
+  },
+  "workflow_provenance": {
+    "strategic_conversation": "IGP24 Team Dirac Update, July 17\u201318, 2026",
+    "model_setting": "GPT-5.6 Pro, reported by Aishwarya; per-turn metadata unavailable",
+    "handoff": "Aishwarya requested a Markdown brief for Codex after the even-quartic diagnosis.",
+    "implementation": "routeA/build_general_quartic_pilot.py and routeA/general_quartic_analyzer.py; local GQ-96 report retained",
+    "claim_limit": "An observational iteration. No model, human, compute, or /goal ablation was performed. The 48-row first stage does not establish a net retained score."
+  }
+}

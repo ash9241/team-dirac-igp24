@@ -1,0 +1,73 @@
+{
+  "exactHits": 5,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_plan.json",
+  "planSha256": "1dcd592a14387e8496a61307e2d042d140f8dcb3b029be1ae416c594f2f13da7",
+  "resolvedSources": 24,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_results.jsonl",
+  "resultsSha256": "1b124998aa767584c6ba5a5d4f7ce7af77bf465aaf63e9331b07df2046e7742e",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T15265_r16.json",
+      "certificateSha256": "642cb41f6c4330f05a9e9b7912227cbc948e23742494ed5717c1bcc13102ec99",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T15265_r16.txt",
+      "manifestSha256": "3967daa3e1e12d6cbe2e6f182acecf6984b2cb85f2a44b385535f4b6e01fa413",
+      "target": {
+        "label": "24T15265",
+        "r": 16,
+        "t": 15265
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T17644_r8.json",
+      "certificateSha256": "99ef4e4d442c60aeb30f5fe06d8d3c3c76dffa963debc37a5b622e1f5f2e6ed4",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T17644_r8.txt",
+      "manifestSha256": "5bc0fbecd8445735724226b5bea3cb55078cb330edd2b5e3365e50ac42dfc950",
+      "target": {
+        "label": "24T17644",
+        "r": 8,
+        "t": 17644
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T17678_r24.json",
+      "certificateSha256": "1cbf610f2916cffa00ab5ce430866cab5bf0845248333b27470e59ff14e7189b",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T17678_r24.txt",
+      "manifestSha256": "081080b2e7620bf270b446367104d282af477d7e372b99b91d500a0c4252cdc7",
+      "target": {
+        "label": "24T17678",
+        "r": 24,
+        "t": 17678
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T10697_r16.json",
+      "certificateSha256": "e3396663d172a6c6b10a1e136de3065fd91cd001c30dbe72fc5e0436d6a19aec",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T10697_r16.txt",
+      "manifestSha256": "cdcb0efe6393cddbb9987652f6e1b4aa9bc66bb682595f218e16634c4e6f9bae",
+      "target": {
+        "label": "24T10697",
+        "r": 16,
+        "t": 10697
+      }
+    },
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T15096_r12.json",
+      "certificateSha256": "c514d8cbe426fd8e1c69b51a6ae6868d12294039ae18049db40389b395aae598",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_v8_24T15096_r12.txt",
+      "manifestSha256": "9aa54019b7607867cb932dc89cbe77950ce84e0f174a32b0963f5b6d420cd381",
+      "target": {
+        "label": "24T15096",
+        "r": 12,
+        "t": 15096
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 5,
+    "resolved_not_frozen_live_signature": 19
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_v8"
+}

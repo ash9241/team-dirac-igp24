@@ -1,0 +1,28 @@
+{
+  "exactHits": 1,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_guaranteed_v14_13006_plan.json",
+  "planSha256": "f2720bb61c98c57b5b6b0de916d73a2532ccca98a14232b7cdcf99d9acee721c",
+  "resolvedSources": 1,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_guaranteed_v14_13006_results.jsonl",
+  "resultsSha256": "9f421acacc18ebb8a3182888db10849d0a64b462d418fd01b1bfcac93c202248",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_guaranteed_v14_13006_24T13006_r24.json",
+      "certificateSha256": "81130153a5813956fd06adf3ed92d7849729b5362d0a991db4751ff0df88659d",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_guaranteed_v14_13006_24T13006_r24.txt",
+      "manifestSha256": "40fd3fc8e8da04a8b054021f29921fe8688b95445d33c54ce7a4dce5b9db9580",
+      "target": {
+        "label": "24T13006",
+        "r": 24,
+        "t": 13006
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 1
+  },
+  "submissionCalls": 0,
+  "waveId": "root_sigalign_guaranteed_v14_13006"
+}

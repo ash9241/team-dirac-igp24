@@ -1,0 +1,204 @@
+{
+  "candidate": {
+    "coefficientLine": "339561432928434628637536693574805464197104664576,0,-511789154896894286967226503392460176430727168,0,286607472516594262213287996748426680336384,0,-82590330233900570344041436255793446912,0,16428987663229457079642783235543040,0,-2577058402472417679759735529472,0,295524403277040995400781824,0,-21525489741881485595648,0,1123819382015081856,0,-58708139166848,0,2870086432,0,-84688,0,1",
+    "coefficientSha256": "d3714f3cae5570ceac5625e6ca0e72d6e3777d792707307ef7db6674fee550a6",
+    "fieldDiscriminantAbs": "359552085521054394443039042892331207149686237701319736397907623936",
+    "irreducible": true,
+    "r": 8
+  },
+  "exactAction": {
+    "pairOrbit": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "sourceBlockSystem": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        17,
+        18
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        23,
+        24
+      ]
+    ],
+    "sourceLabel": "24T15624",
+    "sourceSignatureToPossibleTargetSignatures": {
+      "0": [
+        0,
+        8,
+        16,
+        24
+      ],
+      "12": [
+        0,
+        8,
+        12,
+        16
+      ],
+      "16": [
+        8,
+        16,
+        24
+      ],
+      "2": [
+        0
+      ],
+      "20": [
+        16
+      ],
+      "24": [
+        24
+      ],
+      "4": [
+        0,
+        8,
+        16
+      ],
+      "8": [
+        0,
+        8,
+        16,
+        24
+      ]
+    },
+    "sourceT": 15624,
+    "targetLabel": "24T9402",
+    "targetOrder": 6144,
+    "targetT": 9402
+  },
+  "factorDegrees": [
+    {
+      "degree": 6,
+      "exponent": 1
+    },
+    {
+      "degree": 12,
+      "exponent": 1
+    },
+    {
+      "degree": 48,
+      "exponent": 1
+    }
+  ],
+  "frozenGoldTarget": {
+    "frozenAt": "2026-07-21T16:37:14.206264+00:00",
+    "label": "24T9402",
+    "minimumDiscAbs": null,
+    "projectedNewGoldPoints": 1.0,
+    "r": 8,
+    "t": 9402,
+    "targetGeneratedAt": "2026-07-21T13:01:08Z",
+    "teamCount": 0
+  },
+  "localLiveRecheck": {
+    "baseline": false,
+    "discovered": false,
+    "owned": false,
+    "teamCount": 0
+  },
+  "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_24T9402_r8.txt",
+  "manifestSha256": "7148a8396662876035433b8726349be506b606d41f13981e7d04dbad0876b9a4",
+  "method": "safe-single-block-system-unique-pair-orbit-exact-pilot-v1",
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_root_sigalign_tail_v10_plan.json",
+  "planSha256": "0d45650f2d2c97ede36d71521bfe2e57fddcd1de37dabb5645f889630dadf870",
+  "source": {
+    "coefficientBytes": 218,
+    "coefficientSha256": "0e86b0bb94ffdf0d80888fab5a9e1e97e1bef53a68caf0ded4f659071ea2de00",
+    "fieldDiscAbs": "21320784204288457242259399053101268804522584183452249334160031744",
+    "label": "24T15624",
+    "polynomialIndex": 9,
+    "quotientLine": "582718999972057396993024,-73142446452501985740800,-2828176036008349141760,-92112723878225762304,-589075867051420352,-56334115490816,182075786770240,1452098762368,2198198384,-32350816,-94836,16,1",
+    "quotientPolynomialSha256": "a42d722e4aa82221c0e0010622d7c6f4490c38b711282ae6c95f9bb683dc8f32",
+    "r": 8,
+    "submissionId": "sub_e22138d35a614728a1bc63d7fe779122",
+    "t": 15624
+  },
+  "submissionCalls": 0
+}

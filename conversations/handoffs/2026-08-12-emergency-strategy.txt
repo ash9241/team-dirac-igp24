@@ -1,0 +1,1186 @@
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+                                                       TEAM DIRAC
+
+
+
+          IGP24 Emergency Recovery Strategy
+ Forensic diagnosis, retained-value model, new mathematical attack surfaces, and a
+                            deadline-aware execution plan
+
+
+
+
+       529.39                        23,388                           7.23                            632.36
+        Current score                Scoreable pairs                Rank-15 cushion                   Gap to rank 10
+
+
+
+
+ Central conclusion
+ Stop optimizing verified-polynomial count. Optimize three-day retained score. The recent interval added coverage
+ while the legacy portfolio lost far more value than the new pairs could plausibly replace.
+
+
+
+   Prepared from the Team Dirac evidence bundle and the full emergency analysis produced on August 12, 2026.
+           Competition deadline referenced in the analysis: August 15, 2026 at 00:00 AoE (7:00 AM CDT).
+
+
+
+
+                                                                             Internal strategy report | August 12, 2026   Page 1
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+CONTENTS
+
+
+Report map
+1                                                Emergency verdict
+
+2                                                What actually caused the score collapse
+
+3                                                Replace new-pair count with a retained-value model
+
+4                                                What the leaders appear to be doing differently
+
+5                                                Ranked attack matrix
+
+6                                                Attack 1: common-quadratic-resolvent 8x3 fiber products
+
+7                                                Attack 2: cyclic C3 ray-class lifts over octic bases
+
+8                                                Attack 3: narrow C4 ray-class lifts over sextic bases
+
+9                                                Attack 4: S3-Galois sextics over quartic bases
+
+10                                               Attack 5: D4 and Q8 extensions over cubic bases
+
+11                                               Attack 6: exceptional elliptic 7-division x-fields
+
+12                                               Attack 7: elliptic 5-torsion point fields
+
+13                                               Attack 8: fixed-cubic-resolvent A4/S4 quartics over sextic bases
+
+14                                               Ideas explicitly rejected
+
+15                                               The single best immediate experiment
+
+16                                               Independent reserve experiment
+
+17                                               Golds, raids, and rank defense
+
+18                                               The next 24 hours
+
+19                                               The remaining 72-hour window
+
+20                                               Seven-day top-10 path
+
+21                                               Score scenarios
+
+22                                               Risk register
+
+23                                               Data that would materially improve the conclusion
+
+24                                               Final operating order
+
+Appendix                                         Sources and evidence base
+
+
+
+
+                                                                   Internal strategy report | August 12, 2026   Page 2
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+
+1. Emergency verdict
+1.   Stop optimizing verified-polynomial count. Optimize three-day retained score.
+Between August 6 and August 12, Dirac gained 70 scoreable pairs but lost 150.282409 points. The score-per-pair
+fell from 0.029148 to 0.022635, a 22.34% deterioration. The central failure is therefore portfolio decay and
+revaluation, not a shortage of accepted polynomials.
+2.   The best immediate new attack is a common-quadratic-resolvent 8x3 fiber product.
+This is not the exhausted linearly disjoint octic-cubic compositum. Force an octic normal closure and an S3-cubic
+normal closure to intersect in the same quadratic field. The resulting degree-24 action is the subdirect product H
+x_{C2} S3, not H x S3. It has exact group-theoretic certification, useful signature control, and a cheap abstract
+GAP atlas before any expensive arithmetic.
+                                       H x_{C2} S3 = {(h,s) in H x S3 : chi(h) = sign(s)}
+
+3.   Run one independent cheap reserve in parallel: exceptional elliptic 7-division fields.
+The 7-division polynomial has degree 24 in the x-coordinates. Instead of random curves, enumerate transitive
+mod-7 image classes, identify their exact 24T actions on nonzero torsion points modulo sign, and join that finite
+atlas to the live target table. This is fundamentally unrelated to Kummer extensions, twists, subset resolvents,
+and tower volume.
+
+ Deadline constraint
+ The published deadline is August 15, 2026 at 00:00 AoE, equivalent to August 15 at 7:00 AM CDT. As of 12:48 PM CDT
+ on August 12, roughly 66 hours 12 minutes remained. The requested seven-day campaign is impossible under the
+ published schedule unless the competition is extended.
+
+
+
+
+2. What actually caused the score collapse
+The arithmetic
+ Metric                       August 6                           August 12                        Change
+
+
+ Score                        679.674166                         529.391757                       -150.282409
+
+ Scoreable pairs              23,318                             23,388                           +70
+
+ Score per pair               0.029148                           0.022635                         -22.34%
+
+
+
+
+                                                                                  Internal strategy report | August 12, 2026   Page 3
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+Recent wave efficiency
+                                                                  Distinct returned
+Wave                  Verified polynomials   Returned labels                               Distinct-pair yield    Row redundancy
+                                                                  pairs
+
+
+Totally real          119                    6                    17                       14.29%                 85.71%
+
+Kummer diversity      75                     16                   15                       20.00%                 80.00%
+
+Unit-twist siblings   80                     63                   74                       92.50%                 7.50%
+
+Combined              274                    -                    102                      37.23%                 62.77%
+
+
+
+At least 32 of those 102 distinct returned pairs did not expand Dirac's owned-pair set, because the net increase
+was only 70. The true number may be higher if unrelated submissions also added pairs during the interval.
+More importantly, let N be the August 12 score contributed by the 70 newly owned pairs. Since a new pair can
+contribute at most one point:
+                                                           0 <= N <= 70
+
+The contribution of the pre-August-6 portfolio therefore fell by:
+                                       679.674166 - (529.391757 - N) = 150.282409 + N
+
+Thus the old portfolio lost between 150.28 and 220.28 points. Even in the most favorable interpretation, the
+legacy portfolio lost more than twice the maximum possible one-point value of the new pair count.
+
+Ranked causal diagnosis
+1. Competitor reproduction is almost certainly the largest term
+For a pair with k credited teams and Dirac discriminant D, the score is:
+                                                    2^(1-k) * log(D0) / log(D)
+
+Every new team normally halves the pair's base value. A collection of 300 Dirac solos becoming two-team pairs
+would lose approximately 150 points. Alternatively, 100 solos going from k=1 to k=3 would also lose
+approximately 75 points twice over. These are illustrations, not claims about the exact holder transitions.
+
+2. Pair-level exact/mixed discriminant transitions may have amplified the loss
+For a non-baseline pair, if any relevant nfdisc computation fails or times out, the entire pair is scored with the
+mixed fallback. This can change the score of every team on that pair, including historical rows. New competitor
+submissions can therefore change both k and the discriminant source.
+Operational implication: submitting another hard-to-evaluate polynomial for an already owned pair is not
+automatically harmless. Even when it does not change ownership, it can waste evaluation capacity and may
+alter the pair-level discriminant pathway.
+
+3. The new waves generated mostly low-retention coverage
+The totally-real wave concentrated 119 rows into six labels. The Kummer wave concentrated 75 rows into only
+15 pairs. Those are family-correlation signatures, not target-conditioned breadth.
+The unit-twist wave was internally broad, but the total net ownership increase shows that many outcomes were
+already owned, became immediate collisions, or landed in already crowded strata. The supplied bundle does not
+contain the pair-by-pair pre-wave ownership table needed to distinguish those cases.
+
+4. Internal duplication explains wasted throughput, not the full score loss
+Dirac contributes only one team count to a pair regardless of how many polynomials it submits, and within one
+submission only the first verified row for a pair is considered. Internal duplicates therefore cannot directly
+
+
+
+                                                                                      Internal strategy report | August 12, 2026   Page 4
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+explain a 150-point collapse. They explain why 274 verified polynomials produced only 102 distinct outcomes
+and consumed submission and evaluation capacity.
+
+    Currently unknowable from the supplied bundle
+    The exact fraction of the recent 102 pairs already owned before submission; which historical pairs acquired
+    holders; how much loss came from k-changes versus discriminant changes; and which construction family has the
+    longest measured scoring half-life all require pair-level snapshots.
+
+
+
+
+3. Replace “new pair count” with a retained-value model
+For candidate c, pair p, and horizon h, use:
+                      RV_h(c,p) = q_label q_sig q_live q_scoreable * E[ 2^(1-K_{p,h}) * log(D0_{p,h}) / log(D_c) ]
+
+      q_label: probability of the exact 24T label.
+      q_sig: probability of the required real signature.
+      q_live: probability the target remains valuable at submission.
+      q_scoreable: irreducibility, exact-discriminant success, and baseline rules.
+      K_{p,h}: future number of credited teams.
+      D_c: candidate exact or official scoring discriminant.
+For an exactly certified candidate, q_label=q_sig=1. No candidate with only Frobenius compatibility should
+receive that treatment.
+
+Correlation must be applied by lineage, not by row
+                                      q_portfolio(p) = 1 - product_over_lineages(1 - q_{lineage,p})
+
+The product should run over independent mathematical lineages, not parameter changes within one generator.
+Fifty coefficient variants of the same ray-class character are not 50 independent chances.
+
+Empirical survival model
+For each structural family, fit a holder-arrival rate lambda from daily snapshots. If new holders arrive
+approximately as a Poisson process and the discriminant ratio is temporarily ignored:
+                                                   E[2^(-N_h)] = exp(-lambda*h/2)
+
+The scoring half-life is then:
+                                                       h_1/2 = 2 log(2) / lambda
+
+                               lambda, new
+    Family prior                                        1-day value factor         3-day factor               7-day factor
+                               holders/day
+
+
+    Highly reproducible        0.35                     0.839                      0.592                      0.294
+
+    Specialized                0.15                     0.928                      0.799                      0.592
+
+    Rare/nonabelian            0.07                     0.966                      0.900                      0.783
+
+
+
+
+Exact relative value of a raid
+Suppose opponent j is the sole holder of pair p. After Dirac joins:
+                                                 S_D(after) = 1/2 * log(D0)/log(D_D)
+                                                  S_j(after) = 1/2 * log(D0)/log(D_j)
+
+                                                                                      Internal strategy report | August 12, 2026   Page 5
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+The relative gap improvement is:
+                                             Delta_rel(j,p) = S_D(after) + S_j(before) - S_j(after)
+
+With comparable discriminants, this is approximately one point. It can be less than one if Dirac's discriminant is
+substantially worse, or greater than one if Dirac supplies a much better discriminant.
+
+Operational target score
+      U(c,p) = [RV_abs_3 + w_j RV_rel,j_3 + RV_F6_closure_3] / [CPU-hours + alpha*proof cost + beta*nfdisc risk +
+                                         gamma*submission opportunity cost]
+
+The F6 term is essential. Every genuinely new exact source group should immediately enter a fresh-source-only
+F6 index-24 action closure. That does not make F6 a new attack family, but it can multiply the value of every
+successful new construction.
+
+
+4. What the leaders appear to be doing differently
+The August 12 snapshot places rank 10 at 1161.747780, rank 11 at 826.642271, rank 12 at 675.718287, rank 13 at
+604.393054, Dirac at 529.391757, and rank 15 at 522.157613.
+The snapshot does not include current pair counts, holder histograms, or discriminant distributions for the
+leading teams. Therefore it is not possible to determine from score alone whether they win primarily through
+breadth, rarity, discriminants, raids, or a combination.
+
+Hypothesis                                         Why it fits the evidence                           Falsification test
+
+
+Leaders cover more algebraic architectures         Dirac's score collapsed while adding pairs from    Compare each team's pair holdings by block
+                                                   highly reproducible families                       system, kernel type, quotient, and signature
+
+Leaders generate rarer signatures within           Dirac repeatedly reaches labels but not durable    Compute holder-count distributions within each
+reached groups                                     scoring cells                                      24T label
+
+Leaders use lower-discriminant sources             The logarithmic factor can protect value on        Compare team discriminant ratios by pair and
+                                                   shared pairs                                       family
+
+Leaders refresh and raid target books              Sole-held raids have approximately one-point       Reconstruct daily entry/exit from opponent
+continuously                                       relative impact                                    placement snapshots
+
+Leaders exploit closure from every new source      Dirac's own F6 history shows new fields can        Measure descendants per first-time source label
+field                                              unlock sibling actions                             for each team
+
+
+
+
+                                                                                                 Internal strategy report | August 12, 2026     Page 6
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+
+
+5. Ranked attack matrix
+The retained-point bands are conditional planning bands, not forecasts. They are non-additive and become zero when the live atlas fails its gate.
+
+                                                                                                                                                                 72-hour retained band:
+Rank                       Attack                                 New algebraic architecture         Exact signatures        Smallest pilot
+                                                                                                                                                                 conservative / base / optimistic
+
+
+1                          Shared quadratic-resolvent 8x3         Subdirect H x_{C2} S3              r=r_A or 3r_A           12 fields                           0-5 / 15-30 / 50-80
+                           fiber products
+
+2                          Cyclic C3 ray-class lifts over octic   Odd elementary module kernels      0,6,12,18,24            12 fields                           0-10 / 30-70 / 100-180
+                           bases
+
+3                          Narrow C4 ray-class lifts over         Exponent-4, non-elementary         multiples of 4          12 fields                           0-5 / 20-40 / 60-100
+                           sextic bases                           kernels
+
+4                          S3-Galois sextics over quartic bases   Nonabelian sextic block kernels    0,6,12,18,24            8 fields                            0-5 / 10-25 / 35-60
+
+5                          D4/Q8-Galois octics over cubic         Nonabelian 2-group block kernels   0,8,16,24               10 fields                           0-3 / 8-15 / 20-35
+                           bases
+
+6                          Exceptional elliptic 7-division x-     Mod-7 Galois representations       r=6                     Up to 10 image classes              0 / 1-3 / 4-8
+                           fields
+
+7                          Elliptic 5-torsion point fields        Mod-5 action on nonzero vectors    r=4                     Up to 10 image classes              0 / 1-3 / 4-8
+
+8                          Fixed-cubic-resolvent A4/S4            Nonabelian quartic fibers          broad even signatures   6 fields                            0-2 / 6-12 / 15-30
+                           quartics over sextic bases
+
+
+
+
+                                                                                                                                              Internal strategy report | August 12, 2026     Page 7
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+
+
+6. Attack 1: common-quadratic-resolvent 8x3 fiber products
+Let A/Q be an octic field with normal closure N_A, transitive group H, and an index-two character chi:H -> C2. Let
+k be the corresponding quadratic subfield of N_A. In the first implementation, use the sign character, so:
+                                               k = Q(sqrt(sqf Disc(A)))
+
+Construct a non-Galois cubic field B/Q with Galois closure N_B, group S3, and quadratic resolvent exactly k. Cubic
+fields with a prescribed quadratic resolvent have an explicit class-field/Kummer parametrization and can be
+enumerated by conductor.
+When N_A intersection N_B = k, the normal closure of AB has group:
+                                                    G = H x_{C2} S3
+
+A particularly clean proof gate is 3 not dividing |H|. Since N_B/k is cyclic cubic, any intersection larger than k
+would force a factor of three into |H|. Therefore the intersection is exactly k.
+The compositum AB has degree 24 because [A:Q]=8 and [B:Q]=3 are coprime. The fiber product acts transitively
+on 8x3 points and has two useful crossing block systems:
+   eight blocks of size three, with quotient H;
+   three blocks of size eight, with quotient S3.
+The group has order 3|H|, rather than 6|H| for the direct product.
+
+Signature control
+Let r_A be the number of real roots of the octic source.
+   If k is real, the cubic is totally real and r(AB)=3r_A.
+   If k is imaginary, the cubic has one real root and r(AB)=r_A.
+The exact involution classes in H x_{C2} S3 determine which values actually occur. The abstract atlas computes
+this before constructing any polynomial.
+
+Exact certification
+A candidate certificate contains:
+4. the exact octic group H;
+5. the exact index-two character and quadratic field k;
+6. proof that the cubic is S3 with quadratic resolvent k;
+7. proof that N_A intersection N_B = k;
+8. the exact product-action 24T identification;
+9. exact root count;
+10. irreducibility and degree 24 of the reduced compositum polynomial;
+11. exact nfdisc.
+This is an exact containment proof, not a Frobenius classifier. A full Magma GaloisProof can audit one
+representative per resulting action.
+
+Discriminant strategy
+   low-discriminant octic sources;
+   the smallest possible quadratic resolvent;
+   cubic conductors supported on small primes;
+   ramification outside k disjoint from the octic source;
+   polredabs or equivalent field reduction before generating the monic submission polynomial.
+
+
+
+                                                                           Internal strategy report | August 12, 2026   Page 8
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+Go and kill gates
+    GO
+    Exact live atlas contains at least 30 unowned or sole-held valuable pairs; first 12 arithmetic candidates produce at
+    least two distinct live exact pairs; label precision is 12/12; and at least 75% finish exact nfdisc within the local
+    evaluator budget.
+
+
+
+    AMBER
+    Exactly one hit in 12. Run a second disjoint eight-source pilot.
+
+
+
+    KILL
+    Live atlas has fewer than 10 valuable pairs; zero hits after 20 independent source-resolvent combinations; any
+    predicted-action mismatch; or projected cost exceeds 50 CPU-hours per retained point.
+
+
+
+Red-team finding: the main risk is not group ambiguity. It is that fixed-resolvent cubic fields with acceptably
+small discriminants may be sparse for the octic quadratic fields that lead to live targets. That is why the abstract
+live join must precede arithmetic.
+
+
+7. Attack 2: cyclic cubic ray-class extensions of octic fields
+Take an exact octic field K and a ray-class quotient of exact order three. Construct a cyclic cubic class field L/K
+with [L:K]=3, giving [L:Q]=24.
+This is not a direct 8x3 compositum. In the normal closure, conjugates of the order-three character generate an
+F3[H]-module. The kernel may be C3^d, with its rank and dependency structure determined by the orbit of the
+ray-class character. This targets odd-module block kernels absent from Dirac's predominantly 2-primary
+Kummer campaign.
+
+Structure and signatures
+The degree-24 action has eight blocks of size three. The quotient on the blocks is the normal-closure group of K. A
+cyclic odd-degree extension cannot complexify a real place. Consequently:
+                                                           r(L) = 3r(K)
+
+The possible signatures are 0, 6, 12, 18, and 24.
+
+Discriminant
+                                                          d_{L/K} = f^2
+                                                   |D_L| = |D_K|^3 * Norm(f)^2
+
+Choose low-discriminant octics and the smallest split primes whose ray groups contain useful order-three
+quotients.
+
+Live-target computation
+     Enumerate 24T groups with a size-three minimal block system;
+     Enumerate 24T groups with degree-eight quotient matching a candidate octic group;
+     Enumerate 24T groups with elementary abelian 3-kernel;
+     Enumerate 24T groups with the exact involution fixed-point count 3r(K).
+
+
+                                                                                   Internal strategy report | August 12, 2026   Page 9
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+Then remove every action already represented by F4 or another registered route. Only the structural difference
+counts as new.
+
+Pilot and gate
+Run 12 source/modulus combinations, selected across at least four octic quotient groups.
+
+ Scale only with
+ At least 50 live structural targets; two exact live outcomes in 12; at least two different module ranks or cocycle
+ classes; and no action identity already registered.
+
+
+
+ Kill
+ Zero hits in 20 exact class fields, or every order-three character collapses to a diagonal/direct-product action already
+ exhausted.
+
+
+
+
+8. Attack 3: narrow cyclic quartic extensions over sextic bases
+Choose a degree-six field K and a ray-class quotient containing a genuine order-four character. Construct L/K
+cyclic of degree 4, with [L:Q]=24.
+This directly targets exponent-four kernels rather than elementary C2^d Kummer kernels. The order-four
+quotient and its 2-cocycle must be retained; an extension that collapses to C2 x C2 is rejected as an old lane.
+
+Signature control
+At each real place of K, a cyclic quartic Galois extension contributes either four real embeddings or zero real
+embeddings if that place complexifies. The list of infinite places in the ray modulus therefore gives signature
+chambers with:
+                                                    r in {0,4,8,12,16,20,24}
+
+subject to the real places of the chosen sextic.
+
+Discriminant
+                                        d_{L/K} = f(chi) f(chi^2) f(chi^3) = f_4^2 f_2
+                                        |D_L| = |D_K|^4 * Norm(f_4)^2 * Norm(f_2)
+
+The campaign value comes from selecting exact quotient actions and archimedean conditions, not enumerating
+cyclic quartics indiscriminately.
+
+Gate
+ Scale
+ At least two distinct live exact pairs in a 12-field pilot; at least one non-split or non-diagonal action; at least 40 live
+ structural targets; acceptable exact nfdisc on 75% or more.
+
+
+
+ Kill
+ All characters reduce to elementary 2-extensions, the live atlas has fewer than 15 targets, or zero of 20 exact fields
+ lands live.
+
+
+
+                                                                                Internal strategy report | August 12, 2026   Page 10
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+
+
+9. Attack 4: S3-Galois sextics over quartic bases
+Let K/Q be quartic. Choose a quadratic extension M=K(sqrt(d)) with a prescribed sign pattern at the real places of
+K. Let tau be the nontrivial automorphism of M/K. Find an order-three ray-class character psi satisfying:
+                                                        tau psi = psi^(-1)
+
+The resulting cyclic cubic class field E/M is stable under tau, and Gal(E/K) is isomorphic to S3. Since [E:K]=6,
+[E:Q]=24.
+This creates nonabelian sextic block kernels. It is not the pure-cubic fiber from F4 that forced at most one real
+root over each real outer embedding.
+
+Signatures
+     If M splits into two real places, each supplies three real embeddings and the contribution is six.
+     If M becomes complex, the contribution is zero.
+For a totally real quartic base, r(E) lies in {0,6,12,18,24}.
+
+Exact target class
+The degree-24 action has four blocks of size six. Its local block action is S3, and the global normal closure is
+determined by the conjugate anti-invariant character module and extension cocycle.
+
+Gate
+    Pilot
+    Run eight fields from four distinct quartic bases. Scale after two exact live outcomes and at least 30 live structural
+    targets.
+
+
+
+    Kill
+    The anti-invariant 3-primary spaces are uniformly zero, every action is already in the direct-product catalog, or
+    class-field equation construction exceeds the deadline budget.
+
+
+
+
+10. Attack 5: D4 and Q8 extensions over cubic bases
+Let K/Q be cubic. Construct a Galois extension E/K of degree eight with group D4 or Q8. Then E is an absolute
+degree-24 field.
+For D4, begin with a biquadratic field M=K(sqrt(a),sqrt(b)). A standard construction solves a norm equation:
+                                                  Norm_{K(sqrt(a))/K}(u) = b
+
+and adjoins the required square root over M. The resulting closure is checked for exact D4. For Q8, solve the
+corresponding central embedding problem; Witt-type criteria translate solvability into equivalence of ternary
+quadratic forms, and explicit solutions can be recovered from the equivalence matrix.
+
+Signature control
+Every real place of the cubic contributes either eight or zero real embeddings.
+     For a totally real cubic: r=0,8,16,24.
+
+
+                                                                                Internal strategy report | August 12, 2026   Page 11
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+     For a cubic with one real place: r=0 or 8.
+
+Difference from existing work
+This is not an e-D4 quartic polynomial over a sextic field. It is a Galois octic block fiber over a cubic base, creating
+three blocks of size eight and a nonabelian block kernel.
+
+Red-team conclusion
+Start with D4, not Q8. The Q8 lane is more vulnerable to 2-adic obstruction, large discriminants, expensive
+defining-equation construction, and low live-target intersection.
+
+    Gate
+    Scale after two of ten exact D4 fields hit live targets. Do not open the Q8 subcampaign until the abstract live
+    intersection and local-solvability rate are both positive.
+
+
+
+
+11. Attack 6: exceptional elliptic 7-division x-coordinate fields
+For an elliptic curve E/Q, the seventh division polynomial psi_7(x) has degree (7^2-1)/2 = 24 and its roots are the
+x-coordinates of nonzero 7-torsion points modulo P ~ -P.
+If the mod-7 image is G <= GL_2(F7), the exact degree-24 permutation action is on:
+                                                       (F7^2 - {0}) / {+/- 1}
+
+For the full image, the faithful action is through GL_2(F7)/{+/-I}. Complex conjugation has eigenvalues 1,-1. It
+fixes three projective sign-pairs in each eigenspace, giving exactly r=6.
+
+Why exceptional images matter
+Random curves with surjective mod-7 image all land in the same group/signature cell. That pair is likely already
+crowded. The only rational campaign is:
+12. enumerate realizable exceptional image classes;
+13. retain only those transitive on the 24 sign-pairs;
+14. identify their exact 24T labels;
+15. join to the live table;
+16. choose one low-conductor curve per image class.
+This is the first attack architecture not suggested in the prompt or attachments.
+
+    Gate
+    Kill immediately if the finite image-action atlas contains no live valuable pairs. Continue only if at least one exact
+    live pair appears among the first five distinct image classes. Never run multiple ordinary full-image curves.
+
+
+
+
+12. Attack 7: elliptic 5-torsion point fields
+The nonzero vectors of E[5] ~= F5^2 form a 24-element set. A full mod-5 image acts transitively on them.
+The x-division polynomial alone has degree 12 because it identifies P and -P. Instead, use a primitive coordinate
+u(P)=x(P)+lambda y(P) and eliminate x from:
+                                                            psi_5(x)=0
+                                             (T-x)^2 - lambda^2(x^3 + A x + B) = 0
+
+                                                                                Internal strategy report | August 12, 2026   Page 12
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+The resultant is generically degree 24 and has roots indexed by the 24 nonzero torsion points. Complex
+conjugation fixes the four nonzero vectors in its +1 eigenspace, giving r=4.
+As with the mod-7 lane, enumerate exact image classes first. Most random full-image curves will reproduce one
+common pair. This lane is valuable only if exceptional transitive images intersect live targets.
+This is the second attack architecture not suggested in the prompt or attachments.
+
+
+13. Attack 8: fixed-cubic-resolvent A4/S4 quartics over sextic bases
+Let F/Q be sextic. Choose a cubic extension C/F. Quartic fields over F with local group A4 or S4 and cubic
+resolvent C correspond to quadratic extensions of C satisfying a trivial-norm condition. This correspondence is
+explicit and includes prescribed-signature refinements.
+The resulting absolute degree is 4*6=24. Each real place of F can contribute 0, 2, or 4 real roots, providing
+considerably broader even-signature control than the cyclic and dihedral fibers.
+This lane is conditional because RouteA already used several quartic-over-sextic constructions. It counts as new
+only if an exact action-level audit shows that the fixed-resolvent A4/S4 structures are absent from the historical
+recipe and action catalogs. Otherwise it is rebranding and should be rejected.
+
+
+14. Ideas explicitly rejected
+    Idea                                                            Why it is rejected now
+
+
+    More generic Kummer, rational twists, subset products, pair     Already exhausted or active under F1-F10.
+    resolvents, and tower volume
+
+    More Frobenius primes                                           Cycle data can veto a label, but cannot certify exact
+                                                                    containment; prior audit measured inadequate precision for
+                                                                    that role.
+
+    Primitive-cover specialization as the main emergency strategy   A cover often supplies one group and a limited signature set;
+                                                                    even a successful new M24 specialization is roughly a one-pair
+                                                                    event, not a route to 200 retained points.
+
+    Blind database ingestion                                        Useful for source fields, but database volume without an exact
+                                                                    target action recreates the old broad-search failure.
+
+
+
+
+15. The single best immediate experiment
+Experiment: exact common-resolvent fiber-product pilot
+Inputs
+      Exact degree-eight source catalog: source polynomial hash, exact 8T label H, signature r_A, discriminant
+       squareclass, order |H|, and index-two characters.
+      Current Dirac ownership ledger.
+      Current labels/progress and remaining-pairs target feeds.
+      Current placements for ranks 10-15.
+      Exact historical F1-F10 action identities.
+      F6 fresh-source closure map.
+
+Abstract atlas pseudocode
+       S3 := the transitive degree-3 group S3
+
+       for every transitive degree-8 group H:
+
+
+
+                                                                                   Internal strategy report | August 12, 2026   Page 13
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+        for every epimorphism chi : H -> C2:
+            G := {(h,s) in H x S3 : chi(h) = sign(s)}
+
+            construct the action of G on Omega8 x Omega3
+
+            if the action is transitive:
+                t24 := exact transitive-group identification of this action
+
+                for each involution class cH in H:
+                    for each involution class c3 in S3:
+                        if chi(cH) = sign(c3):
+                            r := fixed_points(cH on Omega8)
+                                 * fixed_points(c3 on Omega3)
+
+                            emit H, chi, t24, r, order(G),
+                                 block systems, quotient identities,
+                                 kernel identities, involution classes
+
+Live join
+    join fiber-product atlas to current pair table on (t24, r)
+
+    exclude:
+        Dirac-owned pairs
+        baseline pairs without a proven discriminant improvement
+        action identities already present in F1-F10
+        targets stale at the latest refresh
+
+    score each route by:
+        three-day retained absolute value
+        relative value against ranks 15, 13, 12, and 10
+        source availability
+        fixed-resolvent cubic cost
+        discriminant estimate
+        F6 descendant value
+
+Arithmetic pilot
+    select 12 routes with:
+        3 not dividing |H|
+        at least 4 distinct octic groups
+        at least 6 distinct live target pairs
+        both real and imaginary quadratic-resolvent cases where possible
+        no repeated source polynomial
+        low source discriminant
+
+    for each route:
+        A := exact octic source
+        k := quadratic field selected by chi
+        enumerate the lowest-conductor S3 cubics B with quadratic resolvent k
+        prove Gal(normal_closure(A)) = H
+        prove Gal(normal_closure(B)) = S3
+        prove intersection of normal closures = k
+        L := compositum(A,B); assert degree(L)=24
+        f := reduced monic integral defining polynomial of L
+        certify irreducibility, exact signature, exact fiber-product action,
+                exact 24T label, coefficient novelty, exact nfdisc,
+                current target status, and Dirac non-ownership
+        write certificate; do not submit
+
+Expected outputs
+   fiber_c2_s3_atlas.jsonl
+   fiber_c2_s3_live_join.jsonl
+   fiber_c2_s3_pilot_plan.json
+   fiber_c2_s3_results.jsonl
+   One certificate per field containing source hashes; H, chi, k; cubic conductor and resolvent proof;
+    intersection proof; exact action and 24T; exact r; polynomial hash; nfdisc; target-snapshot hash; and F6
+    closure descendants.
+
+Compute estimate
+   Abstract group atlas: minutes to roughly two CPU-hours.
+   Fixed-resolvent cubic enumeration and composita: roughly 2-8 total CPU-hours for the first 12, depending on
+    the quadratic fields.
+   Exact field reduction and discriminants: roughly 5-20 CPU-hours.
+
+
+                                                                              Internal strategy report | August 12, 2026   Page 14
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+     Full independent Magma audit representatives: potentially 20-80 CPU-hours, but the structural intersection
+      proof should avoid a full degree-24 GaloisProof for every sibling.
+These are planning estimates and must be benchmarked on the first two fields.
+
+Decision rule
+
+    Scale
+    At least 2/12 distinct current exact hits, 12/12 action precision, and live structural ceiling at least 30.
+
+
+
+    Second pilot
+    Exactly 1/12; run eight disjoint sources.
+
+
+
+    Kill
+    Zero in 20, live ceiling below 10, exact-action mismatch, or unacceptable nfdisc failure rate.
+
+
+
+Scale size: first 32, then 64, never a blind thousand-row wave.
+
+
+16. Independent reserve experiment
+Exceptional mod-7 elliptic images
+      enumerate known realizable subgroups G <= GL(2,F7)
+
+      for each G:
+          construct action on (F7^2 - {0}) / {v ~ -v}
+          if action is transitive:
+              t24 := exact transitive identification
+              r := 6
+              join (t24,r) to live targets
+
+      for every surviving exact image class:
+          choose one low-conductor elliptic curve with that image
+          compute the 7-division polynomial
+          construct the degree-24 x-coordinate field
+          replace the non-monic division polynomial by a reduced monic integral defining polynomial
+          prove the mod-7 image and exact permutation action
+          compute exact nfdisc
+          run fresh F6 closure
+
+Compute: approximately 5-20 CPU-hours for the finite first pass.
+
+    Go
+    At least one live structural target and one exact hit among five image classes.
+
+
+
+    Kill
+    No live target in the abstract atlas. Do not spend arithmetic time merely to rediscover the full-image pair.
+
+
+
+The reserve is intentionally finite. Its purpose is to capture a few structurally unrelated rare pairs while the
+scalable class-field lanes are being built.
+
+
+17. Golds, raids, and rank defense
+Current snapshot gaps:
+
+
+                                                                                   Internal strategy report | August 12, 2026   Page 15
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+    Objective                                                Gap / cushion
+
+    Rank-15 cushion                                          7.234144
+
+    Rank-13 gap                                              75.001297
+
+    Rank-12 gap                                              146.326530
+
+    Rank-10 gap                                              632.356023
+
+
+
+
+A new solo gold and a comparable direct raid each close the gap to a particular opponent by approximately one
+point:
+      Gold: Dirac gains about 1, opponent unchanged.
+      Sole-held raid: Dirac gains about 0.5 and opponent loses about 0.5.
+The gold is superior when costs are comparable because it improves Dirac's position against every team, not just
+one opponent. A targeted raid wins when its realization probability or retention is materially higher.
+
+Priority sequence
+Stage A: create a 20-point rank-15 cushion
+Use the highest three-day relative value among new golds, sole-held rank-15 raids, and sole-held rank-13 raids
+that also have strong absolute value. Eight comparable retained golds or direct rank-15 raids would
+approximately double the present cushion. The real target should be 12-15 retained points because legacy score
+decay may continue.
+
+Stage B: attack rank 13
+A static 75-point gap needs approximately 76 comparable golds/direct raids. With another 30-50 points of legacy
+decay, the gross target is closer to 110-130 retained points.
+
+Stage C: challenge rank 12
+The static gap is 146.33. With 50 points of further decay, a 200-point gain only barely crosses the current rank-12
+score. The operational target should be 230-275 new three-day retained points, not exactly 200.
+
+Target-incidence table
+Every live row should include:
+
+                                                                             Internal strategy report | August 12, 2026   Page 16
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+      snapshot_time
+      24T label
+      r
+      baseline status
+      current k_teams
+      current best scoring discriminant
+      disc_source
+      all known holders
+      rank-15 holder flag
+      rank-13 holder flag
+      rank-12 holder flag
+      rank-10 holder flag
+      Dirac ownership
+      Dirac current discriminant and points
+      block systems
+      quotient labels
+      kernel structure and exponent
+      extension module and cocycle class
+      complex-conjugation fixed-point class
+      Dirac reached-group flag
+      compatible new construction families
+      source-field count
+      exact realization probability
+      signature probability
+      exact-proof cost
+      nfdisc timeout risk
+      1-day / 3-day / 7-day survival estimate
+      absolute retained EV
+      relative retained EV by opponent
+      F6 closure descendants
+      target refresh timestamp
+Do not hard-code submission limits from an old file. Read submissionSpec.limits from the live competition state.
+
+
+18. The next 24 hours
+    Time                                  Action                                                Pass condition
+
+
+    Hours 0-2                             Freeze all generic submission paths. Reconcile        One authoritative snapshot hash and zero
+                                          queues, receipts, ownership, exact/mixed status,      unresolved duplicate receipts
+                                          and current API limits. Pull leaderboard,
+                                          progress, remaining pairs, and ranks 10-15
+                                          placements.
+
+    Hours 2-6                             Build the shared-resolvent abstract atlas, elliptic   Exact target counts and union counts for every
+                                          mod-7 atlas, and exact live incidence join.           new family
+                                          Deduplicate against F1-F10.
+
+    Hours 6-14                            Run the 12-field shared-resolvent pilot under         Typed result for all 12; no unhandled failures
+                                          one heavy-worker lease. In parallel, only light
+                                          structural C3/C4 ray-class censuses.
+
+    Hours 14-20                           Exact proof, field reduction, nfdisc, target          Fail-closed certificate for every claimed pair
+                                          refresh, and fresh-source F6 closure.
+
+    Hours 20-24                           Apply go/amber/kill gate. If green, prepare a 32-     One sealed plan; no ambiguous labels
+                                          source scale wave. If amber, run eight disjoint
+
+
+
+                                                                                         Internal strategy report | August 12, 2026       Page 17
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+    Time                                  Action                                             Pass condition
+
+
+                                          sources. If killed, pivot heavy compute to the
+                                          elliptic reserve and C3 ray-class pilot.
+
+
+
+
+    Operational boundary
+    No POST and no cloud launch are authorized by the attached live hill-climb plan.
+
+
+
+
+19. The remaining 72-hour window
+Because only approximately 66 hours remain before the published deadline, the final six hours of this nominal
+plan occur after closing.
+
+Hours 24-42
+      Scale exactly one green family.
+      Run 32 candidates first.
+      Refresh and evaluate yield.
+      Run 64 only if precision remains 100% and retained-value estimates hold.
+      Run the finite elliptic reserve concurrently only when it does not compete for the heavy arithmetic slot.
+
+Hours 42-54
+Start the first 12-field C3 ray-class pilot if its structural live ceiling is at least 50, source octics and order-three ray
+quotients are already available, and the shared-resolvent lane has not consumed the proof capacity. Otherwise,
+continue the winning family and F6 closure.
+
+Hours 54-62
+Stop opening new algebraic architectures. Complete exact proofs, reduced monic polynomials, nfdisc, current
+ownership checks, target union deduplication, compact score-ranked manifests, and receipt/rollback
+preparation.
+
+Hours 62-66
+Only with explicit authorization: refresh all targets immediately before submission; submit the best polynomial
+first for each expected pair; use compact batches; monitor until terminal; never replay a stale outbox; preserve
+every receipt; and stop new arithmetic whose proof cannot finish before closure.
+
+Hours 66-72
+Under the current published deadline, this is post-competition: reconcile final evaluator state, export the
+complete ledger, document exact new constructions, and preserve reproducible certificates.
+
+
+20. Seven-day top-10 path
+Under the current schedule, a seven-day leaderboard push requires an extension. Without one, days four
+through seven are a research program rather than a scoring program.
+
+Conditions under which a top-10 attempt becomes credible
+17. At least one new family with 300 or more non-overlapping live target cells.
+18. At least 20% exact target conversion under target conditioning.
+
+
+                                                                                       Internal strategy report | August 12, 2026   Page 18
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+19. Three-day value retention of at least 65%.
+20. An F6 closure multiplier of at least 1.5.
+21. At least two additional independent 75-150-point families.
+22. Exact proofs and discriminants that scale without evaluator timeouts.
+No existing evidence establishes those conditions. Historical F5/F6 performance shows that fast exact yield is
+possible, but those source frontiers are now exhausted and cannot be extrapolated to a new family.
+
+Static top-10 arithmetic
+Dirac needs 632.356 points merely to equal the August 12 rank-10 score. If Dirac adds 750 points but the existing
+portfolio loses another 100:
+                                              529.391757 + 750 - 100 = 1179.391757
+
+That is only 17.64 points above the current rank-10 score. It is not a comfortable buffer.
+To end 100 points above the current rank-10 threshold while tolerating 100 points of continuing legacy decay
+requires approximately:
+                                        632.356 + 100 + 100 = 832.356 new retained points
+
+The real buffered target is therefore 850-900, not 750.
+
+
+21. Score scenarios
+These scenarios use the August 12 snapshot and are not predictions of opponent movement.
+
+Scenario                     New retained points     Further legacy decay    Ending score               Static interpretation
+
+
+Defensive failure            3-15                    50-100                  432.39-494.39              Likely below current rank
+                                                                                                        15
+
+Base recovery                40-100                  25-70                   499.39-604.39              Rank-15 defense to
+                                                                                                        rank-13 challenge
+
+Breakthrough family          150-315                 10-50                   629.39-834.39              Rank-12 to rank-11 range
+
+Exactly 200, with 50 decay   200                     50                      679.39                     Only 3.67 above current
+                                                                                                        rank 12
+
+750, with 100 decay          750                     100                     1179.39                    Only 17.64 above current
+                                                                                                        rank 10
+
+
+
+The responsible base expectation from untested new mathematics is not 200 retained points. Two hundred is the
+stretch outcome in which at least one scalable class-field or fiber-product lane passes its pilot early and
+generates substantial F6 descendants.
+
+
+
+
+                                                                               Internal strategy report | August 12, 2026    Page 19
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+
+22. Risk register
+Risk                                             Failure signal                                             Mitigation
+
+
+Stale battlefield                                Target changes between planning and staging                Refresh before every manifest and immediately before authorized
+                                                                                                            submission
+
+Rebranding F1-F10                                Same abstract action or kernel module already registered   Hash exact action identities and reject overlap before arithmetic
+
+Exact-label ambiguity                            Several 24T groups survive                                 Fail closed; no maximal-exclusion-only claim; use structural containment
+                                                                                                            or GaloisProof
+
+Signature illusion                               Constructed field repeatedly lands in one chamber          Compute infinite-place behavior before defining equations
+
+Discriminant blow-up                             nfdisc timeout or poor logarithmic ratio                   Low-discriminant bases, small conductors, reduction, exact local nfdisc
+                                                                                                            benchmark
+
+Pair-level mixed fallback                        New row changes discriminant source                        Avoid hard duplicate rows and require local exact nfdisc
+
+Target overlap across families                   Gross ceilings add the same pairs repeatedly               Score only the union of exact (24T,r) cells
+
+Family correlation                               Many rows collapse to a few pairs                          One representative per source/action/signature lineage
+
+Competitor reproduction                          High holder-arrival hazard                                 Use empirical 1/3/7-day survival and prioritize specialized structures
+
+One-heavy-worker constraint                      Swap or worker collision                                   Preserve the serialized heavy lease used by the project
+
+Deadline and queue                               Proof or verification unfinished by closure                Stop new arithmetic at hour 54-58; submit only terminal-ready work
+
+Multiple submitters                              Duplicate POSTs and stale receipts                         One locked submitter, global STOP, receipt-first reconciliation
+
+Credential exposure                              Tokens in historical plaintext files                       Environment-only token; never copy it into workers or reports
+
+Unauthorized cloud work                          Compute launched before calibration                        No GCP until a pilot gate passes and explicit authorization exists
+
+
+
+
+                                                                                                                          Internal strategy report | August 12, 2026             Page 20
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+The repository already records plaintext-token risk and forbids printing or transmitting the credential. The hard
+prohibitions remain binding: no stale replay, no untargeted volume, no exact-label claim without containment,
+no ambiguous-family scaling, and no competing submitters.
+
+
+23. Data that would materially improve the conclusion
+1. Sanitized candidate ledger: candidate hash, construction family, source hashes, parameters, predicted pair,
+exact pair, submission ID, verification time, nfdisc, scoring discriminant, and score contribution.
+2. Daily pair snapshots from August 1 onward: (24T,r), holder count, holder identities, best discriminant, Dirac
+discriminant, discriminant source, and Dirac points.
+3. Current rank-10 through rank-15 placements: all sole-held and low-team-count pairs with discriminants.
+4. Exact group-structure table for all 25,000 groups: block systems, quotients, kernels, exponents, extension
+modules, cocycles, and involution fixed-point counts.
+5. Low-degree source catalog: cubic, quartic, sextic, and octic fields with exact Galois group, signature,
+discriminant, quadratic resolvents, class groups, and small ray-class quotients.
+6. F4/F5/F6 action certificates and code hashes: needed to prove that the proposed fiber products and class-
+field modules are genuinely new.
+7. Current evaluator queue and exact/mixed transitions: required to determine whether any recent duplicate
+or timeout changed pair-level scoring.
+
+
+24. Final operating order
+ Operating order
+ Refresh and attribute the score loss -> build the exact shared-resolvent atlas -> live-join and deduplicate it -> run 12
+ fields -> prove groups, signatures, and discriminants -> feed every new source into fresh F6 closure -> apply a
+ quantitative gate -> only then authorize submission or cloud scaling.
+
+
+
+Anything that skips the exact live join or the 12-field precision gate is another volume campaign in disguise.
+
+
+
+
+                                                                             Internal strategy report | August 12, 2026   Page 21
+TEAM DIRAC / IGP24 EMERGENCY RECOVERY STRATEGY
+
+
+
+Appendix. Sources and evidence base
+This PDF preserves the substance of the August 12 emergency strategy. Historical numbers and constraints were
+grounded in the supplied Team Dirac evidence bundle; public competition mechanics and mathematical
+construction references were taken from the sources named in the original analysis.
+
+Team Dirac evidence bundle
+   00_READ_ME_FIRST.md - Bundle upload order and instruction to treat August 12 leaderboard figures as a
+    snapshot.
+   01_LIVE_HILLCLIMB_PLAN_20260806.md - August 6 position, live hill-climb strategy, and hard operational
+    prohibitions.
+   02_APPROACH_FAMILY_REGISTRY.json - F1-F10 family registry, status, evidence, reopen gates, and active
+    F5/F6 lanes.
+   03_PROJECT_STATE.md - Durable checkpoints, exact F5/F6 history, pair-count/score dilution evidence, and
+    operational security notes.
+   04_TOP10_CAMPAIGN_2026-07-27.md - Top-10 campaign audit, raw target surfaces, calibration gates, and
+    GCP execution envelope.
+   05_PRIOR_GPT_5.6_STRATEGY_BRIEF.md - Earlier strategic brief, known negative results, block-shape
+    census, and system architecture.
+   PASTE_THIS_INTO_GPT_5.6_PRO.md - August 12 emergency mission, current battlefield, recent wave
+    results, and required analysis form.
+
+Public competition and software references
+   SAIR IGP24 evaluation setup: https://competition.sair.foundation/competitions/igp24/evaluation-setup
+   SAIR IGP24 API: https://competition.sair.foundation/competitions/igp24/api
+   SAIR IGP24 overview: https://competition.sair.foundation/competitions/igp24/overview
+   SAIR public GitHub evaluation spec:
+    https://github.com/SAIRcompetition/IGP24-public/blob/main/competition/rules/evaluation.md
+   Magma handbook - Galois groups:
+    https://magma.maths.usyd.edu.au/magma/handbook/galois_groups_and_automorphisms
+   Magma handbook - ray class groups: https://magma.maths.usyd.edu.au/magma/handbook/text/435
+   Magma handbook - elliptic division polynomials:
+    https://magma.maths.usyd.edu.au/magma/handbook/text/1546
+   Magma handbook - Hilbert symbols / norm equations:
+    https://magma.maths.usyd.edu.au/magma/handbook/text/1536
+   Cubic fields with prescribed quadratic resolvent: https://arxiv.org/abs/1003.1869
+   Cyclic quartic extensions over number fields: https://numdam.org/articles/10.5802/jtnb.503/
+   Quaternion embedding / Witt-type criteria reference: https://www.mscand.dk/article/view/14327
+   Sutherland - computing images of Galois representations:
+    https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/computing-images-of-galois-
+    representations-attached-to-elliptic-curves/C05C4437EB4691A8728D8A41340BC1F0
+   Sage elliptic Galois representation tools:
+    https://doc.sagemath.org/html/en/reference/arithmetic_curves/sage/schemes/elliptic_curves/gal_reps.html
+   M24 inverse Galois specialization reference: https://arxiv.org/abs/1204.1328
+   GaloisDB: https://galoisdb.math.upb.de/
+   LMFDB: https://www.lmfdb.org/
+Evidence discipline: Where the attachments did not support pair-level attribution, holder transitions, or family
+half-lives, the report explicitly labels those quantities as unknown rather than filling them from general
+knowledge.
+
+
+
+                                                                      Internal strategy report | August 12, 2026   Page 22
+

@@ -1,0 +1,20 @@
+Validated polynomials-001.csv.gz 200000 rows
+Validated polynomials-002.csv.gz 200000 rows
+Validated polynomials-003.csv.gz 200000 rows
+Validated polynomials-004.csv.gz 200000 rows
+Validated polynomials-005.csv.gz 200000 rows
+Validated polynomials-006.csv.gz 200000 rows
+Validated polynomials-007.csv.gz 200000 rows
+Validated polynomials-008.csv.gz 200000 rows
+Validated polynomials-009.csv.gz 200000 rows
+Validated polynomials-010.csv.gz 33772 rows
+{
+  "status": "passed",
+  "rows": 1833772,
+  "accepted_pairs": 30288,
+  "row_status_counts": {
+    "accepted": 1680129,
+    "unverified_in_local_snapshot": 153625,
+    "failed": 18
+  }
+}

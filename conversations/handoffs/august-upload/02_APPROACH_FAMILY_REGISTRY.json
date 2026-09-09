@@ -1,0 +1,436 @@
+{
+    "schemaVersion": 1,
+    "createdAt": "2026-07-21T18:18:00+05:30",
+    "updatedAt": "2026-07-21T21:11:00+05:30",
+  "objective": {
+    "authoritativeTargetSource": "data/live_undiscovered_signatures.jsonl from SAIR /targets refresh ending 2026-07-21T13:01:17Z",
+    "authoritativeTargetRows": 23018,
+    "authoritativeTargetDistinctLabels": 8269,
+    "authoritativeTargetSha256": "62f04747b3f5add5cc2f2d7c5d611124f56ba72d353a9ed6ce34bc925108e647",
+    "targetKind": "exact currently undiscovered allowed (24Tt,r) signatures, plus exact sole-holder strategic swings",
+    "portfolioThresholdPoints": 400.0,
+    "independenceRule": "Agents receive only their local mathematical hypothesis, inputs, and falsification gate; no agent is told the root's current family ranking during early rounds.",
+    "selectionRule": "Do not rank a family by elegance or reduction quality. Rank it by certified distinct live-pair yield, projected points, coverage novelty, and cost per resolved command.",
+    "stallRule": "Block a family after its frozen nonduplicate frontier is exhausted at zero distinct live hits, or after two disjoint bounded waves add no new mathematical coverage and no distinct live hit. Reopen only for a recorded new construction mechanism, new source corpus, or newly changed target intersection."
+  },
+  "liveState": {
+    "team": "IGP24-T00135",
+    "rank": 13,
+    "scoreAfterLatestVerifiedAction": 1066.834883,
+    "scoreablePairs": 22103,
+    "rank10ScoreAtRefresh": 1356.986659,
+    "rank11ScoreAtRefresh": 1219.9449,
+    "researchWindowGain": 28.699825,
+    "portfolioPointsRemaining": 371.300175,
+    "rank12Gap": 38.59775,
+    "rank11Gap": 153.110017,
+    "rank10Gap": 290.151776
+  },
+  "families": [
+    {
+      "familyId": "F1_QUADRATIC_EXTENSION_SQUARECLASS",
+      "mathematicalIdea": "Construct degree-24 fields as quadratic extensions of exact degree-12 quotient fields, controlling real signatures with Kummer squareclasses and certified split-prime auxiliaries.",
+      "agent": "/root/inspect_mac_v5",
+      "status": "blocked_stalled",
+      "round": 2,
+      "mechanism": "Repeated-auxiliary schedules on 162 exact-aligned source representations across 37 canonical quotient fields; one best candidate per distinct live pair.",
+      "independentInputs": [
+        "data/agent_gold_c_character_field_census.jsonl",
+        "data/agent_gold_c_character_census_alignment_results.jsonl",
+        "data/agent_gold_c_character_census_split_aux_continuation_bank.jsonl"
+      ],
+      "evidence": {
+        "selectedCommands": 420,
+        "distinctLiveGoldHits": 2,
+        "verifiedSubmission": "sub_d0c81616077248f2b4e68968abfe5cd4",
+        "verifiedPairs": ["24T18494/r0", "24T18494/r24"],
+        "verifiedScoreGain": 1.987933,
+        "remainingNewCommandIdentitiesAtRoundStart": 2265
+      },
+      "blockReason": "After the first two distinct gold pairs, six further disjoint 60-command waves produced no new distinct live pair; the exact current target ceiling was only 104 full-rank-kernel gold pairs.",
+      "reopenGate": "A certified class-group/Selmer squareclass outside the tested S-unit span or another mathematically new full-rank generator."
+    },
+    {
+      "familyId": "F2_UNORDERED_PAIR_RESOLVENT",
+      "mathematicalIdea": "Use exact GAP actions on unordered root pairs and certified degree-276 resolvents to move from owned degree-24 source fields to sibling degree-24 actions.",
+      "agent": "/root/rank10_ambiguous_pair",
+      "status": "blocked_exhausted",
+      "round": 1,
+      "mechanism": "Full current owned-source/signature intersection against rank-10 and rank-11 sole-held targets, including all distinct source presentations and joint Frobenius factor assignment.",
+      "evidence": {
+        "rank10PresentationsResolved": 710,
+        "rank10FreshHits": 0,
+        "rank11FreshPacketsResolved": 35,
+        "rank11FreshHits": 0,
+        "recoveredExactRaid": "24T11164/r24",
+        "recoveredSubmission": "sub_a6a9390ec99a42e4814215ec7b993bf7",
+        "recoveredSubmissionStatus": "verified",
+        "observedDiracScoreGain": 0.210468,
+        "predictedCandidateScore": 0.3209333,
+        "predictedRelativeSwing": 0.8209333
+      },
+      "blockReason": "Every currently owned presentation in the exact rank-10 and rank-11 intersections is exhausted. Re-running source presentations is forbidden.",
+      "reopenGate": "A new source-field corpus, a new degree-24 action not represented by unordered pairs, or a changed live holder intersection."
+    },
+    {
+      "familyId": "F3_HIGHER_SUBSET_AND_SUBGROUP_ACTIONS",
+      "mathematicalIdea": "Search exact degree-24 factors arising from higher subset/subgroup actions (beginning with 3-subset orbit systems), rather than unordered-pair actions.",
+      "agent": "/root/blocked_base_recovery",
+      "status": "blocked_empty_intersection",
+      "round": 1,
+      "mechanism": "Intersect locally certified triple-orbit/action profiles with the authoritative undiscovered-signature list, then resolve only nonduplicate source/action packets.",
+      "independentInputs": [
+        "data/agent_gold_a_triple_orbit_shard0.jsonl",
+        "data/agent_gold_a_triple_orbit_shard1.jsonl",
+        "data/agent_gold_a_triple_orbit_shard2.jsonl",
+        "data/agent_gold_a_triple_orbit_shard3.jsonl"
+      ],
+      "evidence": {
+        "tripleCertificateRows": 3747,
+        "currentTargetCompatibleLabels": 783,
+        "ownedSourceSignatureCases": 2080,
+        "exactLiveRouteIntersection": 0,
+        "mergedProfileSha256": "247b568dba738ad3087a951ccdabedf63938d8ae5c44e81548870224cb282053"
+      },
+      "blockReason": "No compatible source involution class maps any certified degree-24 triple orbit to a current gold signature.",
+      "reopenGate": "New owned source signatures or a higher action that is not a triple-subset representation."
+    },
+        {
+            "familyId": "F4_SOLVABLE_TOWER_COMPOSITA",
+            "mathematicalIdea": "Generate degree-24 fields through genuinely different solvable towers/composita of lower-degree fields, then identify exact transitive labels and signatures against the live undiscovered list.",
+            "agent": "/root/rank10_ambiguous_pair",
+            "status": "blocked_signature_obstruction",
+            "round": 1,
+            "mechanism": "After proving simple linearly-disjoint 3x8 and 4x6 composita have zero frozen-live intersection, test the sole iterated cubic-augmentation route 8T42 to 24T21564.",
+            "evidence": {
+                "recoverableSubfields": 542,
+                "representedSourceLabels": 241,
+                "simpleCompositaLiveRoutes": 0,
+                "iteratedTowerStructuralRoutes": 1,
+                "iteratedTowerLivePairs": [
+                    "24T21564/r12",
+                    "24T21564/r24"
+                ],
+                "exactPilotLabel": "24T21564",
+                "exactPilotR": 8,
+                "exactPilotHit": false,
+                "pilotCertificate": "data/agent_non12_21564_pilot.json",
+                "pilotCertificateSha256": "46f100270b3ea13f49ec9350177ee613f438cf8dcb4f4c037bc59d985eb356fe"
+            },
+            "blockReason": "Pure cubic fibers contribute at most one real root per real outer embedding, forcing r<=8, while the only frozen-live 24T21564 signatures are r12 and r24.",
+            "reopenGate": "A certified all-real cubic-fiber formula with common real quadratic resolvent that preserves the proved C3^7 augmentation relation."
+        },
+    {
+            "familyId": "F5_PRESCRIBED_KUMMER_RANK_RECOVERY",
+      "mathematicalIdea": "Construct even q(x^2) fields whose conjugate squareclasses have prescribed rank below 11, realizing block-kernel orders 4 through 1024 rather than F1's full 2048 kernel.",
+            "agent": "/root/inspect_mac_v5",
+            "status": "active_reopened_new_source_corpus",
+            "round": 3,
+            "mechanism": "Apply the H-equivariant pair-incidence map to conjugate quotient elements: pair products beta_i beta_j on size-12 H-orbits change the Kummer submodule rank and induced degree-24 action without auxiliary enumeration.",
+      "targetCoverage": {
+        "currentGoldPairs": 1531,
+        "currentGoldLabels": 797,
+        "kernelOrders": [4, 8, 16, 32, 64, 128, 256, 512, 1024]
+      },
+            "historicalEvidence": {
+                "score700Rows": 1000,
+                "subgroupRecoverySubmitted": 604,
+                "subgroupRecoveryExact": 492,
+                "claimedPrecisionPct": 81.46
+            },
+            "structuralEvidence": {
+                "pairProductActions": 377,
+                "distinctHistoricalSourceLabels": 370,
+                "frozenLiveRouteRows": 113,
+                "frozenLiveDistinctPairs": 46,
+                "frozenLiveDistinctLabels": 29,
+                "liveKernelOrders": [
+                    16,
+                    32,
+                    64,
+                    256,
+                    512
+                ],
+                "actionsSha256": "6304b195a109317db89413300a51567c9f7c09c6227616591cf15fd344031f40",
+                "routesSha256": "bf8588b8b3f433cb99666066232f40a20028a1ab72ac344be80b102f5e1f4704"
+            },
+            "executableEvidence": {
+                "firstExactCandidatePair": "24T9187/r16",
+                "firstExactCandidateSha256": "6d1c8abdc80fa8e289ed93bacb80cae244f33776d1c5fc7f8716c1c2d0b74abf",
+                "firstExactCandidateCertificateSha256": "7e6596797df8539ce62c01508ec30f6cb23a4dad84771ddcbbff540df249b6da",
+                "submission": "sub_db0df0922cdd49e5bb9c9e2f76cf3af6",
+                "submissionStatus": "queued"
+            },
+            "finalCeiling": {
+                "structuralLivePairs": 46,
+                "distinctExactPairsStaged": 14,
+                "exhaustedNoHitPairs": 32,
+                "remainingExecutableSourcePolynomialsForUnhitPairs": 0,
+                "finalResidualSourcePolynomialsResolved": 14,
+                "finalResidualFactorsResolved": 22,
+                "finalCeilingAuditSha256": "a73bd8cffee7661b9208a7d40ea3fc610a4512deb97b2bfce5073cd73efc2a5e"
+            },
+            "fullLedgerReopen": {
+                "reason": "The prior ceiling covered only one 846-row historical even-source wave; the complete ledger is a mathematically valid new source corpus under the recorded reopen gate.",
+                "verifiedEvenDistinctHashes": 357380,
+                "sourceLabels": 5363,
+                "profileUniqueLabels": 4431,
+                "singleBlockSystemSafeLabels": 4374,
+                "multiBlockSystemLabelsExcludedPendingAssignment": 57,
+                "safeLabelSignatures": 15023,
+                "safeDistinctQuotientPolynomials": 317655,
+                "safeEvenRows": 321786,
+                "retainedCap3SourceRepresentatives": 26539,
+                "retainedCorpusPct": 8.3547,
+                "omittedUntilYieldGate": 291116,
+                "safeCorpusAuditSha256": "fd4490c95b66139271ffd4b3f9b68fc23f4bbcfa5ff9639833638ff52cf1cb37",
+                "censusShards": 4,
+                "arithmeticPilotFirstRoute": "24T7936 -> 24T5991/r12",
+                "arithmeticPilotFirstRouteHit": false,
+                "arithmeticPilotRealizedSignatures": [0, 8],
+                "currentStructuralActionRows": 3762,
+                "currentFrozenLiveRouteRows": 1535,
+                "currentFrozenLiveDistinctPairs": 375,
+                "currentDistinctRouteSources": 1077,
+                "newRoundExactHits": 6,
+                "newRoundQueuedPolynomials": 6,
+                "newRoundSubmittedPairs": ["24T13066/r12", "24T11683/r16", "24T9271/r8", "24T9271/r16", "24T9271/r24", "24T11939/r16"],
+                "signatureAlignmentEvidence": "9 of 11 historical exact F5 golds preserved source r; future nomination prioritizes source.r equal to requested target.r before coverage and height",
+                "activeRootHighTargetWaves": ["root_sigalign_v5", "root_sigalign_v6", "root_priority_13755_v1"]
+            },
+            "historicalBlockReason": "Every executable historical k=2 pair-product source for the 46-pair structural frontier is resolved; 14 pairs yielded exact candidates and the other 32 have no remaining historical source polynomial.",
+            "reopenGate": "A new historical/source quotient presentation or a higher-subset incidence mechanism not equivalent to k=2."
+        },
+    {
+      "familyId": "F6_COMPLETE_INDEX24_SUBGROUP_ACTIONS",
+      "mathematicalIdea": "Enumerate core-free index-24 subgroup representations of owned Galois groups and construct sibling degree-24 fields outside the already-blocked pair and triple-subset actions.",
+            "agent": "/root/blocked_base_recovery",
+            "status": "active",
+            "round": 1,
+            "mechanism": "Exact abstract-group/action and involution-signature intersection first; executable invariant/resolvent pilots only for nonduplicate actions.",
+            "progress": {
+                "ownedSourceGroups": 6189,
+                "frozenGoldTargetLabels": 8269,
+                "unionLabels": 13456,
+                "excludedKnownRepresentationIdentities": 10681,
+                "censusShards": 6,
+                "sameOrderSourceGoldCandidates": 2312137,
+                "fingerprintSurvivors": 1213,
+                "isomorphismCandidatesResolved": 1076,
+                "isomorphicGroups": 649,
+                "nonisomorphicGroups": 427,
+                "coreFreeIndex24SubgroupClasses": 5685,
+                "structuralGoldSupportProfiles": 270,
+                "allClassSafeRoutesBeyondPairIdentities": 12,
+                "deterministicSafeRoutesBeyondPairIdentities": 10,
+                "orderedPairExecutableSourcesResolved": 1060,
+                "orderedPairExecutableSupports": 0,
+                "exactHits": 14,
+                "exactStagedPairs": 14,
+                "previouslyUnmappedOwnedSourcesAudited": 488,
+                "safeMissingMapRoutesCompleted": 11,
+                "safeMissingMapRouteHits": 11,
+                "ambiguousPairRoutesUnderArithmeticPilot": 45,
+                "ambiguousPairExactHits": ["24T9115/r12", "24T18940/r0", "24T15831/r16"],
+                "fingerprintRejections": 52,
+                "fingerprintRejectionSha256": "115e5d96024029d57bea20cb14d77c5df1f7cfa2f967fec21ca9c4cdefd8a9de"
+            },
+            "nextGate": "Continue the corrected exact index-24 subgroup/isomorphism census; execute only routes with a computable invariant. The previously unmapped pair-action gap is complete."
+        },
+        {
+            "familyId": "F7_GENERIC_RATIONAL_TWIST_EXHAUSTIVE_AUDIT",
+            "mathematicalIdea": "For every verified even source P(x)=q(x^2), adjoin a fresh ramified rational quadratic twist so the exact generic action is <G,z>, while using the sign of the twist to control the real signature.",
+            "agent": "/root/rank10_ambiguous_pair",
+            "status": "blocked_empty_intersection",
+            "round": 1,
+            "mechanism": "Audit the full historical even-source corpus, not only the latest 44-row delta; compute exact quotient real-root counts, resolve ambiguous block systems with joint Frobenius, and generate at most one novel fresh-prime candidate per frozen-live pair.",
+            "priorEvidence": {
+                "submittedEarlierGoldTwists": 16,
+                "earlierSubmission": "sub_cd5269005cd341ce9c301121b2471a9d",
+                "latestDeltaRows": 44,
+                "latestDeltaHits": 0,
+                "currentEvenVerifiedRows": 363403,
+                "currentEvenUniqueHashes": 357380,
+                "actionMapRows": 5283
+            },
+            "completeAudit": {
+                "verifiedEvenRows": 363403,
+                "distinctEvenHashes": 357380,
+                "sourceLabels": 5363,
+                "sourcePairs": 17679,
+                "positiveExactLiveRoutes": 0,
+                "negativeExactRootChecks": 14993,
+                "negativeExactLiveRoutes": 0,
+                "candidates": 0,
+                "summarySha256": "2c16736f9d7209ba38d0389da5ec5595d384ecf1cf5295b06f1efa417a589ccb"
+            },
+            "blockReason": "The complete current historical even-source corpus has zero exact positive or negative twist intersection with the frozen live set after excluding known hashes and the previously submitted 16 hits.",
+            "reopenGate": "New verified even source labels/signatures or a non-rational twist that changes the generic action beyond <G,z>."
+        },
+        {
+            "familyId": "F8_HISTORICAL_JUMP_LINEAGE",
+            "mathematicalIdea": "Recover the actual algebraic construction lineages behind Team Dirac's July 15-16 rank jump by clustering verified polynomials through coefficient/invariant ancestry, then transfer only genuinely new mechanisms to the current frozen live objective.",
+            "agent": "/root/rank10_ambiguous_pair",
+            "status": "blocked_no_new_executable_mechanism",
+            "round": 1,
+            "mechanism": "Join the rank-77-to-13 HTML timeline to exact ledger submissions, classify by mathematical transformation rather than timestamp or naming, infer parent/source relationships, and build exact action/signature intersections for mechanisms outside F1, F2, F4, F5, and F7.",
+            "independentInputs": [
+                "/path/to/private-file",
+                "data/ledger.sqlite3",
+                "data/agent_gold_b_html_wave_manifests/score700_bank_1000.txt"
+            ],
+            "evidence": {
+                "historicalJumpPoints": 419.444251,
+                "characterKummerAttributedPoints": 396.934,
+                "characterKummerSharePct": 94.633,
+                "score700AttributedPoints": 315.232,
+                "auditedRows": 1388,
+                "canonicalParentFields": 340,
+                "liveStructuralPairs": 89,
+                "unitSignRoutes": 3,
+                "exactCandidates": 0,
+                "summarySha256": "88fc0330dca7d1c82234c069fff2bb4e779ccf13e2076a33a0ba6b6ad84d3b5e"
+            },
+            "blockReason": "The historical leap is explained by registered norm-character/Kummer mechanisms. All three surviving unit-sign transfer routes collapse into proper maximal subgroups, so no third executable lineage remains.",
+            "reopenGate": "Recovery of the missing historical conjugate-squareclass dependency recipe or a new lineage artifact proving a different construction."
+        },
+        {
+            "familyId": "F9_HIGHER_KUMMER_SUBSET_PRODUCTS",
+            "mathematicalIdea": "Replace k=2 conjugate pair products by H-orbits of k-subsets for k=3,4,5,6; each orbit supplies a new exact GF(2) incidence map and signed degree-24 Kummer action.",
+            "agent": "/root/rank10_ambiguous_pair",
+            "status": "blocked_exhausted",
+            "round": 1,
+            "mechanism": "Enumerate exact size-12 quotient subset orbits and induced signed actions, intersect their involution signatures with frozen live pairs, then factor only source-diverse symmetric-power resolvents having unique orbit assignment.",
+            "correctedStructuralEvidence": {
+                "subsetProductActions": 3072,
+                "liveRouteRows": 127,
+                "liveDistinctPairs": 30,
+                "livePairsNovelBeyondK2": 17,
+                "actionsSha256": "63e61cb820747f55aadd5145e033de82b4632e5ee82b5e24eb6298a4f34a267e",
+                "routesSha256": "c5200b0dd07a1640028fb39f61f36a890e0ca960b6a0ffe43c85681759759f46",
+                "actionHistogram": {"k3": 449, "k4": 674, "k5": 1024, "k6": 925},
+                "liveRouteHistogram": {"k3": 14, "k4": 39, "k5": 18, "k6": 56},
+                "failedActions": 0
+                },
+            "k3Pilot": {
+                "status": "blocked_no_live_hit",
+                "eligibleSources": 7,
+                "resolvedSources": 7,
+                "liveHits": 0,
+                "realizedPairsAlreadyDiscovered": ["24T9819/r4", "24T9819/r12", "24T9819/r20", "24T12290/r12", "24T14219/r12"],
+                "summarySha256": "fa9858c7a948839ed4f6eb1fcf153c982857d3f03c6153f148ea70b3b73889ab"
+            },
+            "k4Pilot": {
+                "status": "blocked_signature_miss",
+                "structuralLivePairs": 9,
+                "novelLivePairsBeyondK2K3": 8,
+                "sourcePilotCap": 3,
+                "sourcesResolved": 3,
+                "uniqueJointFrobeniusAssignments": 3,
+                "realizedPair": "24T6120/r12",
+                "targetPairs": ["24T6120/r16", "24T6120/r24"],
+                "liveHits": 0,
+                "summarySha256": "5270584fe920eeb6f4ca3e540e2d59e87bd037dc47e4aa5156bcb552736523e6",
+                "resultsSha256": "9e4c50d4339b4c7638fb117466e3eb3f5fe987d4c30d602341f0c5a5bea29eae",
+                "blockReason": "All three bounded, uniquely assigned sources realize r12, while the exact live 24T6120 frontier requires r16 or r24."
+            },
+            "k5Pilot": {
+                "status": "blocked_signature_miss",
+                "novelTargetPairs": ["24T22560/r20", "24T22562/r20"],
+                "sourcesResolved": 2,
+                "factorsResolved": 6,
+                "realizedSignatures": [4, 12, 12, 4, 12, 12],
+                "liveHits": 0,
+                "mechanism": "exact quadratic-subfield 6+6 norm reduction bypassing the degree-792 symmetric power",
+                "summarySha256": "05d0e861e21da4409e022da5e1e636f220c3b22e5a4d71d26860f1d6f13d0866",
+                "resultsSha256": "a9580cbb15eb6aaecdd20ec3eca772dc827aacea17a778f8a9273169b5648512"
+            },
+            "k6Audit": {
+                "status": "blocked_zero_novel_coverage",
+                "livePairs": 13,
+                "novelPairsBeyondK2K4": 0
+            },
+            "theoremAuditSha256": "6cf4f2860adc34e8bd526748f37a49118b0fec84083eb29fb5d52bc83942bfd9",
+            "blockReason": "Every corrected k=3 through k=6 executable novelty gate is closed: k3-k5 exact pilots miss the required signatures and k6 has zero novel frozen-live coverage.",
+            "reopenGate": "A subset-product mechanism not generated by k=2 through k=6 incidence/complement modules, or a new source corpus that changes the exact signature frontier."
+        },
+        {
+            "familyId": "F10_CLASS_GROUP_SELMER_REOPEN_AUDIT",
+            "mathematicalIdea": "Reopen the full-rank quadratic-extension lane only through explicit 2-Selmer or class-group squareclasses outside the exhausted S-unit/auxiliary span.",
+            "agent": "/root/inspect_mac_v5",
+            "status": "blocked_stalled_after_positive_route",
+            "round": 1,
+            "mechanism": "Compute exact relevant 2-Selmer spaces and H-module spans for every canonical quotient field, exhibit any new representatives, and intersect only genuinely new modules with the frozen full-rank target frontier.",
+            "progress": {
+                "canonicalFields": 37,
+                "fieldsAudited": 37,
+                "positiveStrictQuotients": 1,
+                "certifiedNewModuleRoutes": 2,
+                "pilots": 2,
+                "hits": 1,
+                "strictDimensionHistogram": {"0": 36, "2": 1},
+                "submittedPair": "24T19693/r6",
+                "submission": "sub_89a86bcd8558463898995ae310a3a033",
+                "submissionStatus": "verified",
+                "independentNoStageCandidate": "r16/core55",
+                "finalAuditSha256": "fd08ce957104689d2e491e9a8df6d6857d79fb65b2ccb6861761580ffc41ec1c"
+            },
+            "blockReason": "The sole positive strict quotient produced one exact live core103 hit; its independent core55 representative realizes r16, outside the frozen-live qT97 frontier. All 37 fields are now exact-audited.",
+            "reopenGate": "A new canonical quotient field or a new class-group/Selmer representative outside the completed 37-field census."
+        }
+  ],
+  "supportPipelines": [
+    {
+      "pipelineId": "P1_INCREMENTAL_HISTORY_AND_ACTION_MAP",
+      "status": "transport_stalled",
+      "scope": "page20 only",
+      "checkpoint": "data/agent_page20_history_cursor_checkpoint.json",
+      "rule": "This is source acquisition, not an independent mathematical family. It may feed any family but cannot be counted as diversity by itself."
+    },
+    {
+      "pipelineId": "P2_LIVE_CERTIFICATION_SUBMISSION_RECEIPTS",
+      "status": "verified_26_plus_six_queued",
+      "submittedWithReceiptIds": 9,
+      "manualBatchVerified": 24,
+      "separateF6Verified": 1,
+      "separateF10Verified": 1,
+      "newF5Queued": 6,
+      "exactPendingManualLines": 0,
+      "combinedManifest": "outbox/pending_exact_live_combined.txt",
+      "combinedManifestSha256": "ec246a0957495da05efb4eff8b1f0cb8d69f4a1d7c32930b05d244e95c09c35e",
+      "manualBatchSubmission": "sub_79fd1b3277b54d5c849f0a624adf535b",
+      "separateF6Submission": "sub_a92faa24c5b54963ab5a57e8374b42ab",
+      "separateF10Submission": "sub_89a86bcd8558463898995ae310a3a033",
+      "newF5SingleSubmissions": ["sub_a2789da2c1ea443a8d10ade7779f7f73", "sub_02306fbc526e45dc82d1a0ad19ed83fb"],
+      "newF5BatchSubmission": "sub_de369e1a99164b549ddb8163f9f5f2ae",
+      "apiRetryPausedToPreventManualDuplicate": true,
+      "rule": "Every candidate is locally exact-certified, deduplicated, live-rechecked, dry-run, committed, synced, and receipt-preserved."
+    }
+  ],
+  "roundLog": [
+        {
+            "round": 1,
+            "synthesis": "F2 exact owned-source pair-action intersections are exhausted and blocked. F1 produced the only new distinct live golds and advances, but remains yield-gated. F3 and F4 are launched to prevent convergence on F1."
+        },
+        {
+            "round": 2,
+            "synthesis": "F1 stalled after two exact golds and is blocked; F3 has an empty exact route intersection; F4 proved one group-theoretic route but hit a decisive real-signature obstruction and is blocked. F5's new H-equivariant pair-incidence mechanism has 46 distinct frozen-live structural pairs and produced its first exact staged candidate. F6 continues a complete novel index-24 representation census. F7 audits whether the earlier 16-hit rational-twist mechanism has unexhausted coverage in the full historical even corpus."
+        },
+        {
+            "round": 3,
+            "synthesis": "F5 reached a certified 14-pair source ceiling and is blocked pending a new source corpus. F6 closed its previously unmapped pair-action gap with 11 exact staged hits and continues only the corrected exotic subgroup census. F8 reconstructed 94.633% of the historical jump as the already-registered Kummer lineage and found no third executable lineage. F9's corrected k=3 mechanism yielded zero live hits and is blocked, while the genuinely new k=4 incidence mechanism receives a capped three-source pilot. F10 independently audits the exact Selmer quotient rather than re-enumerating auxiliaries. Twenty-two additional exact candidates are frozen for submission; transport is retrying after SAIR DNS failure."
+        },
+        {
+            "round": 4,
+            "synthesis": "F9 is closed after exact bounded k4 and k5 signature misses and zero novel k6 coverage. F6 reopened 45 arithmetically resolvable ambiguous pair routes and added two exact hits, bringing its staged yield to 13. F5 is legitimately reopened on the complete verified-even ledger source corpus: 4,374 single-block-system-safe labels and 317,655 distinct quotient polynomials, with a cap-three source pilot covering 8.3547% first. Multi-system labels are excluded until exact assignment. Twenty-four exact pending candidates are consolidated for manual SAIR submission because the execution environment cannot reach the API; automatic retry is paused to avoid a duplicate. F10 continues independently."
+        },
+        {
+            "round": 5,
+            "synthesis": "The consolidated portfolio verified 24/24, comprising 11 F5 lower-Kummer pair-product hits and 13 F6 index-24 sibling-action hits; the separate F6 hit also verified, for 25 verified with zero failures. F5 full-ledger structural coverage has expanded to 332 frozen-live pairs from 897 route sources and two disjoint high-target arithmetic waves are active. F6 exact census reached 1,049/1,213 and 14 total verified hits. F10 completed all 37 fields, produced one queued core103 hit, and is frozen after the independent core55 representative missed the live signature frontier; its agent is redirected to an independent historical exact-ledger recovery audit."
+        },
+        {
+            "round": 6,
+            "synthesis": "F10's sole core103 hit verified. The scaled F5 full-ledger lane produced six new exact live candidates, all submitted and queued with zero failures: two singles and a four-line signature-aligned batch. Historical evidence that 9/11 F5 golds preserve the source real signature was promoted into the nomination ordering; two 24-source aligned waves and a deterministic 24T13755/r24 priority wave are active. F5 structural coverage continues growing as the final census shards run, now 375 frozen-live pairs from 1,077 route sources. F6 reached 1,076/1,213 exact cases with no fifteenth hit yet."
+        }
+  ]
+}

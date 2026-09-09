@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checks": {
+    "UNIQUE12": "1",
+    "MATCH": "1",
+    "DEGREE": "24",
+    "IRREDUCIBLE": "1",
+    "REAL_ROOTS": "20"
+  },
+  "factor_degrees": [
+    [
+      "6",
+      "1"
+    ],
+    [
+      "12",
+      "1"
+    ],
+    [
+      "48",
+      "1"
+    ]
+  ],
+  "coefficient_sha256": "6a3d5b8add3b235b9c4174ed12f346a17b5076bc9226c8c1088258d2bfb6968d",
+  "galois_group_rerun": false,
+  "archived_official_label": "24T15308",
+  "group_evidence": "Saved official receipt and local action certificate; not established by this replay."
+}

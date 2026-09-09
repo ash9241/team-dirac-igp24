@@ -1,0 +1,29 @@
+{
+  "exactHits": 1,
+  "mechanismExhausted": false,
+  "networkCalls": 0,
+  "plan": "data/agent_f5_full_ledger_safe_unique_orbit_target_11939_v1_plan.json",
+  "planSha256": "6b22f515be38f8804d035c54476cb81fb139e7a83a6cc19aafc741c80cfb56a6",
+  "resolvedSources": 3,
+  "results": "data/agent_f5_full_ledger_safe_unique_orbit_target_11939_v1_results.jsonl",
+  "resultsSha256": "7cab168a394d5e389c0265f22e555fba1c8caac85458cbc006f7bf180d4dfa7d",
+  "staged": [
+    {
+      "certificate": "data/agent_f5_full_ledger_safe_unique_orbit_target_11939_v1_24T11939_r16.json",
+      "certificateSha256": "bdaf89e3085a38ce85dc155754c13155da5e422666c8cc250f144132b8afcf5d",
+      "manifest": "outbox/agent_f5_full_ledger_safe_unique_orbit_target_11939_v1_24T11939_r16.txt",
+      "manifestSha256": "5c76a282d8617108cdd82a1084a83794046a21447d92e12f15789d6eb7232c89",
+      "target": {
+        "label": "24T11939",
+        "r": 16,
+        "t": 11939
+      }
+    }
+  ],
+  "statusHistogram": {
+    "hit_staged": 1,
+    "resolved_not_frozen_live_signature": 2
+  },
+  "submissionCalls": 0,
+  "waveId": "target_11939_v1"
+}

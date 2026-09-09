@@ -1,0 +1,38 @@
+{
+  "acceptedScoreablePairs": [
+    "24T5614/r16",
+    "24T5747/r24",
+    "24T8440/r8",
+    "24T9115/r12",
+    "24T10829/r20",
+    "24T13182/r16",
+    "24T13182/r24",
+    "24T13187/r16",
+    "24T15065/r20",
+    "24T15831/r16",
+    "24T17219/r8",
+    "24T17219/r12",
+    "24T18940/r0",
+    "24T18940/r24"
+  ],
+  "acceptedScoreablePolynomials": 14,
+  "failedPolynomials": 0,
+  "source": "local ledger synchronized from live submission verification",
+  "status": "all_f6_staged_hits_accepted_scoreable",
+  "submissions": [
+    {
+      "createdAt": "2026-07-21T14:53:23Z",
+      "f6PolynomialIndexes": [4, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23],
+      "submissionId": "sub_79fd1b3277b54d5c849f0a624adf535b",
+      "totalFailed": 0,
+      "totalVerified": 24
+    },
+    {
+      "createdAt": "2026-07-21T14:56:56Z",
+      "f6PolynomialIndexes": [0],
+      "submissionId": "sub_a92faa24c5b54963ab5a57e8374b42ab",
+      "totalFailed": 0,
+      "totalVerified": 1
+    }
+  ]
+}

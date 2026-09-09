@@ -1,0 +1,19 @@
+{
+  "date_utc": "2026-09-09T05:23:43.642438+00:00",
+  "gitleaks_version": "8.30.1",
+  "unresolved_secret_findings": 0,
+  "narrow_false_positive_annotations": 2,
+  "source_python_parse_count": 876,
+  "focused_tests": {
+    "passed": 30,
+    "skipped": 2,
+    "skip_reason": "GAP and degree-24 group catalog unavailable"
+  },
+  "pari_version": "2.17.2",
+  "worked_example_replay": "passed",
+  "galois_identification_rerun": false,
+  "bulk_rows_schema_and_hash_checked": 1833772,
+  "figures_rebuilt": true,
+  "original_git_history_published": false,
+  "raw_databases_published": false
+}

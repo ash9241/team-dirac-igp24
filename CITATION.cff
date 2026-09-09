@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this versioned archive when using its code, data, or research account."
+type: software
+title: "Team Dirac IGP24: Research Code, Results, and Human–AI Collaboration Records"
+version: 1.0.0
+date-released: 2026-09-09
+authors:
+  - family-names: Das
+    given-names: Aishwarya
+  - family-names: Kumar
+    given-names: Durgesh
+repository-code: "https://github.com/ash9241/team-dirac-igp24"
+url: "https://github.com/ash9241/team-dirac-igp24"
+abstract: >-
+  An archive of Team Dirac's work on the degree-24 Inverse Galois Problem
+  competition. Includes mathematical constructions, a submission corpus,
+  selected verification records, a reproducible PARI/GP example, strategy
+  handoffs, and an account of collaboration using GPT-5.6 Pro and Codex.
+keywords:
+  - inverse Galois problem
+  - computational number theory
+  - degree 24
+  - human-AI collaboration

@@ -1,0 +1,212 @@
+{
+  "scope": "Release copies only; original workspace preserved.",
+  "changes": [
+    {
+      "source": "igp24_autoresearch/HANDOFF_GOLD_LIFT_20260731.md",
+      "category": "personal-path",
+      "occurrences": 3
+    },
+    {
+      "source": "igp24_autoresearch/HANDOFF_GOLD_LIFT_NEXT_AGENT_20260731.md",
+      "category": "personal-path",
+      "occurrences": 3
+    },
+    {
+      "source": "igp24_autoresearch/IGP_SESSION_HANDOFF_20260727.md",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/PROJECT_STATE.md",
+      "category": "personal-path",
+      "occurrences": 8
+    },
+    {
+      "source": "igp24_autoresearch/agent_deep_character_build_split_pilot.sage.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/agent_f8_historical_jump_lineage.sage.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/agent_gold_b_archive_family_audit.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/agent_gold_b_asymmetric_composition_pilot.sage.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/agent_gold_b_html_jump_audit.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/character_fresh_field_inventory_q138_root_q12q81_20260730.sage.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/character_q210_freshfields_agent_22548_corpus_gate_20260730.py",
+      "category": "local-workspace",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/character_q210_freshfields_agent_source_census_20260730.sage.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/compute_missing_pair_signatures_gcp_20260814.py",
+      "category": "personal-path",
+      "occurrences": 2
+    },
+    {
+      "source": "igp24_autoresearch/compute_missing_pair_signatures_gcp_20260814.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/launch_lower_kummer_expansion16_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/launch_lower_kummer_expansion_k56_microshards_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/launch_lower_kummer_expansion_k711_microshards_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/launch_lower_kummer_expansion_microshards_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/launch_lower_kummer_pair_microshards_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_current_6t11_subfield_recovery_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_lower_kummer_expansion_k56_microshard_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_lower_kummer_expansion_k711_microshard_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_lower_kummer_expansion_microshard_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_lower_kummer_pair_microshard_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_pair_after_subset_census16_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_pair_after_subset_census_20260812.sh",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_postreset_exact_closure_controller_20260814.py",
+      "category": "personal-path",
+      "occurrences": 3
+    },
+    {
+      "source": "igp24_autoresearch/run_postreset_exact_closure_controller_20260814.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_postreset_f5_adaptive_controller_20260814.py",
+      "category": "personal-path",
+      "occurrences": 3
+    },
+    {
+      "source": "igp24_autoresearch/run_postreset_f5_adaptive_controller_20260814.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_postreset_sync_and_plan_20260814.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/run_reset_submission_queue_20260814.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/sair_api.py",
+      "category": "local-workspace",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/sair_api.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "igp24_autoresearch/tests/test_stage_all_exact_frobenius_unowned.py",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "GPT_5.6_PRO_UPLOAD/02_APPROACH_FAMILY_REGISTRY.json",
+      "category": "personal-path",
+      "occurrences": 1
+    },
+    {
+      "source": "GPT_5.6_PRO_UPLOAD/03_PROJECT_STATE.md",
+      "category": "personal-path",
+      "occurrences": 8
+    },
+    {
+      "source": "research/igp24_autoresearch/run_postreset_f5_adaptive_controller_20260814.py",
+      "category": "operational-host-identifiers",
+      "occurrences": 2
+    },
+    {
+      "source": "research/igp24_autoresearch/run_postreset_exact_closure_controller_20260814.py",
+      "category": "operational-host-identifiers",
+      "occurrences": 2
+    },
+    {
+      "source": "research/igp24_autoresearch/compute_missing_pair_signatures_gcp_20260814.py",
+      "category": "operational-host-identifiers",
+      "occurrences": 1
+    }
+  ],
+  "api_client_change": "Removed legacy credential-file parsing from archived sair_api.py; requires SAIR_API_KEY.",
+  "additional_publication_edits": [
+    "Two test cases explicitly skip when GAP is absent.",
+    "Two experiment-name false positives carry narrow gitleaks:allow comments.",
+    "The figure renderer uses repository-relative paths.",
+    "Archive documentation distinguishes historical advice and current release behavior."
+  ]
+}

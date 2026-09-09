@@ -1,0 +1,21 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+downloads/
+release-assets/
+*.part
+node_modules/
+.next/
+research/**/data/
+research/**/output/
+research/**/outbox/
+research/**/receipts/
+# Hand-written *.sage.py experiments are intentionally tracked.

@@ -1,0 +1,16 @@
+{
+  "retrieved_at_utc": "2026-09-09T02:22:16.182589+00:00",
+  "generated_at_utc": "2026-09-01T13:33:10Z",
+  "source_url": "https://server-9527.sair.foundation/api/igp24/leaderboard",
+  "team": "Dirac",
+  "team_number": "IGP24-T00135",
+  "members": [
+    "Durgesh Kumar",
+    "Aishwarya Das"
+  ],
+  "rank": 14,
+  "score": 405.86189,
+  "scoreable_pairs": 30426,
+  "api_total_count": 140,
+  "total_count_caveat": "Leaderboard entries; not the website's participant count or a count of mathematicians."
+}

@@ -1,0 +1,117 @@
+{
+  "form_label_counts": [
+    {
+      "count": 267,
+      "form": "c4",
+      "label": 17757
+    },
+    {
+      "count": 206,
+      "form": "d4-k1",
+      "label": 19036
+    },
+    {
+      "count": 175,
+      "form": "v4-entangled",
+      "label": 7181
+    },
+    {
+      "count": 112,
+      "form": "pure4",
+      "label": 19036
+    },
+    {
+      "count": 101,
+      "form": "d4-k2",
+      "label": 19036
+    },
+    {
+      "count": 79,
+      "form": "d4-k3",
+      "label": 19036
+    },
+    {
+      "count": 49,
+      "form": "d4-k5",
+      "label": 19036
+    },
+    {
+      "count": 4,
+      "form": "v4-entangled",
+      "label": 1205
+    },
+    {
+      "count": 1,
+      "form": "c4",
+      "label": 10825
+    },
+    {
+      "count": 1,
+      "form": "pure4",
+      "label": 13306
+    },
+    {
+      "count": 1,
+      "form": "pure4",
+      "label": 17533
+    },
+    {
+      "count": 1,
+      "form": "pure4",
+      "label": 17768
+    },
+    {
+      "count": 1,
+      "form": "v4-entangled",
+      "label": 151
+    },
+    {
+      "count": 1,
+      "form": "v4-entangled",
+      "label": 473
+    },
+    {
+      "count": 1,
+      "form": "v4-entangled",
+      "label": 2501
+    }
+  ],
+  "matched_rows": 1000,
+  "regimes": {
+    "C4_linked": {
+      "labels": {
+        "10825": 1,
+        "17757": 267
+      },
+      "precision": 0.996268656716418,
+      "predicted_label": 17757,
+      "predicted_matches": 267,
+      "total": 268
+    },
+    "D4_linked": {
+      "labels": {
+        "13306": 1,
+        "17533": 1,
+        "17768": 1,
+        "19036": 547
+      },
+      "precision": 0.9945454545454545,
+      "predicted_label": 19036,
+      "predicted_matches": 547,
+      "total": 550
+    },
+    "V4_common": {
+      "labels": {
+        "151": 1,
+        "473": 1,
+        "1205": 4,
+        "2501": 1,
+        "7181": 175
+      },
+      "precision": 0.9615384615384616,
+      "predicted_label": 7181,
+      "predicted_matches": 175,
+      "total": 182
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "architecture": "GQ-96",
+  "attempts_per_cell": 2,
+  "automatic_submission_authorized": false,
+  "batch_1_size": 48,
+  "batch_2_size": 48,
+  "certification_limits": [
+    "GAP degree-24 group IDs are unavailable locally",
+    "S4/A4 normal-closure intersection is a ramification screen, not a proof",
+    "S4 conjugate discriminant-orbit rank is not yet certified in the normal closure"
+  ],
+  "construction_errors": {},
+  "exact_checks": [
+    "relative irreducibility",
+    "cubic resolvent factorization",
+    "number-field discriminant square test",
+    "D4 marker-prime squareclass rank",
+    "degree-24 rational irreducibility",
+    "exact Sturm real-root count",
+    "30-prime Frobenius fingerprint"
+  ],
+  "locally_valid_pool": 96,
+  "missing_cells": 0,
+  "pari_jobs": 192,
+  "pari_rejections": {},
+  "pool_per_cell": 1,
+  "requested_cells": 96,
+  "selected": 96,
+  "submission_note": "Local candidate construction only; no server or GCP action taken.",
+  "submission_ready": false
+}

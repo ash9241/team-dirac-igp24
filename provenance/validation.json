@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "representatives_checked": 30288,
+  "labels": 8521,
+  "f5_f6_pairs": 49,
+  "gq48_rows": 48,
+  "chat_truncation_explicit": true,
+  "reader_links_checked": true,
+  "galois_identification_rerun": false
+}
