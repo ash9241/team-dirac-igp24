@@ -28,7 +28,7 @@ The included `vercel.json` serves these files directly. The current canonical ad
 
 ## Source and checks
 
-The article was rendered from the approved Sites source at commit `5eed97d07e50824af566e50b8f5f5f81a82337a2`. The corresponding article components are retained in [article/website-source](../article/website-source/). The public export keeps the same HTML and styles, with a small JavaScript module for the calculator in place of the original framework runtime.
+The article was rendered from the approved Sites source at commit `95c10ac27e46d0d6f5e6073d094cfacc90b4cc49`. The corresponding article components are retained in [article/website-source](../article/website-source/). The public export keeps the same HTML and styles, with a small JavaScript module for the calculator in place of the original framework runtime.
 
 The source checks cover the displayed coefficient list, mathematical formula, evidence links, assets, and scoring behavior. Additional export checks verify the static assets, public metadata, and both calculator sliders, including the sole-team reset. The deployed HTML was checked against the local export and its assets and GitHub links were checked without authentication.
 

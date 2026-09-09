@@ -162,6 +162,11 @@
       "sha256": "8bf681209ab5fd910005b04ad7b2489852f3ae8014a7cd7a511ecc2ec8fce9b7"
     },
     {
+      "path": "article/website-source/layout.tsx",
+      "bytes": 1690,
+      "sha256": "4ef124f2cb66ed4ee275dfddcbb20394e4d6b2d09bd83ce2db1507f7daceac61"
+    },
+    {
       "path": "article/website-source/page.tsx",
       "bytes": 27309,
       "sha256": "0d234348de0aa923dbe41c9a9b6ace2d8a77bd8d50e7d93579d86750e477ec5d"
@@ -5454,7 +5459,7 @@
     {
       "path": "website/README.md",
       "bytes": 2359,
-      "sha256": "571ed4122321ca1e5a78d5b1a223bd8479f19d65258c5699dc661d8ef22aef9e"
+      "sha256": "c78e7d5ff4915895e96b3dd60d23887faf20946e0415e99059c619b85705a533"
     },
     {
       "path": "website/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -5813,8 +5818,8 @@
     },
     {
       "path": "website/index.html",
-      "bytes": 49734,
-      "sha256": "1cf5c62cdc1b3d030afcc9db8911447bc7703d2b13ed703dba9fa712c7dc7580"
+      "bytes": 49896,
+      "sha256": "a3cd4ab8b7bc34ed4880ae5eabc48a6256e718df871913834135bc4826b03db3"
     },
     {
       "path": "website/robots.txt",
