@@ -651,7 +651,7 @@
     "source": "routeA/constructions/compositum_8x3.py",
     "path": "research/routeA/constructions/compositum_8x3.py",
     "original_sha256": "5fb83cced45017493b3462fc3d28bbaf0c2ae631419c6e3bdcf93eeb91ead938",
-    "published_sha256": "5fb83cced45017493b3462fc3d28bbaf0c2ae631419c6e3bdcf93eeb91ead938"
+    "published_sha256": "8eb3b4666c5b1de60087ff2dd0eac4ceb33dc33dccf05905b9b38675c5004520"
   },
   {
     "source": "routeA/constructions/cubic_tower_reciprocal.py",

@@ -40,7 +40,7 @@ PYTHONPATH=. python -m pytest \
   tests/test_controller.py -q
 ```
 
-PARI/GP must be available for the algebraic tests. The release run produced **30 passed, 2 skipped**. The skipped checks require GAP and its degree-24 transitive-group catalog; GAP was unavailable in the publication environment. If installed, set `IGP24_GAP` to its executable to enable those checks. The test copy marks the missing prerequisite explicitly instead of failing during setup.
+PARI/GP must be available for the algebraic tests. The shared construction helper uses `IGP24_GP` when set, then looks for `gp` on `PATH`, then tries the historical `~/.local/bin/gp` location. The release run produced **30 passed, 2 skipped**. The skipped checks require GAP and its degree-24 transitive-group catalog; GAP was unavailable in the publication environment. If installed, set `IGP24_GAP` to its executable to enable those checks. The test copy marks the missing prerequisite explicitly instead of failing during setup.
 
 These tests cover exact resultant construction, polynomial square roots, ledger identity/state, scheduling, and mocked submission behavior. They do not launch cloud workers or make real submissions. All **876** archived Python source files also passed syntax parsing. The rest of the historical test suite and all campaign scripts were not rerun.
 

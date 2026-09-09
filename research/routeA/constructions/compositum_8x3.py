@@ -7,6 +7,7 @@ import ast
 import hashlib
 import json
 import os
+import shutil
 import subprocess
 import time
 from dataclasses import asdict, dataclass
@@ -16,7 +17,9 @@ from typing import Any, Mapping, Sequence
 from routeA.ledger import candidate_hash, canonical_coefficients
 
 
-DEFAULT_GP = os.path.expanduser(os.environ.get("IGP24_GP", "~/.local/bin/gp"))
+DEFAULT_GP = os.path.expanduser(os.environ.get("IGP24_GP", "").strip()) or (
+    shutil.which("gp") or str(Path.home() / ".local/bin/gp")
+)
 
 
 @dataclass(frozen=True)

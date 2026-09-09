@@ -298,8 +298,8 @@
     },
     {
       "path": "docs/reproducing.md",
-      "bytes": 5117,
-      "sha256": "7dc96e9622256ded37bde5d0ed9f0656893c3b346b650b5db187693dfcae7ecd"
+      "bytes": 5259,
+      "sha256": "b01fd269577bb95a2ff6b7e11df2bea01f5ed70f3edf9e04f4c8fccc8824123b"
     },
     {
       "path": "docs/workflow.md",
@@ -648,13 +648,13 @@
     },
     {
       "path": "provenance/sanitization.json",
-      "bytes": 6734,
-      "sha256": "f5bba4758aae5ea1bd81eec5b00b140fff7aa73223891087d58d348fc0179356"
+      "bytes": 6878,
+      "sha256": "35c122889bdeb902e2aaac3593824a67caee7140dbccff68bcdff4630b4a5f14"
     },
     {
       "path": "provenance/source-files.json",
       "bytes": 361494,
-      "sha256": "675c14778d4c766e083a2d8baf685d2c4d82ecd15b294bee2f6cfaa79166771b"
+      "sha256": "1ffa64ee3364be30c8eef1259f722d44878208e7a337bdcd9a628a2f1bee6e61"
     },
     {
       "path": "provenance/validation.json",
@@ -4598,8 +4598,8 @@
     },
     {
       "path": "research/routeA/constructions/compositum_8x3.py",
-      "bytes": 8887,
-      "sha256": "5fb83cced45017493b3462fc3d28bbaf0c2ae631419c6e3bdcf93eeb91ead938"
+      "bytes": 8962,
+      "sha256": "8eb3b4666c5b1de60087ff2dd0eac4ceb33dc33dccf05905b9b38675c5004520"
     },
     {
       "path": "research/routeA/constructions/cubic_tower_reciprocal.py",

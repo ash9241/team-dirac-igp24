@@ -207,6 +207,7 @@
     "Two test cases explicitly skip when GAP is absent.",
     "Two experiment-name false positives carry narrow gitleaks:allow comments.",
     "The figure renderer uses repository-relative paths.",
-    "Archive documentation distinguishes historical advice and current release behavior."
+    "Archive documentation distinguishes historical advice and current release behavior.",
+    "Shared PARI executable lookup now honors IGP24_GP, then PATH, then the historical ~/.local/bin/gp fallback; fixes the Linux runner path."
   ]
 }
