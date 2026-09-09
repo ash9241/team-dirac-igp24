@@ -38,13 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13047,
-      "sha256": "176ebc10a0b2bef6198b18b505dd3cda6d70fc0d32362df392ffd57ad67eacd4"
+      "bytes": 13319,
+      "sha256": "bb04149b6edf1e3e57fcd6114080ff228a6f871428a01d25af64cd1d528e6eb5"
     },
     {
       "path": "article/essay.md",
-      "bytes": 17278,
-      "sha256": "a6c472f570cbf553f553e68742abc4869b7a0af69e750e42dcdd17752f4c23ec"
+      "bytes": 22050,
+      "sha256": "a029c104d145d054ba8cec8fb550913984bb2bd47b4accf010db4cd4128321d0"
     },
     {
       "path": "article/evidence/checkpoints.csv",
@@ -102,6 +102,16 @@
       "sha256": "d92e44a445805ba9e32720d9179e0b6fecdd1ea41814a98b3123fc036597b66d"
     },
     {
+      "path": "article/figures/galois-symmetries-mobile.svg",
+      "bytes": 4776,
+      "sha256": "f184a15d9d8de6684f8a14eef80a47c216168e9acd875a63fb5f0161e53f675b"
+    },
+    {
+      "path": "article/figures/galois-symmetries.svg",
+      "bytes": 4774,
+      "sha256": "448cf771ae2be3fb3c94006dcaf7e042196b39150b431ce58dec07077b4187ab"
+    },
+    {
       "path": "article/figures/trajectory-mobile.png",
       "bytes": 67558,
       "sha256": "c19653b6f6ac8fe4bf65e7c9cc0b217d239bc3ca860409e03bb53f44947897a6"
@@ -152,14 +162,24 @@
       "sha256": "039f8d104f358011e1cb620d95d3f68bfef1dd47545fda83d04fb3542d0f0e15"
     },
     {
+      "path": "article/website-source/draw-galois-diagram.py",
+      "bytes": 4370,
+      "sha256": "1f472d631318a0a9ec9feaa2484b73601e74d2c2f66771a71232fb04d111aa3f"
+    },
+    {
       "path": "article/website-source/essay-tools.tsx",
       "bytes": 2256,
       "sha256": "a42aaaf8170d7360c8969b5d582a2d6eac85f112e046859f10ef92d1534b0285"
     },
     {
+      "path": "article/website-source/export-essay-text.py",
+      "bytes": 5191,
+      "sha256": "d18f07f0cded1a9470cc5bdb5edefb17a82bb6466bbdce08ce6aba83442225d3"
+    },
+    {
       "path": "article/website-source/globals.css",
-      "bytes": 19330,
-      "sha256": "8bf681209ab5fd910005b04ad7b2489852f3ae8014a7cd7a511ecc2ec8fce9b7"
+      "bytes": 20819,
+      "sha256": "c9f14679baa66ec038ff71cb24db75ceb4013a0d6a276ba315206cbbc234ec7e"
     },
     {
       "path": "article/website-source/layout.tsx",
@@ -168,8 +188,8 @@
     },
     {
       "path": "article/website-source/page.tsx",
-      "bytes": 27309,
-      "sha256": "0d234348de0aa923dbe41c9a9b6ace2d8a77bd8d50e7d93579d86750e477ec5d"
+      "bytes": 31126,
+      "sha256": "0394ae0cb3bae3a0668a590756aa911500531bcc820c37df05f63babdc594a67"
     },
     {
       "path": "article/website-source/plot-essay.py",
@@ -308,8 +328,8 @@
     },
     {
       "path": "docs/workflow.md",
-      "bytes": 6961,
-      "sha256": "4aa33f744709855695cefb70dabfbf2acbd65ce9f72392e506a3516686d596d8"
+      "bytes": 7805,
+      "sha256": "c48563f13b67325f8ada65a3517a0dc5ebf4ce32618e0720c26364ee735df733"
     },
     {
       "path": "evidence/README.md",
@@ -5459,7 +5479,7 @@
     {
       "path": "website/README.md",
       "bytes": 2359,
-      "sha256": "c78e7d5ff4915895e96b3dd60d23887faf20946e0415e99059c619b85705a533"
+      "sha256": "5370b70041e813d0bb90ddb6891e77f3a42b70522326dc4e60881c9ebaa39ac1"
     },
     {
       "path": "website/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -5757,6 +5777,11 @@
       "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa"
     },
     {
+      "path": "website/assets/index-CCFlSFw-.css",
+      "bytes": 49373,
+      "sha256": "f1c30059dfeee783a85b21c1804bace7a944440167e7d6d602a48794f08fdbae"
+    },
+    {
       "path": "website/assets/index-O2_PQxfz.css",
       "bytes": 47902,
       "sha256": "d615e271d6c3caee70e935b90c0e6048f54eb7c2c7a88b00b01d47b9c22ee16b"
@@ -5768,8 +5793,8 @@
     },
     {
       "path": "website/downloads/two-batchmates.md",
-      "bytes": 18212,
-      "sha256": "da1c2c224a4d2d7d224fabb2ca415ff6e783e016523a9d638f2b8135d068970f"
+      "bytes": 22338,
+      "sha256": "c3d7f0a97498c477ca937da96a729a33268b9eea76e3ff7a47b1fe16ccd3b155"
     },
     {
       "path": "website/figures/diversity-mobile.svg",
@@ -5780,6 +5805,16 @@
       "path": "website/figures/diversity.svg",
       "bytes": 25345,
       "sha256": "2fb131f2afbbfe862a3113c2428c976d48002469f86c31a53393396625d89a6a"
+    },
+    {
+      "path": "website/figures/galois-symmetries-mobile.svg",
+      "bytes": 4776,
+      "sha256": "f184a15d9d8de6684f8a14eef80a47c216168e9acd875a63fb5f0161e53f675b"
+    },
+    {
+      "path": "website/figures/galois-symmetries.svg",
+      "bytes": 4774,
+      "sha256": "448cf771ae2be3fb3c94006dcaf7e042196b39150b431ce58dec07077b4187ab"
     },
     {
       "path": "website/figures/trajectory-mobile.svg",
@@ -5818,8 +5853,8 @@
     },
     {
       "path": "website/index.html",
-      "bytes": 49896,
-      "sha256": "a3cd4ab8b7bc34ed4880ae5eabc48a6256e718df871913834135bc4826b03db3"
+      "bytes": 60423,
+      "sha256": "c89211c919f1c2b8bfb9e30152ee1307f16f65a31d5e689aa9fcee25b4e5e196"
     },
     {
       "path": "website/robots.txt",

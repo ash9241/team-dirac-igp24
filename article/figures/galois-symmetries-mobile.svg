@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1070" role="img" aria-labelledby="title desc">
+<title id="title">Which permutations belong to the Galois group of x⁴ − 2?</title>
+<desc id="desc">Complex conjugation swaps iα and −iα and fixes α and −α. It is a field automorphism. Exchanging α and iα alone fails: α + (−α) = 0 would become iα − α = 0, which is false. Here α is the positive fourth root of two. The Galois group has eight elements, whereas four roots have twenty-four permutations.</desc>
+<rect width="600" height="1070" fill="#ffffff"/>
+<defs><marker id="blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="#315dff"/></marker><marker id="red" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="#a33e35"/></marker></defs>
+<rect x="18" y="18" width="564" height="450" rx="2" fill="#eef2ff"/>
+<text x="43" y="59" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#315dff" text-anchor="start" font-weight="700">ALLOWED</text>
+<text x="43" y="98" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#1b2531" text-anchor="start" font-weight="600">Complex conjugation</text>
+<path d="M198.0 258H402.0M300.0 156V360" fill="none" stroke="#c4ccd8" stroke-width="1.5"/>
+<circle cx="390.0" cy="258" r="7" fill="#697586"/>
+<text x="407.0" y="266" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#465465" text-anchor="start" font-weight="400">α</text>
+<circle cx="210.0" cy="258" r="7" fill="#697586"/>
+<text x="193.0" y="266" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#465465" text-anchor="end" font-weight="400">−α</text>
+<circle cx="300.0" cy="168" r="7" fill="#315dff"/>
+<text x="300.0" y="149" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#315dff" text-anchor="middle" font-weight="400">iα</text>
+<circle cx="300.0" cy="348" r="7" fill="#315dff"/>
+<text x="300.0" y="383" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#315dff" text-anchor="middle" font-weight="400">−iα</text>
+<path d="M310.0 180C376.5 204.0 376.5 312.0 310.0 336" fill="none" stroke="#315dff" stroke-width="3" marker-start="url(#blue)" marker-end="url(#blue)"/>
+<text x="300.0" y="420" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#315dff" text-anchor="middle" font-weight="400">iα ↔ −iα; α and −α stay fixed</text>
+<text x="300.0" y="451" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#465465" text-anchor="middle" font-weight="400">Every rational algebraic relation survives.</text>
+<rect x="18" y="492" width="564" height="450" rx="2" fill="#f6eeee"/>
+<text x="43" y="533" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#a33e35" text-anchor="start" font-weight="700">FORBIDDEN</text>
+<text x="43" y="572" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#1b2531" text-anchor="start" font-weight="600">Swap two adjacent roots</text>
+<path d="M198.0 732H402.0M300.0 630V834" fill="none" stroke="#c4ccd8" stroke-width="1.5"/>
+<circle cx="390.0" cy="732" r="7" fill="#a33e35"/>
+<text x="407.0" y="740" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#a33e35" text-anchor="start" font-weight="400">α</text>
+<circle cx="210.0" cy="732" r="7" fill="#697586"/>
+<text x="193.0" y="740" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#465465" text-anchor="end" font-weight="400">−α</text>
+<circle cx="300.0" cy="642" r="7" fill="#a33e35"/>
+<text x="300.0" y="623" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#a33e35" text-anchor="middle" font-weight="400">iα</text>
+<circle cx="300.0" cy="822" r="7" fill="#697586"/>
+<text x="300.0" y="857" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#465465" text-anchor="middle" font-weight="400">−iα</text>
+<path d="M314.0 644Q398.0 634 388.0 718" fill="none" stroke="#a33e35" stroke-width="3" marker-start="url(#red)" marker-end="url(#red)"/>
+<text x="300.0" y="894" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#a33e35" text-anchor="middle" font-weight="400">α ↔ iα; −α stays fixed</text>
+<text x="300.0" y="925" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#465465" text-anchor="middle" font-weight="400">α + (−α) = 0 → iα − α ≠ 0.</text>
+<text x="300.0" y="1002" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#1b2531" text-anchor="middle" font-weight="600">8 automorphisms. 24 permutations.</text>
+<text x="300.0" y="1042" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#546174" text-anchor="middle" font-weight="400">The algebra decides which permutations are allowed.</text>
+</svg>

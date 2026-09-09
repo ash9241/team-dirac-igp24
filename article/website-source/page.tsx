@@ -43,13 +43,16 @@ export default function Article() {
     <article id="essay">
       <Section id="problem" note={<><span className="margin-stat">24</span><p>The highest power of x in the polynomials we were trying to find.</p></>}>
         <p className="opening">The competition asked us to work backwards: choose how an equation’s roots should behave, then find an equation whose roots behave that way.</p>
-        <p>Most of us meet a polynomial as something to solve. Take x² − 2 = 0. Its two roots are √2 and −√2. You can exchange them without changing their sum, their product, or any of their algebraic relationships over the rational numbers. Leaving them alone works too. Those two operations form its Galois group: the symmetries of its roots.</p>
-        <p>The <strong>inverse Galois problem</strong> starts with the symmetry group and asks for the polynomial. The general problem remains open. IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1, and irreducible: they could not factor into lower-degree polynomials over the rationals.</p>
+        <p>Most of us meet a polynomial as something to solve. For Galois theory, we start with a polynomial with rational coefficients and consider its <strong>splitting field</strong>: the smallest field containing the rational numbers and every root. It also contains everything we can make from them by addition, subtraction, multiplication, and division by nonzero elements.</p>
+        <p>A field automorphism is a bijection from that field to itself that preserves addition and multiplication. The automorphisms that fix every rational number form the polynomial’s <strong>Galois group over ℚ</strong>. The group operation is composition: do one automorphism, then another.<Ref n={8}/></p>
+        <p>Each automorphism permutes the roots. But its action must preserve <strong>every polynomial relation with rational coefficients among those roots</strong>. Preserving their overall sum and product is not enough; every permutation does that. The example below shows a swap that fails this stronger requirement.</p>
+        <p>The <strong>inverse Galois problem</strong> asks whether every finite group can arise as a Galois group over ℚ. The general problem remains open.</p>
+        <p>IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group acting on the 24 roots, and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1. They also had to be irreducible: they could not factor into lower-degree polynomials over the rationals.</p>
       </Section>
-      <figure className="roots-study wide">
-        <div className="roots-image"><img src="/images/symmetry-study.png" alt="Conceptual illustration of rearrangement using glass spheres on rotated acrylic plates." width="1448" height="1086" loading="lazy"/></div>
-        <div className="roots-explanation"><h3>Two roots. A symmetry you can see.</h3><Equation tex={"x^2-2=0"}/><div className="root-swap"><span>−√2</span><span aria-hidden="true">⇄</span><span>√2</span></div><p>Exchange the roots.<br/>Their sum remains 0; their product remains −2.</p><small>This quadratic is the small example. IGP24 asks for degree 24.</small></div>
-        <figcaption>The glass study illustrates rearrangement. The equation gives an exact example of the idea.</figcaption>
+      <figure className="galois-figure wide" aria-labelledby="galois-figure-title">
+        <div className="diagram-heading"><h3 id="galois-figure-title">A permutation has to respect the algebra.</h3><p>For x⁴ − 2, let α be the positive fourth root of 2 and let i² = −1. The roots are α, −α, iα, and −iα. The splitting field is ℚ(α, i).</p></div>
+        <picture><source media="(max-width:760px)" srcSet="/figures/galois-symmetries-mobile.svg"/><img src="/figures/galois-symmetries.svg" alt="For x to the fourth minus two, complex conjugation swaps i alpha and minus i alpha and fixes the real roots. This is allowed. Swapping alpha and i alpha alone breaks alpha plus minus alpha equals zero. Eight of the 24 root permutations belong to the Galois group." width="1100" height="535" loading="lazy"/></picture>
+        <figcaption>The left-hand map is complex conjugation, which preserves addition, multiplication, and every rational number. A single broken relation rules out the right-hand swap. Here the splitting field has degree 8 over ℚ, so the Galois group has 8 elements.<Ref n={8}/></figcaption>
       </figure>
       <Section id="why-it-matters" note={<><p><strong>25,000</strong> groups</p><p><strong>165,836</strong> allowed group / real-root combinations</p><p><strong>622</strong> examples in the frozen baseline</p></>}>
         <p>There are 25,000 transitive groups of degree 24 in the catalog. Once you include the allowed real-root counts, there are 165,836 targets. The competition’s frozen baseline had examples for only 622 of them.<Ref n={1}/></p>
@@ -66,20 +69,24 @@ export default function Article() {
       </Section>
 
       <figure className="harness-diagram wide">
-        <h3>An idea had to make it through the whole loop.</h3>
+        <h3>The next search began before the next submission.</h3>
         <ol>
-          <li><span aria-hidden="true">1</span><strong>Choose where to look</strong><p>Durgesh proposes a mathematical family. Pro helps turn the idea into a testable plan.</p></li>
-          <li><span aria-hidden="true">2</span><strong>Make it run</strong><p>I pass the brief to Codex, work through the implementation, and organize the compute.</p></li>
-          <li><span aria-hidden="true">3</span><strong>Find out what we made</strong><p>Exact algebra checks the candidates. Official verification identifies submitted examples.</p></li>
-          <li><span aria-hidden="true">4</span><strong>Decide what comes next</strong><p>New pairs, repeats, failures, and costs go back into the ledger and the next conversation.</p></li>
+          <li><span aria-hidden="true">1</span><strong>Choose a family</strong><p>Durgesh proposes a construction. Pro helps turn it into a bounded experiment.</p></li>
+          <li><span aria-hidden="true">2</span><strong>Generate candidates</strong><p>I work with Codex to implement the plan and run the local or cloud search.</p></li>
+          <li><span aria-hidden="true">3</span><strong>Check locally</strong><p>Check validity and real-root count. Use the construction and local group predictor to identify promising targets.</p></li>
+          <li><span aria-hidden="true">4</span><strong>Estimate the gain</strong><p>Compare candidates with our ledger and a fresh leaderboard snapshot. Rank the expected new value.</p></li>
+          <li><span aria-hidden="true">5</span><strong>Submit and reconcile</strong><p>Submit the selected batch. Record the official group labels, real-root counts, and scoring status.</p></li>
+          <li><span aria-hidden="true">6</span><strong>Update the next run</strong><p>Feed the returned labels into the predictor and update the ledger. Expand, change, or stop the family.</p></li>
         </ol>
-        <div className="feedback"><span aria-hidden="true">↶</span><p>The results determine whether we expand a run, change the construction, or stop.</p></div>
+        <div className="feedback"><span aria-hidden="true">↶</span><p>Local checks and score forecasts guide submission. Official results then correct the information used to choose the next batch.</p></div>
       </figure>
 
-      <Section id="harness" note={<><p>The harness was the software that made the experiment repeatable—and its results hard to lose.</p></>}>
-        <p>We built a <strong>harness</strong> around this loop: software to generate candidates, reject cheap failures and duplicates, run checks, submit selected polynomials, and record what came back. Its ledger remembered which group/real-root pairs we already had. Without that memory, a busy search could keep congratulating itself for finding the same things.</p>
-        <p>I ran Codex with persistent <code>/goal</code> instructions. A goal worked best when it could be resolved by an experiment: build a small pilot from this family, inspect its returned labels, compare them with the ledger, and expand only if the new pairs justified the cost. “Keep improving” was much less useful if we had not decided what improvement meant.</p>
-        <p>Some of the work was unglamorous. Heavy algebra jobs competed for memory. Verification and scoring did not always arrive together. Checkpoints made runs resumable; separate counts for generated, submitted, accepted, and scoreable candidates stopped a promising local report from becoming a claim of official success.</p>
+      <Section id="harness" note={<><p>The harness connected local verification, score forecasts, and the records we used to plan the next run.</p></>}>
+        <p>We built a <strong>harness</strong> around this loop. Our local verifier checked things such as degree, monicity, irreducibility, and real-root count. For group identification, we also used the construction’s structure and a local predictor informed by earlier official results. A predicted label remained a prediction until it was justified or confirmed by the competition’s verifier.</p>
+        <p>The <strong>dynamic ledger</strong> remembered our candidates, submissions, and verified pairs. It also held dated snapshots of the public targets: how many teams held a pair and the best known scoring discriminant. Before submitting a wave, the controller refreshed those targets. The scheduler combined that information with our confidence in a candidate’s label and its estimated discriminant to forecast the score it might add. It filtered out pairs we already held and accounted for repeated attempts at the same target.<Ref n={9}/></p>
+        <p>That gave us feedback before each batch went in. A locally valid polynomial could still offer little expected gain. When official results came back, they updated the ledger and supplied new examples for the group predictor. We could then reassess the family against what we now knew. The forecast guided a decision; the official result told us what had actually counted.</p>
+        <p>I ran Codex with persistent <code>/goal</code> instructions. A goal worked best when an experiment could resolve it: build a small pilot, inspect its returned labels, and compare them with the ledger. Expand only if the new pairs justified the cost. “Keep improving” was much less useful if we had not decided what improvement meant.</p>
+        <p>Some of the work was unglamorous. Heavy algebra jobs competed for memory. Verification and scoring did not always arrive together. Checkpoints made runs resumable. We kept separate counts for generated, submitted, accepted, and scoreable candidates, so a promising local report did not become a claim of official success.</p>
         <p>Even with those checks, a run could succeed at everything we had asked it to do and still teach us that the plan was poor.</p>
       </Section>
 
@@ -89,9 +96,17 @@ export default function Article() {
         <p>The batch used degree-four constructions over degree-six starting fields, giving total degree 24. We had varied parameters and real-root behavior, so the list of coefficients looked broad. But the four main templates were all even quartics, of the form y⁴ + by² + c. Their built-in structure kept steering us into the same families.</p>
         <p>I brought the actual templates and returned labels to Pro and asked it to explain the collapse. Its diagnosis focused on the restrictions we had preserved. It proposed a small general-quartic pilot, spread across different structural choices. It also warned that simply adding odd powers might send most candidates into another common family. We needed to test the change.</p>
       </Section>
-      <figure className="search-study wide"><img src="/images/same-mould.png" alt="Identical blue casts sit in a white tray, with distinct geometric forms beside it: a conceptual illustration of changing the construction." width="1672" height="941" loading="lazy"/><figcaption>Different coefficients can preserve the same restrictive structure. The illustration captures the problem; the graph below shows the recorded results.</figcaption></figure>
+      <figure className="quartic-structure wide" aria-labelledby="quartic-structure-title">
+        <h3 id="quartic-structure-title">The restriction was in the formula.</h3>
+        <div className="quartic-steps">
+          <div><span>Start with an even quartic</span><Equation tex={"y^4+b y^2+c"}/></div>
+          <div><span>Set z = y²</span><Equation tex={"z^2+bz+c"}/></div>
+          <div><span>Each z-root gives a ± pair</span><Equation tex={"\\pm\\sqrt{z_1},\\quad\\pm\\sqrt{z_2}"}/></div>
+        </div>
+        <figcaption>Changing b and c preserves this two-stage construction: solve a quadratic in z, then take square roots. The ± pairing is built in. The next pilot tested quartics that could break that restriction; the graph below shows what came back.</figcaption>
+      </figure>
       <Section id="the-next-batch">
-        <p>I asked for the diagnosis and plan as a Markdown file so Codex could implement it. That became GQ‑96, a planned portfolio of 96 candidates in two stages. The first stage returned <strong>48 accepted polynomials across 14 group labels</strong>, covering 48 distinct group/real-root pairs. Its three most common labels contained 12 rows: 25% of the batch, compared with 98.9% before.</p>
+        <p>I asked for the diagnosis and plan as a Markdown file so Codex could implement it. That became GQ‑96, a planned portfolio of 96 candidates in two stages. The first stage returned <strong>48 accepted polynomials across 14 group labels</strong>. They covered 48 distinct group/real-root pairs. Its three most common labels contained 12 rows: 25% of the batch, compared with 98.9% before.</p>
         <p>The first checkpoint recorded 16 pairs that were new to our team. That was the useful number alongside the broader spread of labels. Forty-eight accepted rows did not mean 48 new discoveries, and the immediate scoring check was still pending at that checkpoint.<Ref n={3}/></p>
       </Section>
       <Graph name="diversity" title="A smaller experiment explored more evenly." alt="The earlier 1,000-row portfolio put 98.9 percent in its top three group labels. The later 48-row pilot put 25 percent in its top three labels." caption="Share of each batch in its three most common group labels: 989 of 1,000 versus 12 of 48. These were different-sized, deliberately selected batches, not a controlled comparison of models."/>
@@ -101,7 +116,7 @@ export default function Article() {
 
       <Section id="polynomial" title="Here is one of the polynomials." note={<><p><strong>24T15308</strong><br/>20 real roots</p><p>An accepted example, with a construction you can replay.</p></>}>
         <p>Other routes began with something we had already found. Durgesh’s approach gave us reason to look at familiar objects differently: the roots of one polynomial could supply the ingredients for another. Two routes recorded as F5 and F6 produced 49 distinct group/real-root pairs that we matched to accepted competition receipts.<Ref n={4}/></p>
-        <p>Here is one of them. Start with an accepted degree-24 polynomial written as q(x²), where q has degree 12. Take the twelve roots of q and form their 66 unordered pairwise products. Make a polynomial with those products as its roots, then factor it over the rationals.</p>
+        <p>Here is one of them. Start with an accepted degree-24 polynomial written as q(x²), where q has degree 12. Take the twelve roots of q and form their 66 unordered pairwise products. Make a polynomial with those products as its roots. Then factor it over the rationals.</p>
         <p>For this example, the factors have degrees 6, 12, and 48. Take the unique degree-12 factor, h, and substitute x² into it. The result is another degree-24 polynomial, now identified in the saved official receipt as <strong>24T15308 with 20 real roots</strong>.<Ref n={5}/></p>
       </Section>
       <figure className="polynomial-panel wide" aria-labelledby="polynomial-title">
@@ -158,7 +173,7 @@ export default function Article() {
     </article>
 
     <footer className="appendix" aria-labelledby="appendix-title">
-      <div className="appendix-intro"><h2 id="appendix-title">The work behind<br/>the story.</h2><p>Data, construction, and checks, so you can follow an example all the way through.</p><div className="downloads"><a href={repository}>Explore the public research archive <span>↗</span></a><a href="/downloads/dirac-replay.zip" download>Download the polynomial replay <span>↓</span></a><a href="/downloads/two-batchmates.md" download>Download the article text <span>↓</span></a></div><p className="credits">Written with AI assistance from our conversations and experiment records. Images were made with Image Gen; graphs use recorded data. <a href={evidence+"illustration-prompts.json"}>Image prompts</a>.</p></div>
+      <div className="appendix-intro"><h2 id="appendix-title">The work behind<br/>the story.</h2><p>Data, construction, and checks, so you can follow an example all the way through.</p><div className="downloads"><a href={repository}>Explore the public research archive <span>↗</span></a><a href="/downloads/dirac-replay.zip" download>Download the polynomial replay <span>↓</span></a><a href="/downloads/two-batchmates.md" download>Download the article text <span>↓</span></a></div><p className="credits">Written with AI assistance from our conversations and experiment records. The hero and landscape were made with Image Gen. The diagrams explain the algebra; graphs use recorded data. <a href={evidence+"illustration-prompts.json"}>Image prompts</a>.</p></div>
       <div><ol className="sources">
         <li id="source-1"><a href={rules}>IGP24 overview</a> and <a href="https://competition.sair.foundation/competitions/igp24/evaluation-setup">evaluation rules</a>: targets, baseline, verification, and scoring.</li>
         <li id="source-2"><a href={board}>Published leaderboard</a>. Table dated September 1, 2026, retrieved September 9 UTC / September 8 Pacific. <a href={evidence+"leaderboard.json"}>Saved team extract</a>.</li>
@@ -167,6 +182,8 @@ export default function Article() {
         <li id="source-5"><a href={evidence+"worked_example.json"}>Worked example and archived receipt</a>; <a href={evidence+"worked_example_replay.json"}>PARI/GP replay result</a>. The group identification was not rerun in this audit.</li>
         <li id="source-6"><a href={evidence+"checkpoints.csv"}>Historical checkpoints</a>, with a source for each observation.</li>
         <li id="source-7">Poole and Mackworth, <a href="https://artint.info/3e/html/ArtInt3e.Ch4.S6.html">Local Search</a>, for hill climbing and its limits. The discussion of mathematical formulations is our interpretation.</li>
+        <li id="source-8">J. S. Milne, <a href="https://www.jmilne.org/math/CourseNotes/FT.pdf">Fields and Galois Theory</a>, chapters 2–3: splitting fields and automorphisms. For x⁴ − 2, Eisenstein’s criterion gives [ℚ(α) : ℚ] = 4. This field is real, so adjoining i doubles the degree to 8.</li>
+        <li id="source-9">Archived harness code: <a href={repository+"/blob/main/research/routeA/submit_exploration_batch.py"}>local validity gates</a>, <a href={repository+"/blob/main/research/routeA/ledger.py"}>ledger</a>, <a href={repository+"/blob/main/research/routeA/scheduler.py"}>expected-value scheduler</a>, and <a href={repository+"/blob/main/research/routeA/controller.py"}>wave controller and marginal forecast</a>. The <a href={repository+"/blob/main/research/IGP24_Rank_Climbing_System.md"}>research runbook</a> records the local group predictor and its updates from official labels.</li>
       </ol><a className="back-top" href="#top">Back to the beginning ↑</a></div>
     </footer>
   </main>;

@@ -11,10 +11,12 @@ flowchart LR
     A[Durgesh: mathematical direction] --> B[Aishwarya and Pro: experiment plan]
     B --> C[Aishwarya and Codex: implementation]
     C --> D[Local and cloud search]
-    D --> E[Exact checks and official verification]
-    E --> F[Ledger and experiment review]
-    F --> A
-    F --> B
+    D --> E[Local validity checks and group predictions]
+    E --> F[Ledger and fresh target snapshot: forecast gain]
+    F --> G[Select batch and submit for official verification]
+    G --> H[Update ledger and local group predictor]
+    H --> A
+    H --> B
 ```
 
 ## The harness
@@ -24,12 +26,12 @@ The research code accumulated several generations of the same operational idea:
 1. **Name a construction.** Record a base field, parameters, predicted action, and desired signature. A proposed group label is a hypothesis until justified.
 2. **Generate a bounded portfolio.** Vary structure deliberately. Record the recipe and coefficient hash so an output can be traced back.
 3. **Apply cheap local checks.** Validate coefficient format, degree, monicity, irreducibility, and real-root count where the chosen tools support them.
-4. **Check novelty against a dated target snapshot.** Distinguish a new coefficient string, a new field, a pair new to our team, and a pair not yet held publicly. They are different things.
+4. **Forecast gain against a fresh target snapshot.** The ledger tracks candidates, submissions, verified pairs, team counts, and the best known scoring discriminants. The scheduler combines these with label confidence and estimated discriminant quality to rank expected value before submission. It filters out owned pairs; the controller's marginal forecast discounts repeated attempts at one target. A new coefficient string, a new field, and a new pair are different things.
 5. **Stage and submit selected candidates.** Keep manifests and receipts. The control client records ambiguous submission outcomes so a retry does not silently duplicate work.
-6. **Reconcile results.** A locally generated polynomial, an accepted verification, and a scoreable pair are separate states. Delayed scoring should stay pending.
+6. **Reconcile results.** Official results update the ledger and provide verified fingerprint/label examples for the local group predictor. A locally generated polynomial, an accepted verification, and a scoreable pair are separate states. Delayed scoring should stay pending.
 7. **Review the family.** Count distinct pairs and labels, concentration, runtime, and estimated retained value. Expand a useful family or change the construction when it saturates.
 
-The implementations are in [the ledger](../research/routeA/ledger.py), [scheduler](../research/routeA/scheduler.py), [controller](../research/routeA/controller.py), [API client](../research/routeA/api_client.py), and [autoresearch source](../research/igp24_autoresearch/). Their historical defaults reflect an active competition; the release’s quick-start commands only read archived data or run local arithmetic.
+The implementations are in [the local validity gates](../research/routeA/submit_exploration_batch.py), [ledger](../research/routeA/ledger.py), [scheduler](../research/routeA/scheduler.py), [controller](../research/routeA/controller.py), [API client](../research/routeA/api_client.py), and [autoresearch source](../research/igp24_autoresearch/). The [research runbook](../research/IGP24_Rank_Climbing_System.md) describes the group predictor and its updates from official labels. Local predictions guide selection; an unproved group label remains a prediction until verified. Their historical defaults reflect an active competition; the release’s quick-start commands only read archived data or run local arithmetic.
 
 ## What a useful goal contained
 

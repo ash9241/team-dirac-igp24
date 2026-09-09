@@ -1,13 +1,29 @@
 # Two Batchmates Walk Into a Maths Competition
 
+[Read the illustrated website](https://team-dirac-igp24.vercel.app/) · [Explore the research archive](https://github.com/ash9241/team-dirac-igp24)
+
 By Aishwarya Das. Research with Durgesh Kumar.
 September 8, 2026.
 
 The competition asked us to work backwards: choose how an equation’s roots should behave, then find an equation whose roots behave that way.
 
-Most of us meet a polynomial as something to solve. Take x² − 2 = 0. Its two roots are √2 and −√2. You can exchange them without changing their sum, their product, or any of their algebraic relationships over the rational numbers. Leaving them alone works too. Those two operations form its Galois group: the symmetries of its roots.
+Most of us meet a polynomial as something to solve. For Galois theory, we start with a polynomial with rational coefficients and consider its **splitting field**: the smallest field containing the rational numbers and every root. It also contains everything we can make from them by addition, subtraction, multiplication, and division by nonzero elements.
 
-The **inverse Galois problem** starts with the symmetry group and asks for the polynomial. The general problem remains open. IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1, and irreducible: they could not factor into lower-degree polynomials over the rationals.
+A field automorphism is a bijection from that field to itself that preserves addition and multiplication. The automorphisms that fix every rational number form the polynomial’s **Galois group over ℚ**. The group operation is composition: do one automorphism, then another.[^8]
+
+Each automorphism permutes the roots. But its action must preserve **every polynomial relation with rational coefficients among those roots**. Preserving their overall sum and product is not enough; every permutation does that. The example below shows a swap that fails this stronger requirement.
+
+The **inverse Galois problem** asks whether every finite group can arise as a Galois group over ℚ. The general problem remains open.
+
+IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group acting on the 24 roots, and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1. They also had to be irreducible: they could not factor into lower-degree polynomials over the rationals.
+
+### A permutation has to respect the algebra.
+
+For x⁴ − 2, let α be the positive fourth root of 2 and let i² = −1. The roots are α, −α, iα, and −iα. The splitting field is ℚ(α, i).
+
+![For x to the fourth minus two, complex conjugation swaps i alpha and minus i alpha and fixes the real roots. This is allowed. Swapping alpha and i alpha alone breaks alpha plus minus alpha equals zero. Eight of the 24 root permutations belong to the Galois group.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/figures/galois-symmetries.svg)
+
+The left-hand map is complex conjugation, which preserves addition, multiplication, and every rational number. A single broken relation rules out the right-hand swap. Here the splitting field has degree 8 over ℚ, so the Galois group has 8 elements.[^8]
 
 There are 25,000 transitive groups of degree 24 in the catalog. Once you include the allowed real-root counts, there are 165,836 targets. The competition’s frozen baseline had examples for only 622 of them.[^1]
 
@@ -27,23 +43,31 @@ For the planning, I used GPT‑5.6 Pro as an orchestrator. I brought it Durgesh�
 
 The useful handoff contained more than a suggestion. It named a construction, a small experiment, and the evidence that would justify a larger run. That last part became increasingly important.
 
-### An idea had to make it through the whole loop.
+### The next search began before the next submission.
 
-- **Choose where to look**. Durgesh proposes a mathematical family. Pro helps turn the idea into a testable plan.
+- **Choose a family**. Durgesh proposes a construction. Pro helps turn it into a bounded experiment.
 
-- **Make it run**. I pass the brief to Codex, work through the implementation, and organize the compute.
+- **Generate candidates**. I work with Codex to implement the plan and run the local or cloud search.
 
-- **Find out what we made**. Exact algebra checks the candidates. Official verification identifies submitted examples.
+- **Check locally**. Check validity and real-root count. Use the construction and local group predictor to identify promising targets.
 
-- **Decide what comes next**. New pairs, repeats, failures, and costs go back into the ledger and the next conversation.
+- **Estimate the gain**. Compare candidates with our ledger and a fresh leaderboard snapshot. Rank the expected new value.
 
-The results determine whether we expand a run, change the construction, or stop.
+- **Submit and reconcile**. Submit the selected batch. Record the official group labels, real-root counts, and scoring status.
 
-We built a **harness** around this loop: software to generate candidates, reject cheap failures and duplicates, run checks, submit selected polynomials, and record what came back. Its ledger remembered which group/real-root pairs we already had. Without that memory, a busy search could keep congratulating itself for finding the same things.
+- **Update the next run**. Feed the returned labels into the predictor and update the ledger. Expand, change, or stop the family.
 
-I ran Codex with persistent /goal instructions. A goal worked best when it could be resolved by an experiment: build a small pilot from this family, inspect its returned labels, compare them with the ledger, and expand only if the new pairs justified the cost. “Keep improving” was much less useful if we had not decided what improvement meant.
+Local checks and score forecasts guide submission. Official results then correct the information used to choose the next batch.
 
-Some of the work was unglamorous. Heavy algebra jobs competed for memory. Verification and scoring did not always arrive together. Checkpoints made runs resumable; separate counts for generated, submitted, accepted, and scoreable candidates stopped a promising local report from becoming a claim of official success.
+We built a **harness** around this loop. Our local verifier checked things such as degree, monicity, irreducibility, and real-root count. For group identification, we also used the construction’s structure and a local predictor informed by earlier official results. A predicted label remained a prediction until it was justified or confirmed by the competition’s verifier.
+
+The **dynamic ledger** remembered our candidates, submissions, and verified pairs. It also held dated snapshots of the public targets: how many teams held a pair and the best known scoring discriminant. Before submitting a wave, the controller refreshed those targets. The scheduler combined that information with our confidence in a candidate’s label and its estimated discriminant to forecast the score it might add. It filtered out pairs we already held and accounted for repeated attempts at the same target.[^9]
+
+That gave us feedback before each batch went in. A locally valid polynomial could still offer little expected gain. When official results came back, they updated the ledger and supplied new examples for the group predictor. We could then reassess the family against what we now knew. The forecast guided a decision; the official result told us what had actually counted.
+
+I ran Codex with persistent /goal instructions. A goal worked best when an experiment could resolve it: build a small pilot, inspect its returned labels, and compare them with the ledger. Expand only if the new pairs justified the cost. “Keep improving” was much less useful if we had not decided what improvement meant.
+
+Some of the work was unglamorous. Heavy algebra jobs competed for memory. Verification and scoring did not always arrive together. Checkpoints made runs resumable. We kept separate counts for generated, submitted, accepted, and scoreable candidates, so a promising local report did not become a claim of official success.
 
 Even with those checks, a run could succeed at everything we had asked it to do and still teach us that the plan was poor.
 
@@ -57,11 +81,29 @@ The batch used degree-four constructions over degree-six starting fields, giving
 
 I brought the actual templates and returned labels to Pro and asked it to explain the collapse. Its diagnosis focused on the restrictions we had preserved. It proposed a small general-quartic pilot, spread across different structural choices. It also warned that simply adding odd powers might send most candidates into another common family. We needed to test the change.
 
-![Identical blue casts sit in a white tray, with distinct geometric forms beside it: a conceptual illustration of changing the construction.](https://raw.githubusercontent.com/ash9241/team-dirac-igp24/main/article/images/same-mould.png)
+### The restriction was in the formula.
 
-Different coefficients can preserve the same restrictive structure. The illustration captures the problem; the graph below shows the recorded results.
+Start with an even quartic
 
-I asked for the diagnosis and plan as a Markdown file so Codex could implement it. That became GQ‑96, a planned portfolio of 96 candidates in two stages. The first stage returned **48 accepted polynomials across 14 group labels**, covering 48 distinct group/real-root pairs. Its three most common labels contained 12 rows: 25% of the batch, compared with 98.9% before.
+$$
+y^4+b y^2+c
+$$
+
+Set z = y²
+
+$$
+z^2+bz+c
+$$
+
+Each z-root gives a ± pair
+
+$$
+\pm\sqrt{z_1},\quad\pm\sqrt{z_2}
+$$
+
+Changing b and c preserves this two-stage construction: solve a quadratic in z, then take square roots. The ± pairing is built in. The next pilot tested quartics that could break that restriction; the graph below shows what came back.
+
+I asked for the diagnosis and plan as a Markdown file so Codex could implement it. That became GQ‑96, a planned portfolio of 96 candidates in two stages. The first stage returned **48 accepted polynomials across 14 group labels**. They covered 48 distinct group/real-root pairs. Its three most common labels contained 12 rows: 25% of the batch, compared with 98.9% before.
 
 The first checkpoint recorded 16 pairs that were new to our team. That was the useful number alongside the broader spread of labels. Forty-eight accepted rows did not mean 48 new discoveries, and the immediate scoring check was still pending at that checkpoint.[^3]
 
@@ -77,7 +119,7 @@ This is the episode I keep coming back to when people ask what the AI contribute
 
 Other routes began with something we had already found. Durgesh’s approach gave us reason to look at familiar objects differently: the roots of one polynomial could supply the ingredients for another. Two routes recorded as F5 and F6 produced 49 distinct group/real-root pairs that we matched to accepted competition receipts.[^4]
 
-Here is one of them. Start with an accepted degree-24 polynomial written as q(x²), where q has degree 12. Take the twelve roots of q and form their 66 unordered pairwise products. Make a polynomial with those products as its roots, then factor it over the rationals.
+Here is one of them. Start with an accepted degree-24 polynomial written as q(x²), where q has degree 12. Take the twelve roots of q and form their 66 unordered pairwise products. Make a polynomial with those products as its roots. Then factor it over the rationals.
 
 For this example, the factors have degrees 6, 12, and 48. Take the unique degree-12 factor, h, and substitute x² into it. The result is another degree-24 polynomial, now identified in the saved official receipt as **24T15308 with 20 real roots**.[^5]
 
@@ -153,14 +195,14 @@ We’re excited to attend the [Science x AI Summit at Caltech this Friday, Septe
 
 We’re bringing the experiments as well as the result. We want to hear where other people’s loops worked, where they broke, and which mathematical questions might become approachable with a setup like this. If you’re there, we’d love to compare notes.
 
-[^1]: [IGP24 overview](https://competition.sair.foundation/competitions/igp24/overview) and [evaluation rules](https://competition.sair.foundation/competitions/igp24/evaluation-setup).
-[^2]: [Published leaderboard](https://competition.sair.foundation/competitions/igp24/leaderboard), table dated September 1, retrieved September 9 UTC / September 8 Pacific.
-[^3]: [Quartic portfolio, first-stage pilot, and workflow provenance](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/diversity.json). The Pro setting is reported by Aishwarya; per-turn model metadata is unavailable.
-[^4]: [F5/F6 matched receipts and selected-cohort limitations](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/f5-f6.json).
-[^5]: [Construction, action certificate, and archived receipt](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example.json). [Fresh arithmetic replay](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example_replay.json); Magma identification was not rerun.
-[^6]: [Seven dated checkpoints and their sources](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/checkpoints.csv).
-[^7]: Poole and Mackworth, [Local Search](https://artint.info/3e/html/ArtInt3e.Ch4.S6.html), for hill climbing and its limits. The discussion about mathematical formulations is our interpretation.
+[^1]: [IGP24 overview](https://competition.sair.foundation/competitions/igp24/overview) and [evaluation rules](https://competition.sair.foundation/competitions/igp24/evaluation-setup): targets, baseline, verification, and scoring.
+[^2]: [Published leaderboard](https://competition.sair.foundation/competitions/igp24/leaderboard). Table dated September 1, 2026, retrieved September 9 UTC / September 8 Pacific. [Saved team extract](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/leaderboard.json).
+[^3]: [Quartic portfolio and first-stage pilot](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/diversity.json), with workflow provenance. [Pro conversation and implementation handoffs](https://github.com/ash9241/team-dirac-igp24/blob/main/conversations/README.md). GPT‑5.6 Pro is the setting reported by Aishwarya; per-turn model metadata is unavailable. This is an account of the workflow, not a controlled ablation of its components.
+[^4]: [F5/F6 results](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/f5-f6.json): 49 distinct pairs matched to accepted receipts, plus selected-cohort and failed-run records.
+[^5]: [Worked example and archived receipt](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example.json); [PARI/GP replay result](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/worked_example_replay.json). The group identification was not rerun in this audit.
+[^6]: [Historical checkpoints](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/checkpoints.csv), with a source for each observation.
+[^7]: Poole and Mackworth, [Local Search](https://artint.info/3e/html/ArtInt3e.Ch4.S6.html), for hill climbing and its limits. The discussion of mathematical formulations is our interpretation.
+[^8]: J. S. Milne, [Fields and Galois Theory](https://www.jmilne.org/math/CourseNotes/FT.pdf), chapters 2–3: splitting fields and automorphisms. For x⁴ − 2, Eisenstein’s criterion gives [ℚ(α) : ℚ] = 4. This field is real, so adjoining i doubles the degree to 8.
+[^9]: Archived harness code: [local validity gates](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/submit_exploration_batch.py), [ledger](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/ledger.py), [expected-value scheduler](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/scheduler.py), and [wave controller and marginal forecast](https://github.com/ash9241/team-dirac-igp24/blob/main/research/routeA/controller.py). The [research runbook](https://github.com/ash9241/team-dirac-igp24/blob/main/research/IGP24_Rank_Climbing_System.md) records the local group predictor and its updates from official labels.
 
-Written with AI assistance from our conversations and experiment records. Images were made with Image Gen; graphs use recorded data. [Image prompts](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/illustration-prompts.json).
-
-[Browse the public research archive](https://github.com/ash9241/team-dirac-igp24) · [Pro conversation and handoffs](https://github.com/ash9241/team-dirac-igp24/blob/main/conversations/README.md)
+Written with AI assistance from our conversations and experiment records. The hero and landscape were made with Image Gen. The diagrams explain the algebra; graphs use recorded data. [Image prompts](https://github.com/ash9241/team-dirac-igp24/blob/main/article/evidence/illustration-prompts.json).
