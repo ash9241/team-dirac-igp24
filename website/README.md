@@ -2,6 +2,8 @@
 
 [Read **Working with AI on the Inverse Galois Problem**](https://team-dirac-igp24.vercel.app).
 
+For sharing the retitled article, use [this article URL](https://team-dirac-igp24.vercel.app/working-with-ai-on-the-inverse-galois-problem). It serves the same complete article with its own canonical and Open Graph URL, so social crawlers can fetch it separately from older previews of the home page.
+
 This directory contains the static version published on Vercel: the complete article, responsive images and graphs, mathematical typesetting, and the interactive scoring calculator. Its evidence links lead back to this public repository.
 
 ## Run it locally
@@ -28,7 +30,7 @@ The included `vercel.json` serves these files directly. The current canonical ad
 
 ## Source and checks
 
-The article was rendered from the approved Sites source at commit `97670c178a065cc1e7787d3ff7a40113f5a7b72f`. The corresponding article components are retained in [article/website-source](../article/website-source/). The public export keeps the same HTML and styles, with a small JavaScript module for the calculator in place of the original framework runtime.
+The article was rendered from the approved Sites source at commit `6d1a32d873258de925fe4b9d2f0d1ff08562439b`. The corresponding article components are retained in [article/website-source](../article/website-source/). The public export keeps the same HTML and styles, with a small JavaScript module for the calculator in place of the original framework runtime.
 
 The source checks cover the displayed coefficient list, mathematical formula, evidence links, assets, and scoring behavior. Additional export checks verify the static assets, public metadata, and both calculator sliders, including the sole-team reset. The deployed HTML was checked against the local export and its assets and GitHub links were checked without authentication.
 

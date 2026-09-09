@@ -4,6 +4,12 @@
   "buildCommand": null,
   "installCommand": null,
   "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/working-with-ai-on-the-inverse-galois-problem",
+      "destination": "/working-with-ai-on-the-inverse-galois-problem.html"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

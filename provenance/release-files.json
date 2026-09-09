@@ -192,6 +192,11 @@
       "sha256": "6c358e2c723a47f076e4a93b3f27650d6b4f1fbac10fded5cad0170833a9bc42"
     },
     {
+      "path": "article/website-source/export-static.mjs",
+      "bytes": 4271,
+      "sha256": "8457957c0cb5114ae30a84dfa2b769a44d76cf344fce0feade6b1c7dd4c6d6c0"
+    },
+    {
       "path": "article/website-source/globals.css",
       "bytes": 23607,
       "sha256": "7207ef14eb8fe5f554a821b9927fcf186bc44fb20d61e6f3d46b3162fda73eba"
@@ -5493,8 +5498,8 @@
     },
     {
       "path": "website/README.md",
-      "bytes": 2360,
-      "sha256": "05bc633cb9476215ec66cb7e4990791d7195f385990905afe57eaa5b25d5418b"
+      "bytes": 2662,
+      "sha256": "fbb2bb845e9b6f958d98200bf2e25169f728847b97326c7e2c9a4825e1480666"
     },
     {
       "path": "website/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -5913,8 +5918,13 @@
     },
     {
       "path": "website/vercel.json",
-      "bytes": 564,
-      "sha256": "ee53e10d24b45514493d3af9b9d1fc41c50239977eda8533184d40e29e45260b"
+      "bytes": 738,
+      "sha256": "dc62c7ab199700dc4ed93ae95ec71012d82cede34b7b87fb0f55d96b88689fce"
+    },
+    {
+      "path": "website/working-with-ai-on-the-inverse-galois-problem.html",
+      "bytes": 87168,
+      "sha256": "992ca748ba6a553be2023c377371cb96d54f6f5b232b68b5250a04418bce3f98"
     }
   ]
 }
