@@ -37,6 +37,8 @@ class Article(HTMLParser):
                 self.parts.append("\n\n" + ("## " if tag == "h2" else "### "))
             if tag == "li":
                 self.parts.append("- ")
+            if tag == "span":
+                self.parts.append("\n\n- " if attrs.get("role") == "listitem" else " ")
             if tag == "br":
                 self.parts.append(" " if any(x["tag"] in {"h2","h3"} for x in self.stack) else "\n")
             if tag == "a":
@@ -77,6 +79,8 @@ class Article(HTMLParser):
                 self.parts.append("**")
             if tag == "em":
                 self.parts.append("*")
+            if tag == "span":
+                self.parts.append(" ")
             if tag in {"p", "h2", "h3", "figcaption", "figure", "li", "section", "summary"}:
                 self.parts.append("\n\n")
             if tag == "pre":
@@ -92,6 +96,7 @@ parser = Article()
 html = Path(sys.argv[1]).read_text()
 parser.feed(html)
 body = re.sub(r"\n[ \t]+", "\n", "".join(parser.parts))
+body = re.sub(r"[ \t]+\n", "\n", body)
 body = re.sub(r"\n{3,}", "\n\n", body).strip()
 body = re.sub(r"(?m)^- (\*\*[^*\n]+\*\*)\n\n([^\n]+)", r"- \1. \2", body)
 body = body.replace("\n\n↶\n\n", "\n\n")
@@ -100,7 +105,7 @@ header = """# Two Batchmates Walk Into a Maths Competition
 
 [Read the illustrated website](https://team-dirac-igp24.vercel.app/) · [Explore the research archive](https://github.com/ash9241/team-dirac-igp24)
 
-By Aishwarya Das. Research with Durgesh Kumar.
+By [Aishwarya Das](https://x.com/anshu4321). Research with [Durgesh Kumar](https://x.com/contextuality).
 September 8, 2026.
 
 """

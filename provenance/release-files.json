@@ -23,8 +23,8 @@
     },
     {
       "path": "CONTRIBUTORS.md",
-      "bytes": 1039,
-      "sha256": "3e9179bafe8728d7676c082b0a08bb946ade169986b8bd3e7c1ccba25f7fc981"
+      "bytes": 1209,
+      "sha256": "cf319675b4c31e72b301143172e6ccd395260013cbd891ddaee79887c539048b"
     },
     {
       "path": "LICENSE",
@@ -38,13 +38,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13322,
-      "sha256": "3c620537afb5ea8522f14d1cad3e94e874f8083741a256e452494d82306ea7e9"
+      "bytes": 13479,
+      "sha256": "d7095d8fd7f90e2154fd91457408a5fe550e458043286373d1a5692a09a6ef5a"
     },
     {
       "path": "article/essay.md",
-      "bytes": 24948,
-      "sha256": "7af2438003c3e93310056fc749569eb5106559ee6e5aa028ece607e01cb78ca3"
+      "bytes": 26341,
+      "sha256": "7e520e4114951e0501dca090382edad556fc754beb456cb6bd68e2c40733fe53"
     },
     {
       "path": "article/evidence/checkpoints.csv",
@@ -188,23 +188,23 @@
     },
     {
       "path": "article/website-source/export-essay-text.py",
-      "bytes": 5191,
-      "sha256": "d18f07f0cded1a9470cc5bdb5edefb17a82bb6466bbdce08ce6aba83442225d3"
+      "bytes": 5475,
+      "sha256": "424e31ddde81eb0887a49fc8d7ce12e5e8177e23feacabf62714697d8a9a8ae2"
     },
     {
       "path": "article/website-source/globals.css",
-      "bytes": 20918,
-      "sha256": "4d70af6f923005ba02e08164020d777c4b508df73d35fd56e2d4dccd02bc378f"
+      "bytes": 23607,
+      "sha256": "7207ef14eb8fe5f554a821b9927fcf186bc44fb20d61e6f3d46b3162fda73eba"
     },
     {
       "path": "article/website-source/layout.tsx",
-      "bytes": 1690,
-      "sha256": "4ef124f2cb66ed4ee275dfddcbb20394e4d6b2d09bd83ce2db1507f7daceac61"
+      "bytes": 1763,
+      "sha256": "c55e383f7a37edfc916ad76e5a5d2aee8be0915a46101a9786d0d0e537d544c0"
     },
     {
       "path": "article/website-source/page.tsx",
-      "bytes": 34550,
-      "sha256": "6e724d26f8c62813bcbc92c50b190eaca4651d3a169d0ec358e80234ea98302c"
+      "bytes": 37891,
+      "sha256": "cfc8a2de352ba9b51f6f06262d2fd76f8256e5c3abec545bcf7192887eb687fd"
     },
     {
       "path": "article/website-source/plot-essay.py",
@@ -5494,7 +5494,7 @@
     {
       "path": "website/README.md",
       "bytes": 2359,
-      "sha256": "88e10f34d10396150344adb893a95d91c7fbeb4685ea7c8a6299e98b13a9ed7a"
+      "sha256": "62fabefb9fa624eec2a5c00f6fe3d843ca6fc3df6bafa54636bdb3f2df35c264"
     },
     {
       "path": "website/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -5797,6 +5797,11 @@
       "sha256": "f1c30059dfeee783a85b21c1804bace7a944440167e7d6d602a48794f08fdbae"
     },
     {
+      "path": "website/assets/index-CXk8VVV8.css",
+      "bytes": 52132,
+      "sha256": "8d15753d91e1713ef0af9504e6566b7934df772301ffc587c861e0af8c180be7"
+    },
+    {
       "path": "website/assets/index-DCRTmerM.css",
       "bytes": 49472,
       "sha256": "ade449201ee09b5a6ee6d6a66520b980cfb438deb2bb5f1bdd4729fb390cc9b8"
@@ -5813,8 +5818,8 @@
     },
     {
       "path": "website/downloads/two-batchmates.md",
-      "bytes": 25308,
-      "sha256": "eb2c1d445625c64bf710161cadc4f5ba89df729e379947b92dfcb5d78931b9a2"
+      "bytes": 26701,
+      "sha256": "a3dbe47afce85d6239abcf4e830ab900f4aab3d7c31f4e6610439f60e78550a7"
     },
     {
       "path": "website/figures/diversity-mobile.svg",
@@ -5883,8 +5888,8 @@
     },
     {
       "path": "website/index.html",
-      "bytes": 63891,
-      "sha256": "231bb5716ccc66f0b65394c6a42409603a68abcec6ae89fc57c9e641813401f2"
+      "bytes": 86843,
+      "sha256": "1ae258170b8a33995dd546e3e3f28393adbad0a00d285a8c375b599b2af96561"
     },
     {
       "path": "website/robots.txt",

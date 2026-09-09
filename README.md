@@ -2,7 +2,7 @@
 
 **Team Dirac’s IGP24 research archive — constructions, code, polynomials, experiments, and the conversations behind them.**
 
-I’m Aishwarya Das, the founder of Dirac Labs. My day job is building quantum sensors. Durgesh Kumar was my batchmate in undergrad; he is preparing to start a PhD in category theory. For close to a month, we worked together on a mathematics competition that asked a deceptively simple question: **can you find an equation with these particular symmetries?**
+I’m [Aishwarya Das](https://x.com/anshu4321), a co-founder of [Dirac Labs](https://www.diraclabs.com/). My day job is building quantum sensors for underwater navigation. [Durgesh Kumar](https://x.com/contextuality) was my batchmate in undergrad. He has just finished a master’s in category theory and starts his PhD in about two months. For close to a month, we worked together on a mathematics competition that asked a deceptively simple question: **can you find an equation with these particular symmetries?**
 
 Durgesh suggested the mathematical structures worth exploring. I worked with GPT‑5.6 Pro to develop and question the plans, passed the resulting briefs to Codex, and ran the larger searches on Google Cloud. We kept the results, including the ones that told us to stop.
 

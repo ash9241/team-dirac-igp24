@@ -2,20 +2,92 @@
 
 [Read the illustrated website](https://team-dirac-igp24.vercel.app/) · [Explore the research archive](https://github.com/ash9241/team-dirac-igp24)
 
-By Aishwarya Das. Research with Durgesh Kumar.
+By [Aishwarya Das](https://x.com/anshu4321). Research with [Durgesh Kumar](https://x.com/contextuality).
 September 8, 2026.
 
 The competition asked us to work backwards: choose how an equation’s roots should behave, then find an equation whose roots behave that way.
 
 Take the equation x² = 2. It has two answers: √2 and −√2, because squaring either gives 2. These answers are called its **roots**. Galois theory asks a different question: **which roots can exchange places without breaking the arithmetic?**
 
+### Two roots. Both pass the same test.
+
+$$
+x^2=2
+$$
+
+→
+
+Use √2
+
+$$
+(\sqrt{2})^2=2
+$$
+
+Use −√2
+
+$$
+(-\sqrt{2})^2=2
+$$
+
+The roots are the values that make the equation true.
+
 If two roots add to zero, their replacements must still add to zero. The same goes for every relationship you can express using addition, multiplication, and rational numbers—whole numbers and fractions. A swap must preserve all of those relationships at once.
 
-To check this properly, we include the roots, the fractions, and every number we can build from them by ordinary arithmetic, with no division by zero. Mathematicians call this number system the **splitting field**. An allowed swap must work consistently across this whole system. It has to preserve addition and multiplication, keep the fractions fixed, and be reversible. Such a rearrangement is called an **automorphism**.[^8]
+To check this properly, we include the roots, the fractions, and every number we can build from them by ordinary arithmetic, with no division by zero. Mathematicians call this number system the **splitting field**.
+
+### Build the number system around the roots.
+
+Start with **All fractions and ±√2** →
+
+Keep applying **+   −   ×   ÷**
+
+Some numbers inside it
+
+- ½
+
+- √2
+
+- −√2
+
+- 1 + √2
+
+- 3 − 2√2
+
+- …
+
+Include every result the four operations can produce, with no division by zero. This collection has infinitely many numbers; the roots are only the starting ingredients.
+
+An allowed swap must work consistently across this whole system. It has to preserve addition and multiplication, keep the fractions fixed, and be reversible. Such a rearrangement is called an **automorphism**.[^8]
 
 The **Galois group** is the collection of all these allowed rearrangements, including doing nothing. We can combine two by performing one after the other, and every one can be undone. Together, they describe the algebraic symmetry of the roots.
 
+### For x² = 2, the group has just two moves.
+
+**Leave everything alone**
+
+Every number stays fixed.
+
+$$
+\sqrt{2}\mapsto\sqrt{2}
+$$
+
+**Swap the roots**
+
+Every √2 term changes sign. Fractions stay fixed.
+
+$$
+\begin{aligned}\sqrt{2}&\mapsto-\sqrt{2}\\1+\sqrt{2}&\mapsto1-\sqrt{2}\\\tfrac12&\mapsto\tfrac12\end{aligned}
+$$
+
+A swap followed by another swap brings every number back. These two moves form the Galois group for this example.
+
 The **inverse Galois problem** reverses the task. Start with any finite group: a finite collection of symmetries that can be combined and undone. Can we find an equation built from powers of x and whole numbers or fractions whose Galois group is exactly that group? Nobody knows how to do this for every finite group. The general problem remains open.
+
+### The inverse problem changes where we start.
+
+**Usual direction** An equation  →  Find its symmetries
+
+**Inverse problem** Wanted symmetries  →  Find an equation
 
 IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group acting on the 24 roots, and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1. They also had to be irreducible: they could not factor into lower-degree polynomials over the rationals.
 
@@ -35,7 +107,7 @@ For close to a month, Durgesh Kumar and I tried to fill those cells. Our team, D
 
 ## The work between us
 
-I’m Aishwarya, the founder of Dirac Labs. My day job is building quantum sensors. Durgesh was my batchmate in undergrad; in about two months, he starts a PhD in category theory. Neither of us is mathematics faculty. This was a problem we wanted to spend time on together.
+I’m [Aishwarya](https://x.com/anshu4321), a co-founder of [Dirac Labs](https://www.diraclabs.com/). My day job is building quantum sensors for underwater navigation. [Durgesh Kumar](https://x.com/contextuality) was my batchmate in undergrad. He has just finished a master’s in category theory and starts his PhD in about two months. Neither of us is mathematics faculty. This was a problem we wanted to spend time on together.
 
 Durgesh would suggest the mathematical strategies: structures we might exploit, extensions worth constructing, the “islands” where promising polynomials could live. I would take those ideas to Codex, turn them into programs, and put the larger searches on Google Cloud. The results came back into our next conversation.
 

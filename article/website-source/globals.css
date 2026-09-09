@@ -41,6 +41,31 @@ h3{font-size:28px;font-weight:500;letter-spacing:-.035em;line-height:1.25}
 .reference{font-family:var(--sans);font-size:12px;line-height:0;margin-left:5px;vertical-align:super}
 .reference a{color:var(--blue);text-decoration:none;padding:1px}
 .prose code{font-family:var(--mono);font-size:.8em;background:#e9ecf5;padding:2px 5px}
+.concept-card{margin:30px 0 34px;padding:23px 25px;background:#fff;border:1px solid #d8dfec;border-left:3px solid var(--blue)}
+.concept-card h3{font-size:20px;font-weight:600;letter-spacing:-.025em;margin-bottom:20px;line-height:1.4}
+.concept-card .math-line{font-size:23px}
+.concept-card .katex-display{margin:.35em 0}
+.concept-card figcaption{margin-top:18px;font-size:14px;line-height:1.65}
+.concept-root-branches{display:grid;grid-template-columns:100px 24px minmax(0,1fr);gap:16px;align-items:center}
+.concept-origin{min-width:0}
+.concept-arrow{font-family:var(--sans);color:var(--blue);font-size:25px;text-align:center}
+.concept-leaves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.concept-leaves>div{background:#f0f3fb;padding:12px 10px;min-width:0}
+.concept-leaves>div>span{display:block;font-size:13px;color:#56647a;text-align:center;margin-bottom:8px}
+.concept-field-path{display:grid;grid-template-columns:minmax(0,1fr) 30px minmax(0,1fr);gap:12px;align-items:center}
+.concept-field-path>div>span{display:block;font-size:13px;color:#56647a;margin-bottom:8px}
+.concept-field-path strong{display:block;font-size:18px;font-weight:500;line-height:1.5}
+.concept-number-set{border-top:1px solid #d8dfec;padding-top:16px;margin-top:20px}
+.concept-number-set>span{font-size:13px;color:#56647a}
+.concept-number-set>div{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.concept-number-set>div>span{background:#f0f3fb;padding:8px 11px;font-size:17px;line-height:1.4}
+.concept-moves{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px}
+.concept-moves>div{background:#f0f3fb;padding:18px 14px;min-width:0}
+.concept-moves strong{display:block;font-size:16px;margin-bottom:10px;font-weight:600}
+.concept-moves p{font-family:var(--sans);font-size:14px;line-height:1.6;margin:0 0 14px;color:#56647a}
+.concept-moves .math-line{font-size:20px}
+.concept-directions>div{display:grid;grid-template-columns:130px minmax(0,1fr) 24px minmax(0,1fr);gap:14px;align-items:center;padding:13px 0;border-top:1px solid #d8dfec;font-size:15px;line-height:1.5}
+.concept-directions strong{font-size:13px;font-weight:600;color:#56647a}
 .wide{max-width:1180px;margin:25px auto 35px}
 figcaption{font-size:13px;line-height:1.75;color:var(--muted)}
 .roots-study{display:grid;grid-template-columns:1fr 1fr;background:#ebece9;align-items:center}
@@ -194,6 +219,10 @@ h2{font-size:38px;line-height:1.15;margin-bottom:27px}
 .roots-study figcaption{padding:17px 22px;font-size:12px}
 .harness-diagram{padding:28px 24px}.harness-diagram h3{font-size:28px}.harness-diagram ol{gap:29px 24px}.harness-diagram li strong{font-size:18px}.harness-diagram li p{font-size:14px}
 .diagram-heading{padding:26px 24px 14px}.diagram-heading h3,.quartic-structure h3{font-size:27px}.diagram-heading p{font-size:16px}
+.concept-card{padding:20px 18px}.concept-card h3{font-size:19px}.concept-card .math-line{font-size:21px}
+.concept-root-branches{grid-template-columns:80px 18px minmax(0,1fr);gap:10px}.concept-leaves{grid-template-columns:1fr}.concept-leaves>div{padding:10px 5px}
+.concept-field-path strong{font-size:16px}.concept-moves .math-line{font-size:20px}
+.concept-directions>div{grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);gap:10px;font-size:14px}.concept-directions strong{grid-column:1/-1;margin-bottom:2px}
 .galois-figure figcaption,.hill-figure figcaption{padding:18px 24px 24px}.quartic-structure{padding:28px 24px 24px}
 .quartic-steps{grid-template-columns:1fr;gap:12px;margin:24px 0}.quartic-steps>div{padding:18px 0 8px}.quartic-steps>div+div::before{content:none}.quartic-steps .math-line{font-size:25px;margin-top:8px}
 .graph{padding:27px 13px 25px}.graph h3{font-size:25px;padding:0 10px}.graph figcaption{font-size:12px;margin:12px 10px 0}

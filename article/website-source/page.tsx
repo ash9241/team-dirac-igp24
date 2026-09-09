@@ -3,6 +3,10 @@ import type { ReactNode } from "react";
 import katex from "katex";
 import { SharingExplorer } from "./essay-tools";
 
+const aishwarya = "https://x.com/anshu4321";
+const durgesh = "https://x.com/contextuality";
+const diracLabs = "https://www.diraclabs.com/";
+
 const repository = "https://github.com/ash9241/team-dirac-igp24";
 const evidence = repository + "/blob/main/article/evidence/";
 const example = repository + "/tree/main/examples/f5";
@@ -31,23 +35,48 @@ export default function Article() {
     <a className="skip-link" href="#problem">Skip to the article</a>
     <header className="article-header">
       <img className="hero-art" src="/images/hero-wire-knot.png" alt="Fine silver and blue strands meeting in a suspended mathematical sculpture. A conceptual illustration." width="1672" height="941" fetchPriority="high"/>
-      <div className="hero-date"><span>Aishwarya Das &amp; Durgesh Kumar</span><time dateTime="2026-09-08">September 8, 2026</time></div>
+      <div className="hero-date"><span><a href={aishwarya}>Aishwarya Das</a> &amp; <a href={durgesh}>Durgesh Kumar</a></span><time dateTime="2026-09-08">September 8, 2026</time></div>
       <div className="hero-copy">
         <h1>Two batchmates<br/>walk into a<br/>maths competition.</h1>
       </div>
       <a className="begin-link" href="#problem">The story <span aria-hidden="true">↓</span></a>
     </header>
-    <div className="byline"><p>By <strong>Aishwarya Das</strong><br/>Research with <strong>Durgesh Kumar</strong></p><p>IGP24 · Degree 24<br/>GPT‑5.6 Pro, Codex &amp; computational algebra</p></div>
+    <div className="byline"><p>By <strong><a href={aishwarya}>Aishwarya Das</a></strong><br/>Research with <strong><a href={durgesh}>Durgesh Kumar</a></strong></p><p>IGP24 · Degree 24<br/>GPT‑5.6 Pro, Codex &amp; computational algebra</p></div>
     <nav className="reading-nav" aria-label="In this article"><a href="#problem">The problem</a><a href="#turning-point">The experiment</a><a href="#polynomial">The polynomial</a><a href="#results">The score</a><a href="#friday">Caltech</a><a href={repository}>GitHub ↗</a></nav>
 
     <article id="essay">
       <Section id="problem" note={<><span className="margin-stat">24</span><p>The highest power of x in the polynomials we were trying to find.</p></>}>
         <p className="opening">The competition asked us to work backwards: choose how an equation’s roots should behave, then find an equation whose roots behave that way.</p>
         <p>Take the equation x² = 2. It has two answers: √2 and −√2, because squaring either gives 2. These answers are called its <strong>roots</strong>. Galois theory asks a different question: <strong>which roots can exchange places without breaking the arithmetic?</strong></p>
+        <figure className="concept-card" aria-labelledby="roots-card-title">
+          <h3 id="roots-card-title">Two roots. Both pass the same test.</h3>
+          <div className="concept-root-branches">
+            <div className="concept-origin"><Equation tex={"x^2=2"}/></div><span className="concept-arrow">→</span>
+            <div className="concept-leaves"><div><span>Use √2</span><Equation tex={"(\\sqrt{2})^2=2"}/></div><div><span>Use −√2</span><Equation tex={"(-\\sqrt{2})^2=2"}/></div></div>
+          </div>
+          <figcaption>The roots are the values that make the equation true.</figcaption>
+        </figure>
         <p>If two roots add to zero, their replacements must still add to zero. The same goes for every relationship you can express using addition, multiplication, and rational numbers—whole numbers and fractions. A swap must preserve all of those relationships at once.</p>
-        <p>To check this properly, we include the roots, the fractions, and every number we can build from them by ordinary arithmetic, with no division by zero. Mathematicians call this number system the <strong>splitting field</strong>. An allowed swap must work consistently across this whole system. It has to preserve addition and multiplication, keep the fractions fixed, and be reversible. Such a rearrangement is called an <strong>automorphism</strong>.<Ref n={8}/></p>
+        <p>To check this properly, we include the roots, the fractions, and every number we can build from them by ordinary arithmetic, with no division by zero. Mathematicians call this number system the <strong>splitting field</strong>.</p>
+        <figure className="concept-card" aria-labelledby="field-card-title">
+          <h3 id="field-card-title">Build the number system around the roots.</h3>
+          <div className="concept-field-path"><div><span>Start with</span><strong>All fractions and ±√2</strong></div><span className="concept-arrow">→</span><div><span>Keep applying</span><strong>+ &nbsp; − &nbsp; × &nbsp; ÷</strong></div></div>
+          <div className="concept-number-set"><span>Some numbers inside it</span><div role="list"><span role="listitem">½</span><span role="listitem">√2</span><span role="listitem">−√2</span><span role="listitem">1 + √2</span><span role="listitem">3 − 2√2</span><span role="listitem">…</span></div></div>
+          <figcaption>Include every result the four operations can produce, with no division by zero. This collection has infinitely many numbers; the roots are only the starting ingredients.</figcaption>
+        </figure>
+        <p>An allowed swap must work consistently across this whole system. It has to preserve addition and multiplication, keep the fractions fixed, and be reversible. Such a rearrangement is called an <strong>automorphism</strong>.<Ref n={8}/></p>
         <p>The <strong>Galois group</strong> is the collection of all these allowed rearrangements, including doing nothing. We can combine two by performing one after the other, and every one can be undone. Together, they describe the algebraic symmetry of the roots.</p>
+        <figure className="concept-card" aria-labelledby="moves-card-title">
+          <h3 id="moves-card-title">For x² = 2, the group has just two moves.</h3>
+          <div className="concept-moves"><div><strong>Leave everything alone</strong><p>Every number stays fixed.</p><Equation tex={"\\sqrt{2}\\mapsto\\sqrt{2}"}/></div><div><strong>Swap the roots</strong><p>Every √2 term changes sign. Fractions stay fixed.</p><Equation tex={"\\begin{aligned}\\sqrt{2}&\\mapsto-\\sqrt{2}\\\\1+\\sqrt{2}&\\mapsto1-\\sqrt{2}\\\\\\tfrac12&\\mapsto\\tfrac12\\end{aligned}"}/></div></div>
+          <figcaption>A swap followed by another swap brings every number back. These two moves form the Galois group for this example.</figcaption>
+        </figure>
         <p>The <strong>inverse Galois problem</strong> reverses the task. Start with any finite group: a finite collection of symmetries that can be combined and undone. Can we find an equation built from powers of x and whole numbers or fractions whose Galois group is exactly that group? Nobody knows how to do this for every finite group. The general problem remains open.</p>
+        <figure className="concept-card concept-directions" aria-labelledby="inverse-card-title">
+          <h3 id="inverse-card-title">The inverse problem changes where we start.</h3>
+          <div><strong>Usual direction</strong><span>An equation</span><span className="concept-arrow">→</span><span>Find its symmetries</span></div>
+          <div><strong>Inverse problem</strong><span>Wanted symmetries</span><span className="concept-arrow">→</span><span>Find an equation</span></div>
+        </figure>
         <p>IGP24 gave us a specific part to work on: polynomials with integer coefficients whose highest power is x²⁴. Each target asked for a particular group acting on the 24 roots, and a particular number of real roots. The polynomials had to be monic, with leading coefficient 1. They also had to be irreducible: they could not factor into lower-degree polynomials over the rationals.</p>
       </Section>
       <figure className="galois-figure wide" aria-labelledby="galois-figure-title">
@@ -61,8 +90,8 @@ export default function Article() {
         <p>For close to a month, Durgesh Kumar and I tried to fill those cells. Our team, Dirac, ended up 14th on the published leaderboard. Getting there involved a lot of code, some useful mathematical ideas, and a thousand accepted answers that taught us we were asking the wrong question.</p>
       </Section>
 
-      <Section id="people" title="The work between us" note={<><p><strong>Aishwarya Das</strong><br/>Founder, Dirac Labs</p><p><strong>Durgesh Kumar</strong><br/>Starting a PhD in category theory</p></>}>
-        <p>I’m Aishwarya, the founder of Dirac Labs. My day job is building quantum sensors. Durgesh was my batchmate in undergrad; in about two months, he starts a PhD in category theory. Neither of us is mathematics faculty. This was a problem we wanted to spend time on together.</p>
+      <Section id="people" title="The work between us" note={<><p><strong><a href={aishwarya}>Aishwarya Das</a></strong><br/>Co-founder, <a href={diracLabs}>Dirac Labs</a></p><p><strong><a href={durgesh}>Durgesh Kumar</a></strong><br/>Master’s in category theory<br/>Starting a PhD in two months</p></>}>
+        <p>I’m <a href={aishwarya}>Aishwarya</a>, a co-founder of <a href={diracLabs}>Dirac Labs</a>. My day job is building quantum sensors for underwater navigation. <a href={durgesh}>Durgesh Kumar</a> was my batchmate in undergrad. He has just finished a master’s in category theory and starts his PhD in about two months. Neither of us is mathematics faculty. This was a problem we wanted to spend time on together.</p>
         <p>Durgesh would suggest the mathematical strategies: structures we might exploit, extensions worth constructing, the “islands” where promising polynomials could live. I would take those ideas to Codex, turn them into programs, and put the larger searches on Google Cloud. The results came back into our next conversation.</p>
         <p>That changed what I could bring back to Durgesh. If he suspected a construction was confined to the wrong family, I could help build the experiment that tested his suspicion. We could talk about the labels it returned, the cases it missed, and whether it deserved another run.</p>
         <p>For the planning, I used GPT‑5.6 Pro as an orchestrator. I brought it Durgesh’s ideas, our formulas, returned labels, and bottlenecks. We worked through what might be going wrong and what to test next. When a plan was ready, I asked for a Markdown brief and passed it to Codex to implement.<Ref n={3}/> I was the person carrying the information between those conversations, the code, and the machines.</p>
