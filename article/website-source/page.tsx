@@ -34,7 +34,6 @@ export default function Article() {
       <div className="hero-date"><span>Aishwarya Das &amp; Durgesh Kumar</span><time dateTime="2026-09-08">September 8, 2026</time></div>
       <div className="hero-copy">
         <h1>Two batchmates<br/>walk into a<br/>maths competition.</h1>
-        <p className="subtitle">A founder building quantum sensors, a future category theorist,<br className="desktop-break"/> and a month spent learning what AI could help us find.</p>
       </div>
       <a className="begin-link" href="#problem">The story <span aria-hidden="true">↓</span></a>
     </header>

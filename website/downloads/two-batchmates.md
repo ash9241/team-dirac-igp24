@@ -1,7 +1,5 @@
 # Two Batchmates Walk Into a Maths Competition
 
-A founder building quantum sensors, a future category theorist, and a month spent learning what AI could help us find.
-
 By Aishwarya Das. Research with Durgesh Kumar.
 September 8, 2026.
 

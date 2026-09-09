@@ -2,8 +2,6 @@
 
 [Read the live website](https://team-dirac-igp24.vercel.app) · [Browse the research archive](../README.md)
 
-A founder building quantum sensors, a future category theorist, and a month spent learning what AI could help us find.
-
 By Aishwarya Das. Research with Durgesh Kumar.
 September 8, 2026.
 

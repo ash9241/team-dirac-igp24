@@ -43,8 +43,8 @@
     },
     {
       "path": "article/essay.md",
-      "bytes": 17398,
-      "sha256": "38e1de7644d87b6cf77e67094d60467f8ca1336d77deb83a4fc778bd62cd2105"
+      "bytes": 17278,
+      "sha256": "a6c472f570cbf553f553e68742abc4869b7a0af69e750e42dcdd17752f4c23ec"
     },
     {
       "path": "article/evidence/checkpoints.csv",
@@ -163,8 +163,8 @@
     },
     {
       "path": "article/website-source/page.tsx",
-      "bytes": 27495,
-      "sha256": "3cf8eba3e7ae07c64d88054493b9535a939a88645d3f8d310b745fd39fd6db5e"
+      "bytes": 27309,
+      "sha256": "0d234348de0aa923dbe41c9a9b6ace2d8a77bd8d50e7d93579d86750e477ec5d"
     },
     {
       "path": "article/website-source/plot-essay.py",
@@ -5454,7 +5454,7 @@
     {
       "path": "website/README.md",
       "bytes": 2359,
-      "sha256": "7e4e20aa568c3076885f9b586d1576a90655f288c42e5d1c2cafdf048cfc3076"
+      "sha256": "571ed4122321ca1e5a78d5b1a223bd8479f19d65258c5699dc661d8ef22aef9e"
     },
     {
       "path": "website/assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
@@ -5763,8 +5763,8 @@
     },
     {
       "path": "website/downloads/two-batchmates.md",
-      "bytes": 18332,
-      "sha256": "f0e945844a7d3bacdd30be8320e3fd217a480b9c7ff3b2a370502c52d4e1e2ca"
+      "bytes": 18212,
+      "sha256": "da1c2c224a4d2d7d224fabb2ca415ff6e783e016523a9d638f2b8135d068970f"
     },
     {
       "path": "website/figures/diversity-mobile.svg",
@@ -5813,8 +5813,8 @@
     },
     {
       "path": "website/index.html",
-      "bytes": 49903,
-      "sha256": "85fb1c98e99a369d774dc813732f57cb786ec403b7e4283368a3c4924eae31e0"
+      "bytes": 49734,
+      "sha256": "1cf5c62cdc1b3d030afcc9db8911447bc7703d2b13ed703dba9fa712c7dc7580"
     },
     {
       "path": "website/robots.txt",
