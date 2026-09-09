@@ -1,9 +1,9 @@
-# Two Batchmates Walk Into a Maths Competition
+# Working with AI on the Inverse Galois Problem
 
 [Read the illustrated website](https://team-dirac-igp24.vercel.app/) · [Explore the research archive](https://github.com/ash9241/team-dirac-igp24)
 
 By [Aishwarya Das](https://x.com/anshu4321). Research with [Durgesh Kumar](https://x.com/contextuality).
-September 8, 2026.
+9th September, 2026.
 
 The competition asked us to work backwards: choose how an equation’s roots should behave, then find an equation whose roots behave that way.
 

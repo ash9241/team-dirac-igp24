@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import "katex/dist/katex.min.css";
 import "./globals.css";
 
-const title = "Two Batchmates Walk Into a Maths Competition";
+const title = "Working with AI on the Inverse Galois Problem";
 const description = "A Dirac Labs co-founder and an incoming PhD student used GPT‑5.6 Pro, Codex, and a search harness to reach 14th in IGP24.";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title, description, authors: [{name:"Aishwarya Das",url:"https://x.com/anshu4321"},{name:"Durgesh Kumar",url:"https://x.com/contextuality"}],
     openGraph: {
-      title, description, type: "article",
+      title, description, type: "article", publishedTime: "2026-09-09",
       images: [{url:socialImage,width:1672,height:941,type:"image/png",alt:"Entangled silver and blue strands against a dark background."}],
     },
     twitter: {card:"summary_large_image",title,description,images:[{url:socialImage,alt:"Entangled silver and blue strands against a dark background."}]},

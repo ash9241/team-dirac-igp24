@@ -101,12 +101,12 @@ body = re.sub(r"\n{3,}", "\n\n", body).strip()
 body = re.sub(r"(?m)^- (\*\*[^*\n]+\*\*)\n\n([^\n]+)", r"- \1. \2", body)
 body = body.replace("\n\n↶\n\n", "\n\n")
 body = re.sub(r"\[(\d+)\]\(#source-\1\)", r"[^\1]", body)
-header = """# Two Batchmates Walk Into a Maths Competition
+header = """# Working with AI on the Inverse Galois Problem
 
 [Read the illustrated website](https://team-dirac-igp24.vercel.app/) · [Explore the research archive](https://github.com/ash9241/team-dirac-igp24)
 
 By [Aishwarya Das](https://x.com/anshu4321). Research with [Durgesh Kumar](https://x.com/contextuality).
-September 8, 2026.
+9th September, 2026.
 
 """
 def fragment_text(fragment):

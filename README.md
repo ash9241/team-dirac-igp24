@@ -1,4 +1,4 @@
-# Two Batchmates Walk Into a Maths Competition
+# Working with AI on the Inverse Galois Problem
 
 **Team Dirac’s IGP24 research archive — constructions, code, polynomials, experiments, and the conversations behind them.**
 

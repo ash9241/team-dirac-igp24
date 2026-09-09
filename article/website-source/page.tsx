@@ -35,9 +35,9 @@ export default function Article() {
     <a className="skip-link" href="#problem">Skip to the article</a>
     <header className="article-header">
       <img className="hero-art" src="/images/hero-wire-knot.png" alt="Fine silver and blue strands meeting in a suspended mathematical sculpture. A conceptual illustration." width="1672" height="941" fetchPriority="high"/>
-      <div className="hero-date"><span><a href={aishwarya}>Aishwarya Das</a> &amp; <a href={durgesh}>Durgesh Kumar</a></span><time dateTime="2026-09-08">September 8, 2026</time></div>
+      <div className="hero-date"><span><a href={aishwarya}>Aishwarya Das</a> &amp; <a href={durgesh}>Durgesh Kumar</a></span><time dateTime="2026-09-09">9th September, 2026</time></div>
       <div className="hero-copy">
-        <h1>Two batchmates<br/>walk into a<br/>maths competition.</h1>
+        <h1>Working with AI<br/>on the Inverse<br/>Galois Problem</h1>
       </div>
       <a className="begin-link" href="#problem">The story <span aria-hidden="true">↓</span></a>
     </header>

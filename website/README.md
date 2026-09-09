@@ -1,6 +1,6 @@
 # The published article
 
-[Read **Two Batchmates Walk Into a Maths Competition**](https://team-dirac-igp24.vercel.app).
+[Read **Working with AI on the Inverse Galois Problem**](https://team-dirac-igp24.vercel.app).
 
 This directory contains the static version published on Vercel: the complete article, responsive images and graphs, mathematical typesetting, and the interactive scoring calculator. Its evidence links lead back to this public repository.
 
@@ -28,7 +28,7 @@ The included `vercel.json` serves these files directly. The current canonical ad
 
 ## Source and checks
 
-The article was rendered from the approved Sites source at commit `02e770f206e9d434c04494737e4c18cddbf26bff`. The corresponding article components are retained in [article/website-source](../article/website-source/). The public export keeps the same HTML and styles, with a small JavaScript module for the calculator in place of the original framework runtime.
+The article was rendered from the approved Sites source at commit `97670c178a065cc1e7787d3ff7a40113f5a7b72f`. The corresponding article components are retained in [article/website-source](../article/website-source/). The public export keeps the same HTML and styles, with a small JavaScript module for the calculator in place of the original framework runtime.
 
 The source checks cover the displayed coefficient list, mathematical formula, evidence links, assets, and scoring behavior. Additional export checks verify the static assets, public metadata, and both calculator sliders, including the sole-team reset. The deployed HTML was checked against the local export and its assets and GitHub links were checked without authentication.
 
