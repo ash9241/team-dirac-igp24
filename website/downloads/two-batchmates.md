@@ -107,7 +107,7 @@ For close to a month, Durgesh Kumar and I tried to fill those cells. Our team, D
 
 ## The work between us
 
-I’m [Aishwarya](https://x.com/anshu4321), a co-founder of [Dirac Labs](https://www.diraclabs.com/). My day job is building quantum sensors for underwater navigation. [Durgesh Kumar](https://x.com/contextuality) was my batchmate in undergrad. He has just finished a master’s in category theory and starts his PhD in about two months. Neither of us is mathematics faculty. This was a problem we wanted to spend time on together.
+I’m [Aishwarya](https://x.com/anshu4321), co-founder of [Dirac Labs](https://www.diraclabs.com/), where we’re building quantum sensors to help machines navigate underwater, beyond the reach of GPS. [Durgesh Kumar](https://x.com/contextuality) and I were batchmates in undergrad. He’s just finished a master’s in category theory and starts his PhD in about two months. IGP24 gave us a chance to put his mathematical instincts and my interest in machine learning to work on the same problem. He brought constructions worth exploring; I helped turn them into experiments we could actually run.
 
 Durgesh would suggest the mathematical strategies: structures we might exploit, extensions worth constructing, the “islands” where promising polynomials could live. I would take those ideas to Codex, turn them into programs, and put the larger searches on Google Cloud. The results came back into our next conversation.
 
